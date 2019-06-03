@@ -1,75 +1,38 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-
 class Header extends React.Component {
 
-	constructor(props) {
-		super(props);
-			this.state = {
-		};
+	
+	componentDidMount() {
+		setTimeout(function(){ 
+			var header = document.querySelector(".header-logo")
+			header.classList.add('active')
 
-		// document.querySelector('#moveSectionDown').addEventListener('click', function(e){
-		// 	e.preventDefault();
-		// 	fullpage_api.moveSectionDown();
-		// });
+			var socials = document.querySelector(".header-socialNetwork li")
+			socials.classList.add('active')
+		}, 500);
+
 	}
-
-	handleAddSection() {
-		this.setState(state => {
-		  const { fullpages } = state;
-		  const { length } = fullpages;
-		  fullpages.push({
-		    text: `section ${length + 1}`,
-		    id: Math.random(),
-		  });
-
-		  return {
-		    fullpages: [...fullpages],
-		  };
-		});
-	}
-
-	handleRemoveSection() {
-		this.setState(state => {
-		  const { fullpages } = state;
-		  const newPages = [...fullpages];
-		  newPages.pop();
-
-		  return { fullpages: newPages };
-		});
-	}
-
 
 	render () {
-
-		// var x = "hola"
-		// console.log(x)
-
 		return 	<header className="header">
-					<nav className="container">
+					<nav className="df container">
 
-						<div className="header-logos">
-							<a target="_blank" href="https://kambista.com/" className="header-logo">
-								<figure className="header-logo-kambista">
-									<img src="./static/img/kambista-logo.svg" alt=""/>
-								</figure>
-							</a>
-							<a target="_blank" href="https://www.latam.com/es_pe/?gclid=CjwKCAiAv9riBRANEiwA9Dqv1QYQ40vM47knl33LWk2E7aCk-fShIGvWL14Np6tG7GsO1WbT7x-vLBoCAvwQAvD_BwE&gclsrc=aw.ds" className="header-logo">
-								<figure className="header-logo-latam">
-									<img src="./static/img/latam-logo.svg" alt=""/>
-								</figure>
-							</a>
-						</div>
+						<a className="header-logo" target="_blank" href="https://kambista.com/">
+							Danilo Viacava
+						</a>
 
 						<ul className="header-socialNetwork">
 							<li>
+								<a target="_blank" href="https://www.facebook.com/profile.php?id=100009455848617" >
+									<img src="/static/img/facebookIcon.svg" alt=""/>
+								</a>
+								<a target="_blank" href="https://www.instagram.com/danilojesusv/" >
+									<img src="/static/img/instagramIcon.svg" alt=""/>
+								</a>
+								<a target="_blank" href="https://api.whatsapp.com/send?phone=51931447041&text=Hola,%20quiero%20realizar%20mi%20proyecto" >
+									<img src="/static/img/whatsapp.png" alt=""/>
+								</a>
 								<a target="_blank" href="https://kambista.com/" >
-									<figure>
-										<figcaption>
-											Volver a <strong>Kambista</strong>
-										</figcaption>
-										<img src="./static/img/house.svg" alt=""/>
-									</figure>
+									Cotización Gratis
 								</a>
 							</li>
 						</ul>
@@ -83,45 +46,42 @@ class Header extends React.Component {
 							top: 0;
 							left: 0;
 							width: 100%;
-							z-index: 9;
+							z-index: 999;
+							letter-spacing: 1px;
+						}
+						.header a {
+							color: white;
 						}
 						.header .container {
-							display: flex;
 							justify-content: space-between;
-							align-items: center;
-							max-width: 1200px;
-							width: 96%;
-							margin: auto;
-						}
-						.header-logos {
-							display: flex;
 						}
 						.header-logo {
 							display: inline-block;
 							margin: 10px;
+							opacity: 0;
+							transform: translateY(20px);
+							transition: .5s;
 						}
-						.header-logo-kambista {
-							position: relative;
-							padding-right: 15px;
+						.header-logo.active {
+							opacity: 1;
+							transform: translateY(0);
 						}
-						.header-logo-kambista:before {
-							content: "";
-							position: absolute;
-							top: 0;
-							right: 0;
-							bottom: 0;
-							margin: auto;
-							background: white;
-							opacity: .5;
-							width: 1px;
-							height: 60%;
-						}
-						.header-socialNetwork {
+						.header-socialNetwork li {
 							display: flex;
-							color: white;
+							opacity: 0;
+							transform: translateY(20px);
+							transition: .5s;
+							transition-delay: .5s;
+						}
+						.header-socialNetwork li.active {
+							opacity: 1;
+							transform: translateY(0);
+						}
+						.header-socialNetwork a {
+							margin: 5px;
+							padding: 5px;
 						}
 						.header-socialNetwork a:hover img {
-							background: #051392;
 							box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.85);
 						}
 						.header-socialNetwork figure {
@@ -133,22 +93,17 @@ class Header extends React.Component {
 							color: white;
 						}
 						.header-socialNetwork img {
-							padding: 10px;
 							border-radius: 6px;
 							box-shadow: none;
 							transition: .3s;
-							width: 35px;
-							height: 35px;
 							box-sizing: border-box;
-							margin: 0 2px;
+							width: 15px;
+							height: 15px;
 						}
 
-						@media (max-width: 650px) {
-							.header .container {
-								justify-content: center;
-							}
-							.header-socialNetwork {
-								display: none;
+						@media screen and (max-width: 650px) {
+							.header-socialNetwork a {
+								margin: 0;
 							}
 						}
 					`}</style>

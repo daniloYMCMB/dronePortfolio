@@ -1,5 +1,6 @@
 class VideoBanner extends React.Component {
 
+
 	handleDown () {
 		fullpage_api.moveSectionDown();
 	}
@@ -8,31 +9,31 @@ class VideoBanner extends React.Component {
 		return 	<div className="videoBanner">
 					<div className="videoBanner-container">
 
-                    <div className="vimeo-wrapper">
-                        <video data-autoplay loop muted>
-                            <source src="./static/video/IvanOspinaFMX.mp4" type="video/mp4"></source>
-                        </video>
-                        <div className="df videoBanner-text">
-                            <h1 className="videoBanner-title">¿Necesita mostrar su proyecto eficientemente?</h1>
-                            <ul className="videoBanner-skills">
-                                <li>
-                                    <p>
-                                        Especialiastas en filmaciones y fotos aéreas
-                                    </p>
-                                </li>
-                                <li>
-                                    <p>
-                                        La mejor calidad de video - 4k
-                                    </p>
-                                </li>
-                                <li>
-                                    <p>
-                                        Videos para empresas, inmobiliares, eventos, etc
-                                    </p>
-                                </li>
-                            </ul>
+                        <div className="vimeo-wrapper">
+                            <video data-autoplay loop muted>
+                                <source src="./static/video/IvanOspinaFMX.mp4" type="video/mp4"></source>
+                            </video>
+                            <div className="df container videoBanner-text">
+                                <h1 className="videoBanner-title">¿Necesita mostrar su proyecto eficientemente?</h1>
+                                <ul className="videoBanner-skills">
+                                    <li>
+                                        <p>
+                                            Especialistas en filmaciones y fotos aéreas
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            La mejor calidad de video - 4k
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            Videos para empresas, inmobiliares, eventos, etc
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
-                    </div>
 
 					</div>
 
@@ -72,12 +73,9 @@ class VideoBanner extends React.Component {
 
                     .videoBanner-text {
                         position: absolute;
-                        max-width: 960px;
-                        width: 100%;
                         left: 0;
                         right: 0;
                         width: 100%;
-                        margin: auto;
                         top: 0;
                         bottom: 0;
                         height: 150px;
@@ -107,7 +105,7 @@ class VideoBanner extends React.Component {
                     }
 
                     @media and screen(max-width: 980px) {
-                        
+
                     }
 					`}</style>
 				</div>

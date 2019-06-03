@@ -4,7 +4,6 @@ import Head from 'next/head'
 export default class Layout extends React.Component {
 
     componentDidMount() {
-
 		const width = window.innerWidth;
     }
 
@@ -19,6 +18,7 @@ export default class Layout extends React.Component {
 
 				<meta name="viewport" content="width=device-width, user-scalable=no" />
 				<link rel="icon" type="image/png" href="/static/img/FAVICON-DOLAR.png" />
+
 			</Head>
 			
 			{children}
@@ -27,11 +27,13 @@ export default class Layout extends React.Component {
 
 				body {
 					overflow-x: hidden;
+					color: red;
 				}
 				
 				.Layout {
 					height: 100vh;
 					font-family: 'Viga';
+					color: red;
 				}
 
 				@font-face{
@@ -44,6 +46,7 @@ export default class Layout extends React.Component {
 				    font-weight:normal;
 				    font-style:normal;
 				}
+				
 				@font-face {
 				    font-family: 'Montserrat';
 				    src: url('/static/fonts/Montserrat-Regular.woff2') format('woff2'),
@@ -54,9 +57,15 @@ export default class Layout extends React.Component {
 
 				.df {
 					display: flex;
-					justify-content;
+					justify-content: center;
 					align-items: center;
 					text-align: center;
+				}
+
+				.container {
+					max-width: 960px;
+					width: 94%;
+					margin: auto;
 				}
 
 				html, body, div, span, applet, object, iframe,
@@ -110,7 +119,6 @@ export default class Layout extends React.Component {
 					width: 30px !important;
 				}
 
-
 				@media screen and (max-width: 767px) {
 	              .slide {
 	                overflow: hidden;
@@ -162,16 +170,16 @@ export default class Layout extends React.Component {
 
 	            .firstSection:after {
 	            	content: "";
-								background: url(/static/img/arrow-down.svg);
-								background-size: cover;
-								position: absolute;
-								bottom: 30px;
-								left: 0;
-								right: 0;
-								margin: auto;
-								width: 30px;
-								height: 30px;
-								z-index: 9;
+					background: url(/static/img/arrow-down.svg);
+					background-size: cover;
+					position: absolute;
+					bottom: 30px;
+					left: 0;
+					right: 0;
+					margin: auto;
+					width: 30px;
+					height: 30px;
+					z-index: 9;
 	            }
 
 	            .secondSection {
@@ -184,7 +192,6 @@ export default class Layout extends React.Component {
 	            .section3 {
 	              position: relative;
 	            }
-
 
 	            .section3:before {
 	              content: "";
@@ -232,6 +239,22 @@ export default class Layout extends React.Component {
 	                right: 10px;
 	              }
 	            }
+
+
+				@keyframes translateBottomToTop {
+					0% {
+						transform: translateY(30px);
+						opacity: 0;
+					}
+					50% {
+						transform: translateY(10px);
+						opacity: 0;
+					}
+					100% {
+						transform: translateY(0);
+						opacity: 1;
+					}
+				}
 				
 			`}</style>
 
