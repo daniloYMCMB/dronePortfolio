@@ -14,7 +14,6 @@
     "test": "react-scripts test",
     "dev": "next",
     "build": "next build",
-    "start": "next start",
     "export": "next export"
   },
   "eslintConfig": {

@@ -258,6 +258,8 @@ export default class Layout extends React.Component {
 				
 			`}</style>
 
+			<script src="https://cdn.dashjs.org/latest/dash.all.min.js"></script>
 		</div>
+
 	}
 }

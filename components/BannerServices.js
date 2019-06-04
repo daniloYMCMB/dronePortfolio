@@ -21,9 +21,7 @@ class BannerServices extends React.Component {
 					<div className="videoBanner-container">
 
                         <div className="vimeo-wrapper">
-                            <video data-autoplay loop muted>
-                                <source src="/static/video/IvanOspinaFMX.mp4" type="video/mp4"></source>
-                            </video>
+                            <video data-dashjs-player autoPlay src="/static/video/IvanOspinaFMX.mp4" controls poster="/static/img/fmx.jpg"></video>
                             <div className="container videoBanner-text">
                                 <h1 className="videoBanner-title">¿Necesita mostrar <br/> su proyecto eficientemente?
                                 </h1>
@@ -36,7 +34,7 @@ class BannerServices extends React.Component {
                                             <h2>DESARROLLO WEB</h2>
                                         </figure>
                                         <p>
-                                            Páginas web profesionales y únicas son nuestro servicio clave. Disponible en dispositivos móviles, listo para SEO (Google).
+                                            Páginas web profesionales y únicas son nuestro servicio clave. <span>Disponible en dispositivos móviles, listo para SEO (Google).</span>
                                         </p>
                                     </a>
                                 </li>
@@ -47,7 +45,7 @@ class BannerServices extends React.Component {
                                             <h2>IMÁGENES DE DRONES</h2>
                                         </figure>
                                         <p>
-                                            Brindamos servicios de fotografía y video aéreo con vehículos no tripulados. Certificados con licencia para conducir drones.
+                                            Brindamos servicios de fotografía y video aéreo con drones. <span>Certificados con licencia para conducir drones.</span>
                                         </p>
                                     </a>
                                 </li>
@@ -58,7 +56,7 @@ class BannerServices extends React.Component {
                                             <h2>PORTAFOLIO</h2>
                                         </figure>
                                         <p>
-                                            Vea nuestros últimos de proyectos de sitios web y videos de drones, únase a nuestra lista de clientes satisfechos.                                          </p>
+                                            Vea nuestros últimos proyectos de sitios web y videos aéreos. <span>Únase a nuestra lista de clientes satisfechos.</span></p>
                                     </a>
                                 </li>
                                 <li>
@@ -68,13 +66,12 @@ class BannerServices extends React.Component {
                                             <h2>SERVICIO GRATUITO</h2>
                                         </figure>
                                         <p>
-                                            Consulte nuestra oferta de trabajo y viaje para obtener información ahora y obtener nuestros servicios gratuitos
+                                            Consulte nuestra oferta de trabajo y viaje <span>para obtener información ahora y obtener nuestros servicios gratuitos</span>
                                         </p>
                                     </a>
                                 </li>
                             </ul>
                         </div>
-
 					</div>
 
 					<style jsx>{`
@@ -219,7 +216,7 @@ class BannerServices extends React.Component {
                             left: 80%;
                         }
                         .videoBanner-text {
-                            top: -290px;
+                            top: -130px;
                         }
                         .videoBanner-title  {
                             font-size: 35px;
@@ -230,6 +227,33 @@ class BannerServices extends React.Component {
                         .videoBanner-skills li {
                             width: 49%;
                             border-top: 1px solid black;
+                            padding: 15px 10px;
+                        }
+                        .videoBanner-skills p span {
+                            display: none;
+                        }
+                    }
+
+                    @media screen and (max-width: 400px){
+                        .videoBanner-text {
+                            top: -60px;
+                            height: 80px;
+                        }
+                        .videoBanner-title {
+                            font-size: 25px;
+                        }
+                        .videoBanner-skills figure {
+                            margin-bottom: 10px;
+                        }
+                        .videoBanner-skills img {
+                            width: 25px;
+                            height: 25px;
+                        }
+                        .videoBanner-skills h2 {
+                            font-size: 11px;
+                        }
+                        .videoBanner-skills p {
+                            font-size: 9px;
                         }
                     }
 

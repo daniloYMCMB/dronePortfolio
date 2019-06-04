@@ -12,11 +12,15 @@ class Header extends React.Component {
 
 	}
 
+	down () {
+		fullpage_api.moveSectionDown();
+	}
+
 	render () {
 		return 	<header className="header">
 					<nav className="df container">
 
-						<a className="header-logo" target="_blank" href="https://kambista.com/">
+						<a className="header-logo" href="/">
 							Danilo Viacava
 						</a>
 
@@ -31,7 +35,7 @@ class Header extends React.Component {
 								<a target="_blank" href="https://api.whatsapp.com/send?phone=51931447041&text=Hola,%20quiero%20realizar%20mi%20proyecto" >
 									<img src="/static/img/whatsapp.png" alt=""/>
 								</a>
-								<a target="_blank" href="https://kambista.com/" >
+								<a onClick={this.down}>
 									Cotización Gratis
 								</a>
 							</li>
@@ -106,6 +110,15 @@ class Header extends React.Component {
 								margin: 0;
 							}
 						}
+
+			            @media screen and (max-width: 400px){
+			                .header {
+			                    font-size: 12px;
+			                }
+			                .header a {
+			                	margin: 0;
+			                }
+			            }
 					`}</style>
 				</header>
 	}
