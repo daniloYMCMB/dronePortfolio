@@ -21,7 +21,7 @@ class BannerServices extends React.Component {
 					<div className="videoBanner-container">
 
                         <div className="vimeo-wrapper">
-                            <video data-dashjs-player autoPlay src="/static/video/IvanOspinaFMX.mp4" controls poster="/static/img/fmx.jpg"></video>
+                            <video data-dashjs-player autoPlay loop src="/static/video/IvanOspinaFMX.mp4" controls poster="/static/img/fmx.jpg"></video>
                             <div className="container videoBanner-text">
                                 <h1 className="videoBanner-title">¿Necesita mostrar <br/> su proyecto eficientemente?
                                 </h1>

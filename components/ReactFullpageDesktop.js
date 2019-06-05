@@ -19,6 +19,10 @@ const Fullpage = () => (
           </div>
 
           <div className="section" id="section3"> 
+            <Services></Services>
+          </div>
+
+          <div className="section" id="section3"> 
             <Contact></Contact>
           </div>
 
