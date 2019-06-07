@@ -7,12 +7,8 @@ import Contact from './Contact'
 
 const Fullpage = () => (
 
-  
-
-  <ReactFullpage
-    render={({ state, fullpageApi }) => {
-      return (
-        <ReactFullpage.Wrapper>
+     
+     <div className="">
           <div className="section" id="section1">
             <Header></Header>
             <BannerServices />
@@ -29,10 +25,7 @@ const Fullpage = () => (
           <style>{`
 
           `}</style>
-        </ReactFullpage.Wrapper>
-      );
-    }}
-  />
+       </div>
 );
 
 export default Fullpage;

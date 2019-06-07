@@ -11,23 +11,10 @@ export default class extends React.Component {
 	}
 
 	componentDidMount() {
-		const width = window.innerWidth;
-		console.log(width)
-		this.setState({
-			width: width
-		}) 
 
 	}
 
 	render() {
-		// const isMobile = this.state.width
-		// let page;
-
-		// if (isMobile < 767) {
-		// 	page = <ReactFullpage />
-		// } else {
-		// 	page = <ReactFullpageDesktop />
-		// }
 
 		let page = <ReactFullpageDesktop/>
 		return (

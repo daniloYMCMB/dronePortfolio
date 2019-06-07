@@ -51,6 +51,7 @@ class Contact extends React.Component {
 					¿Tiene un proyecto en el que <br/> <strong>podamos ayudarlo?</strong>
 				</h2>
 
+
 				<div className="afiliacionForm-form">
 					<form onSubmit={this.sendContact}>
 						<div className="afiliacionForm-formInput">

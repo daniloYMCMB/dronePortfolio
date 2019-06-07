@@ -21,7 +21,9 @@ class BannerServices extends React.Component {
 					<div className="videoBanner-container">
 
                         <div className="vimeo-wrapper">
-                            <video data-dashjs-player autoPlay loop src="/static/video/IvanOspinaFMX.mp4" controls poster="/static/img/fmx.jpg"></video>
+                            
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/xJAwnCMgqCg?autoplay=1&controls=0&loop=1&playlist=xJAwnCMgqCg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
                             <div className="container videoBanner-text">
                                 <h1 className="videoBanner-title">¿Necesita mostrar <br/> su proyecto eficientemente?
                                 </h1>
@@ -75,6 +77,10 @@ class BannerServices extends React.Component {
 					</div>
 
 					<style jsx>{`
+
+                    .videoBanner {
+                        height: 100vh;
+                    }
 						
                     .vimeo-wrapper {
                         position: absolute;
@@ -95,9 +101,10 @@ class BannerServices extends React.Component {
                         background: black;
                         opacity: 0.6;
                         z-index: 1;
+                        pointer-events: none;
                     }
                         
-                    .vimeo-wrapper video {
+                    .vimeo-wrapper iframe {
                         width: 100vw;
                         height: 56.25vw; /* Given a 16:9 aspect ratio, 9/16*100 = 56.25 */
                         min-height: 100vh;

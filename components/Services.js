@@ -51,7 +51,8 @@ class Services extends React.Component {
 
 					<style jsx>{`
 						.services {
-							color: black
+							color: black;
+							margin-top: 80px;
 						}
 						.services-about {
 							align-items: stretch;
@@ -79,7 +80,7 @@ class Services extends React.Component {
 							background: url(/static/img/danilo.jpg) center center no-repeat;
 							background-size: cover;
 							width: 48%;
-							height: 200px;
+							height: 250px;
 							margin-right: 2%;
 						}
 
