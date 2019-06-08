@@ -61,7 +61,7 @@ class Services extends React.Component {
 							text-align: left;
 							width: 50%;
 							padding-top: 2%;
-							padding-left: 3%;
+							padding-left: 4%;
 							box-sizing: border-box;
 						}
 						.services-about-text h2 {
@@ -79,9 +79,12 @@ class Services extends React.Component {
 						.services-about-bg {
 							background: url(/static/img/danilo.jpg) center center no-repeat;
 							background-size: cover;
-							width: 48%;
-							height: 250px;
-							margin-right: 2%;
+							width: 50%;
+							height: 280px;
+						}
+
+						.services-items {
+							align-items: start;
 						}
 
 						.services-left {
@@ -91,44 +94,47 @@ class Services extends React.Component {
 
 						.services-web {
 							background: #00BCD4;
-							padding: 40px 20px;
+							padding: 80px 20px;
 							box-sizing: border-box;
 							text-align: left;
 							margin-top: -20px;
+							// margin-left: -50px;
 						}
 
 						.services-web h2 {
 							font-size: 22px;
-							max-width: 370px;
+							max-width: 300px;
 							margin: 0 auto 10px;
-							padding-right: 120px;
+							padding-right: 70px;
 							box-sizing: border-box;
+							margin-left: 100px;
 						}
 						.services-web p {
 							font-size: 15px;
 							font-family: Montserrat;
 							line-height: 1.2;
 							letter-spacing: -0.1px;
-							max-width: 370px;
-							margin: auto;
+							max-width: 300px;
+							margin-left: 100px;
 						}
 						.services-web a {
 							margin: auto;
 							display: inline-block;
-							padding: 15px 20px;
+							padding: 13px 15px;
 							background: white;
 							color: #00BCD4;
 							box-sizing: border-box;
 							margin-top: 10px;
 							margin-left: 100px;
+							font-size: 14px;
 						}
 
 						.services-drone {
 							background: url(/static/img/rupac.jpg) center left no-repeat;
 							background-size: cover;
-							max-width: 340px;
-							padding: 20px;
-							margin: -30px auto 0;
+							max-width: 230px;
+							padding: 80px 90px;
+							margin: -60px 0px 0px 60px;
 							text-align: left;
 							position: relative;
 						}
@@ -146,9 +152,8 @@ class Services extends React.Component {
 
 						.services-drone h2 {
 							font-size: 22px;
-							max-width: 250px;
+							max-width: 180px;
 							margin: 0 auto 10px;
-							padding-right: 50px;
 							box-sizing: border-box;
 							position: relative;
 							z-index: 1;
@@ -179,15 +184,15 @@ class Services extends React.Component {
 						}
 
 						.services-free {
-							background: url(/static/img/emma.jpg) center left no-repeat;
+							background: url(/static/img/emma.jpg) -130px 0px no-repeat;
 							background-size: cover;
 							color: white;
-							padding: 100px 70px 90px 80px;
+							padding: 280px 100px 230px 100px;
 							box-sizing: border-box;
-							margin-top: -70px;
-							margin-left: -70px;
+							margin-top: -50px;
+							margin-left: -110px;
 							text-align: right;
-							max-width: 300px;
+							max-width: 410px;
 							font-size: 15px;
 							position: relative;
 						}
@@ -204,7 +209,7 @@ class Services extends React.Component {
 						}
 
 						.services-free h2{
-							font-size: 16px;
+							font-size: 22px;
 							margin-bottom: 10px;
 							position: relative;
 							z-index: 1;
@@ -215,6 +220,7 @@ class Services extends React.Component {
 							font-family: Montserrat;
 							margin-bottom: 10px;
 							position: relative;
+							line-height: 1.2;
 							z-index: 1;
 						}
 
@@ -225,38 +231,38 @@ class Services extends React.Component {
 						}
 
 
-						@media screen and (max-width: 1024px) {
-							.services-about-text h2 {
-								font-size: 16px;
-							}
-							.services-about-text p {
-								font-size: 14px;
-								line-height: 1;
-							}
-							.services-web {
-								padding-top: 20px;
-							}
-							.services-web h2,
-							.services-drone h2 {
-								font-size: 16px;
-							}
-							.services-web p,
-							.services-drone p {
-								font-size: 14px;
-								line-height: 1;
-							}
-							.services-web a,
-							.services-drone a {
-								font-size: 14px;
-								line-height: 1;
-								padding: 10px;
-								margin-top: 10px;
-							}
-							.services-drone a {
-								margin-left: 35px;
-								margin-top: -10px;
-							}
-						}
+						// @media screen and (max-width: 1024px) {
+						// 	.services-about-text h2 {
+						// 		font-size: 16px;
+						// 	}
+						// 	.services-about-text p {
+						// 		font-size: 14px;
+						// 		line-height: 1;
+						// 	}
+						// 	.services-web {
+						// 		padding-top: 20px;
+						// 	}
+						// 	.services-web h2,
+						// 	.services-drone h2 {
+						// 		font-size: 16px;
+						// 	}
+						// 	.services-web p,
+						// 	.services-drone p {
+						// 		font-size: 14px;
+						// 		line-height: 1;
+						// 	}
+						// 	.services-web a,
+						// 	.services-drone a {
+						// 		font-size: 14px;
+						// 		line-height: 1;
+						// 		padding: 10px;
+						// 		margin-top: 10px;
+						// 	}
+						// 	.services-drone a {
+						// 		margin-left: 35px;
+						// 		margin-top: -10px;
+						// 	}
+						// }
 
 
 						

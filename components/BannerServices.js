@@ -151,7 +151,7 @@ class BannerServices extends React.Component {
                         font-size: 17px;
                         box-sizing: border-box;
                         position: absolute;
-                        bottom: 0;
+                        bottom: 1px;
                         left: 0;
                         right: 0;
                         font-size: 12px;
