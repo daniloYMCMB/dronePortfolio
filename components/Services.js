@@ -60,8 +60,9 @@ class Services extends React.Component {
 						.services-about-text {
 							text-align: left;
 							width: 50%;
-							padding-top: 2%;
+							padding-top: 3%;
 							padding-left: 4%;
+							padding-right: 2%;
 							box-sizing: border-box;
 						}
 						.services-about-text h2 {
@@ -77,7 +78,7 @@ class Services extends React.Component {
 							color: #656565;
 						}
 						.services-about-bg {
-							background: url(/static/img/danilo.jpg) center center no-repeat;
+							background: url(https://firebasestorage.googleapis.com/v0/b/daniloviacava-40daf.appspot.com/o/danilo.JPG?alt=media&token=61b5d63e-546a-4b31-ba07-c19312c264d5) center center no-repeat;
 							background-size: cover;
 							width: 50%;
 							height: 280px;
@@ -115,6 +116,7 @@ class Services extends React.Component {
 							line-height: 1.2;
 							letter-spacing: -0.1px;
 							max-width: 300px;
+							font-size: 14px;
 							margin-left: 100px;
 						}
 						.services-web a {
@@ -130,7 +132,7 @@ class Services extends React.Component {
 						}
 
 						.services-drone {
-							background: url(/static/img/rupac.jpg) center left no-repeat;
+							background: url(https://firebasestorage.googleapis.com/v0/b/daniloviacava-40daf.appspot.com/o/rupac.JPG?alt=media&token=b2993f85-b0fe-4ade-a815-96123eea063f) center left no-repeat;
 							background-size: cover;
 							max-width: 230px;
 							padding: 80px 90px;
@@ -167,6 +169,8 @@ class Services extends React.Component {
 							position: relative;
 							z-index: 1;
 							font-family: Montserrat;
+							font-size: 14px;
+							line-height: 1.2;
 						}
 
 						.services-drone a {
@@ -174,9 +178,9 @@ class Services extends React.Component {
 							padding-left: 25px;
 							box-sizing: border-box;
 							margin-top: 10px;
-							margin-left: 20px;
 							position: relative;
 							z-index: 1;
+							font-size: 14px;
 						}
 
 						.services-free-bg {
@@ -184,7 +188,7 @@ class Services extends React.Component {
 						}
 
 						.services-free {
-							background: url(/static/img/emma.jpg) -130px 0px no-repeat;
+							background: url(https://firebasestorage.googleapis.com/v0/b/daniloviacava-40daf.appspot.com/o/emma.JPG?alt=media&token=d97439c2-7bfe-4801-99cf-e860cbcd1a2a) -130px 0px no-repeat;
 							background-size: cover;
 							color: white;
 							padding: 280px 100px 230px 100px;
@@ -230,39 +234,117 @@ class Services extends React.Component {
 							z-index: 1;
 						}
 
+						@media screen and (max-width: 900px) {
+							.services-about-text {
+								margin-right: 2%;
+								padding-top: 5%;
+							}
+							
+							.services-web h2,
+							.services-web p,
+							.services-web a {
+								margin-left: 30px;
+							}
 
-						// @media screen and (max-width: 1024px) {
-						// 	.services-about-text h2 {
-						// 		font-size: 16px;
-						// 	}
-						// 	.services-about-text p {
-						// 		font-size: 14px;
-						// 		line-height: 1;
-						// 	}
-						// 	.services-web {
-						// 		padding-top: 20px;
-						// 	}
-						// 	.services-web h2,
-						// 	.services-drone h2 {
-						// 		font-size: 16px;
-						// 	}
-						// 	.services-web p,
-						// 	.services-drone p {
-						// 		font-size: 14px;
-						// 		line-height: 1;
-						// 	}
-						// 	.services-web a,
-						// 	.services-drone a {
-						// 		font-size: 14px;
-						// 		line-height: 1;
-						// 		padding: 10px;
-						// 		margin-top: 10px;
-						// 	}
-						// 	.services-drone a {
-						// 		margin-left: 35px;
-						// 		margin-top: -10px;
-						// 	}
-						// }
+							.services-drone {
+								margin-left: 20px;
+							}
+
+							.services-drone h2 {
+								margin-left: 0px;
+							}
+							.services-drone p,
+							.services-drone a {
+								padding-left: 0;
+							}
+
+							.services-free {
+								margin-left: -90px;
+								padding: 280px 60px 230px 60px;
+								background-position: -170px 0px;
+							}
+						}
+
+						@media screen and (max-width: 767px) {
+							.services-about {
+								flex-direction: column;
+								max-width: 600px;
+								margin: auto;
+								text-align: center;
+							}
+							.services-about-bg,
+							.services-about-text {
+								width: 100%;
+							}
+							.services-about p {
+								max-width: 100%;
+							}
+
+							.services-items {
+								flex-direction: column;
+							}
+							.services-left {
+								width: 100%;
+							}
+							.services-web {
+								margin-top: 40px;
+								padding: 40px 120px;
+							}
+							.services-web h2,
+							.services-web p {
+								max-width: 100%;
+							}
+
+							.services-drone {
+								margin: 30px auto;
+								max-width: 100%;
+								padding: 80px 170px;
+							}
+							.services-drone h2 {
+								margin-left: 0;
+								max-width: 100%;
+							}
+							.services-drone a,
+							.services-drone p {
+								margin-left: 0;
+							}
+
+							.services-free-bg {
+								width: 100%;
+							}
+							.services-free {
+								margin: 0;
+								max-width: 100%;
+								padding: 70px 210px;
+								background-position: 0 -80px;
+							}
+
+							.services-free {
+								margin: 0;
+								max-width: 100%;
+								padding: 70px 140px;
+								background-position: 0 -80px;
+							}
+						}
+
+						@media screen and (max-width: 600px) {
+							.services-web {
+								padding: 40px 20px;
+							}
+							.services-web h2,
+							.services-web p,
+							.services-web a {
+								margin: 10px 20px;
+							}
+							.services-drone {
+								padding: 80px 50px;
+							}
+							.services-free {
+								padding: 80px 50px;
+								background-position: 0px 0px;
+							}
+						}
+
 
 
 						

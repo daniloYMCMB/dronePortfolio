@@ -117,6 +117,10 @@ class Contact extends React.Component {
 			</div>
 
 			<style jsx>{`
+				.Contact {
+					text-align: center;
+					margin: 40px 0;
+				}
 				.afiliacionForm-title {
 					padding-top: 40px;
 					text-align: center;

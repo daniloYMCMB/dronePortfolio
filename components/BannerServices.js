@@ -80,6 +80,7 @@ class BannerServices extends React.Component {
 
                     .videoBanner {
                         height: 100vh;
+                        box-shadow: 0 40px 120px -20px rgba(0,0,0,.6);
                     }
 						
                     .vimeo-wrapper {
