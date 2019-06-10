@@ -22,7 +22,7 @@ class BannerServices extends React.Component {
 
                         <div className="vimeo-wrapper">
                             
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/xJAwnCMgqCg?autoplay=1&controls=0&loop=1&playlist=xJAwnCMgqCg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/xJAwnCMgqCg?autoplay=0&controls=0&loop=1&playlist=xJAwnCMgqCg" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
 
                             <div className="container videoBanner-text">
                                 <h1 className="videoBanner-title">¿Necesita mostrar <br/> su proyecto eficientemente?
@@ -136,7 +136,7 @@ class BannerServices extends React.Component {
                         opacity: 0;
                         transform: translateY(30px);
                         transition: .5s;
-                        transition-delay: 1s;
+                        transition-delay: 2s;
                     }
 
                     .videoBanner-title.active {
@@ -163,7 +163,7 @@ class BannerServices extends React.Component {
                         opacity: 0;
                         transform: translateY(30px);
                         transition: .5s;
-                        transition-delay: 1.5s;
+                        transition-delay: 2.5s;
                     }
 
                     .videoBanner-skills.active {

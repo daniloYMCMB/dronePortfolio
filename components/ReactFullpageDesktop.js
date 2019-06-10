@@ -18,6 +18,8 @@ const Fullpage = () => (
             <Services></Services>
           </div>
 
+          <Prices></Prices>
+
           <div className="section" id="section3"> 
             <Contact></Contact>
           </div>

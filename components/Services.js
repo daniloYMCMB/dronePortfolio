@@ -38,7 +38,7 @@ class Services extends React.Component {
 								<div className="services-free">
 									<h2>SERVICIO GRATUITO</h2>
 									<p>
-										Muestra tu resort, hotel o cualquier cosa que desees desde una perspectiva completamente diferente. Haz que tu oferta se destaque en Booking.com o tripadvisor entre otras.
+										¿Quieres un nuevo sitio web pero no tienes tiempo para administrarlo? ¿No tienes fotos o materiales? ¿Es posible construir un sitio web de forma gratuita? En lugar de la oferta estándar, elija la opción Trabajo y viaje.
 									</p>
 									<a>
 										Saber más
@@ -129,6 +129,7 @@ class Services extends React.Component {
 							margin-top: 10px;
 							margin-left: 100px;
 							font-size: 14px;
+							border-radius: 4px;
 						}
 
 						.services-drone {

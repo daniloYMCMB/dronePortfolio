@@ -18,8 +18,6 @@ class Contact extends React.Component {
 
 		const thanks = document.getElementById("thanks")
 		thanks.classList.remove('active')
-
-		fullpage_api.moveTo(1);
 	}
 
 	updateInput = (e) => {
@@ -32,7 +30,7 @@ class Contact extends React.Component {
 		e.preventDefault()
 
 		const thanks = document.getElementById("thanks")
-		thanks.classList.toggle('active')
+		thanks.classList.add('active')
 
     	this.setState({
     		nombres: '',
@@ -41,7 +39,6 @@ class Contact extends React.Component {
     		celular: '',
     		message: ''
     	})
-
 	}
 
 	render () {
@@ -120,14 +117,13 @@ class Contact extends React.Component {
 				.Contact {
 					text-align: center;
 					margin: 40px 0;
+					color: black;
+					position: relative;
 				}
 				.afiliacionForm-title {
-					padding-top: 40px;
+					font-size: 22px;
+					text-transform: uppercase;
 					text-align: center;
-				}
-				.afiliacionForm strong {
-					font-size: 35px;
-					color: #E43776;
 				}
 				.afiliacionForm-form {
 					padding: 20px;
@@ -147,32 +143,37 @@ class Contact extends React.Component {
 					border-radius: 3px;
 					border: none;
 					box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.05);
-					color: #E43776;
+					font-family: Montserrat;
+					font-size: 13px;
 				}
 				.afiliacionForm-formInput input:focus {
 					box-shadow: 2px 3px 30px rgba(228, 55, 118, 0.1);
 				}
 				.afiliacionForm-formInput textarea {
 					height: auto;
-					width: 92%;
+					width: 94%;
 					max-width: 100%;
 				}
 				.afiliacionForm-formInput p {
 					text-align: left;
 					font-size: 14px;
 					padding-left: 10px;
+					font-family: Montserrat;
+					padding-left: 20px;
 				}
 				.btnRosa {
-					background: linear-gradient(90deg, #E43776 -4.07%, #E43776 44.81%, #FA5236 103.82%);
-					box-shadow: 0px 2px 10px rgba(228, 55, 118, 0.35);
-					border-radius: 10px 2px 10px 2px;
+					background: #00bcd4;
 					text-align: center;
 					line-height: 30px;
 					color: white;
-					padding: 3px 40px;
+					padding: 5px 40px;
 					margin-top: 20px;
 					border: none;
 					font-size: 17px;
+					border-radius: 4px;
+					text-transform: uppercase;
+					font-family: Viga;
+					letter-spacing: 1px;
 				}
 				.closeForm {
 					position: absolute;
@@ -225,22 +226,18 @@ class Contact extends React.Component {
 					visibility: visible;
 				}
 
-				@media screen and (max-width: 960px) {
-					.afiliacionForm {
-						position: inherit;
-						top: 0;
-						z-index: 0;
-						right: 0;
-						opacity: 1;
-						max-width: 364px;
+				@media screen and (max-width: 767px){
+					.Contact {
+						margin-top: 0;
 					}
-					.afiliacionForm-formInput input,
-					.afiliacionForm-formInput textarea {
-						max-width: 117px;
+				}
+
+				@media screen and (max-width: 600px){
+					.afiliacionForm-title {
+						font-size: 19px;
 					}
-					.afiliacionForm-formInput textarea {
-						max-width: 100%;
-						width: 245px;
+					.afiliacionForm-form {
+						padding: 20px 0;
 					}
 				}
 			`}</style>

@@ -34,13 +34,11 @@ export default class Layout extends React.Component {
 
 				body {
 					overflow-x: hidden;
-					color: red;
 				}
 				
 				.Layout {
 					height: 100vh;
 					font-family: 'Viga';
-					color: red;
 				}
 
 				@font-face{

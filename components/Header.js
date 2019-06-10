@@ -12,8 +12,9 @@ class Header extends React.Component {
 
 	}
 
-	down () {
-		fullpage_api.moveSectionDown();
+	down (e) {
+		e.preventDefault()
+		// fullpage_api.moveSectionDown();
 	}
 
 	render () {
@@ -35,7 +36,7 @@ class Header extends React.Component {
 								<a target="_blank" href="https://api.whatsapp.com/send?phone=51931447041&text=Hola,%20quiero%20realizar%20mi%20proyecto" >
 									<img src="/static/img/whatsapp.png" alt=""/>
 								</a>
-								<a onClick={this.down}>
+								<a onClick={this.down} href="">
 									Cotización Gratis
 								</a>
 							</li>
@@ -65,6 +66,7 @@ class Header extends React.Component {
 							opacity: 0;
 							transform: translateY(20px);
 							transition: .5s;
+							transition-delay: 1s
 						}
 						.header-logo.active {
 							opacity: 1;
@@ -75,7 +77,7 @@ class Header extends React.Component {
 							opacity: 0;
 							transform: translateY(20px);
 							transition: .5s;
-							transition-delay: .5s;
+							transition-delay: 1.5s;
 						}
 						.header-socialNetwork li.active {
 							opacity: 1;
