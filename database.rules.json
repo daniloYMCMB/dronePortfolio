@@ -1,6 +1,12 @@
 {
   "rules": {
     ".read": "auth != null",
-    ".write": "auth != null"
+    ".write": "auth != null",
+
+	"form-contact": {
+		"$form-contac":{
+			".validate": "!data.exists()"
+		}
+	}
   }
 }
