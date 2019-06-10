@@ -52,7 +52,7 @@ class Services extends React.Component {
 					<style jsx>{`
 						.services {
 							color: black;
-							margin-top: 80px;
+							padding-top: 80px;
 						}
 						.services-about {
 							align-items: stretch;
