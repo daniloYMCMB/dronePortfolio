@@ -22,7 +22,8 @@ class BannerServices extends React.Component {
 
                         <div className="vimeo-wrapper">
                             
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/xJAwnCMgqCg?autoplay=1&controls=0&loop=1&playlist=xJAwnCMgqCg" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/xJAwnCMgqCg?autoplay=1
+                        0&controls=0&loop=1&playlist=xJAwnCMgqCg" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
 
                             <div className="container videoBanner-text">
                                 <h1 className="videoBanner-title">¿Necesita mostrar <br/> su proyecto eficientemente?
@@ -213,6 +214,10 @@ class BannerServices extends React.Component {
                         line-height: 1.2;
                     }
 
+                    .html5-video-player .video-stream {
+                        top: 0 !important;
+                    }
+
                     @media screen and (max-width: 768px){
                         .videoBanner-title br {
                             display: block;
@@ -220,6 +225,9 @@ class BannerServices extends React.Component {
                     }
 
                     @media screen and (max-width: 600px){
+                        .videoBanner {
+                            box-shadow: none
+                        }
                         .vimeo-wrapper video {
                             left: 80%;
                         }

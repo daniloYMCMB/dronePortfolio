@@ -329,6 +329,9 @@ class Services extends React.Component {
 						}
 
 						@media screen and (max-width: 600px) {
+							.services {
+								padding-top: 40px;
+							}
 							.services-web {
 								padding: 40px 20px;
 							}

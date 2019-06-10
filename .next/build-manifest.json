@@ -3,28 +3,28 @@
   "pages": {
     "/": [
       "static/runtime/webpack-a79426b5e11f0ba5879d.js",
-      "static/chunks/commons.eae294a06b26c8f23862.js",
-      "static/runtime/main-eb17f17866aac1cd44c9.js"
+      "static/chunks/commons.f2a4a2ab37a001c884eb.js",
+      "static/runtime/main-45a5e2a432a79f23ce33.js"
     ],
     "/_app": [
       "static/runtime/webpack-a79426b5e11f0ba5879d.js",
-      "static/chunks/commons.eae294a06b26c8f23862.js",
-      "static/runtime/main-eb17f17866aac1cd44c9.js"
+      "static/chunks/commons.f2a4a2ab37a001c884eb.js",
+      "static/runtime/main-45a5e2a432a79f23ce33.js"
     ],
     "/_error": [
       "static/runtime/webpack-a79426b5e11f0ba5879d.js",
-      "static/chunks/commons.eae294a06b26c8f23862.js",
-      "static/runtime/main-eb17f17866aac1cd44c9.js"
+      "static/chunks/commons.f2a4a2ab37a001c884eb.js",
+      "static/runtime/main-45a5e2a432a79f23ce33.js"
     ],
     "/danilo": [
       "static/runtime/webpack-a79426b5e11f0ba5879d.js",
-      "static/chunks/commons.eae294a06b26c8f23862.js",
-      "static/runtime/main-eb17f17866aac1cd44c9.js"
+      "static/chunks/commons.f2a4a2ab37a001c884eb.js",
+      "static/runtime/main-45a5e2a432a79f23ce33.js"
     ],
     "/index": [
       "static/runtime/webpack-a79426b5e11f0ba5879d.js",
-      "static/chunks/commons.eae294a06b26c8f23862.js",
-      "static/runtime/main-eb17f17866aac1cd44c9.js"
+      "static/chunks/commons.f2a4a2ab37a001c884eb.js",
+      "static/runtime/main-45a5e2a432a79f23ce33.js"
     ]
   }
 }

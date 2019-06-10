@@ -1,4 +1,5 @@
-import React from 'react'
+import firebase from '../firebase.js'
+
 
 class Contact extends React.Component {
 
@@ -6,10 +7,10 @@ class Contact extends React.Component {
 		super(props);
 		this.state = {
 			nombres: '',
-			apellidos: '',
+			empresa: '',
 			email: '',
 			celular: '',
-			message: '',
+			mensaje: '',
 		};
 	}
 
@@ -29,15 +30,28 @@ class Contact extends React.Component {
 	sendContact = e => {
 		e.preventDefault()
 
-		const thanks = document.getElementById("thanks")
-		thanks.classList.add('active')
+		const db = firebase.firestore()
+		const userRef = db.collection("form-contacto").add({
+			nombres: this.state.email,
+			empresa: this.state.empresa,
+			email: this.state.email,
+			celular: this.state.celular,
+			mensaje: this.state.mensaje
+		})
+		.then(function(docRef) {
+			const thanks = document.getElementById("thanks")
+			thanks.classList.add('active')
+		})
+		.catch(function(error) {
+			console.log("Error: " + error)
+		})
 
     	this.setState({
     		nombres: '',
-    		apellidos: '',
+    		empresa: '',
     		email: '',
     		celular: '',
-    		message: ''
+    		mensaje: ''
     	})
 	}
 
@@ -58,13 +72,15 @@ class Contact extends React.Component {
 								name="nombres"
 								value= {this.state.nombres}
 								onChange={this.updateInput}
+								required
 								 />
 							<input 
 								type="text" 
-								placeholder="Apellidos*"
-								name="apellidos"
+								placeholder="Empresa*"
+								name="empresa"
 								value= {this.state.apellidos}
 								onChange={this.updateInput} 
+								required
 								/>
 						</div>
 						<div className="afiliacionForm-formInput">
@@ -74,6 +90,7 @@ class Contact extends React.Component {
 								name="email"
 								value= {this.state.email}
 								onChange={this.updateInput} 
+								required
 								/>
 							<input 
 								type="text" 
@@ -81,16 +98,17 @@ class Contact extends React.Component {
 								name="celular"
 								value= {this.state.celular}
 								onChange={this.updateInput} 
+								required
 								/>
 						</div>
 						<div className="afiliacionForm-formInput">
 							<textarea id="" cols="30" rows="3" 
 								placeholder="Cuéntanos cuál es tu empresa y te contactaremos."
 
-								name="message"
-								value= {this.state.message}
+								name="mensaje"
+								value= {this.state.mensaje}
 								onChange={this.updateInput} 
-								
+								required
 								>
 							</textarea>
 
