@@ -57,6 +57,10 @@ class Contact extends React.Component {
 
 	render () {
 		return <div className="Contact">
+			<div className="vimeo-wrapper">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/oTALBxiERRQ?autoplay=1&controls=0&loop=1&playlist=xJAwnCMgqCg&mute=1" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+			</div>
+
 			<div className="container">
 				<h2 className="afiliacionForm-title">
 					¿Tiene un proyecto en el que <br/> <strong>podamos ayudarlo?</strong>
@@ -122,7 +126,7 @@ class Contact extends React.Component {
 				
 			</div>
 
-			<div className="container gracias" id="thanks">
+			<div className="gracias" id="thanks">
 				<h2 className="afiliacionForm-title">
 					¡Gracias! <br/> <strong>Te Contactaremos</strong>
 				</h2>
@@ -132,16 +136,63 @@ class Contact extends React.Component {
 			</div>
 
 			<style jsx>{`
+				.vimeo-wrapper {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    z-index: 99;
+                    overflow: hidden;
+                }
+                .vimeo-wrapper:before {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left 0;
+                    height: 100%;
+                    width: 100%;
+                    background: black;
+                    opacity: 0.3;
+                    z-index: 1;
+                    pointer-events: none;
+                }
+                    
+                .vimeo-wrapper iframe {
+                    width: 100vw;
+                    height: 56.25vw; /* Given a 16:9 aspect ratio, 9/16*100 = 56.25 */
+                    min-height: 100vh;
+                    min-width: 177.77vh; /* Given a 16:9 aspect ratio, 16/9*100 = 177.77 */
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+
 				.Contact {
+					background: url(static/img/contacto.jpg) center center no-repeat;
+					background-size: cover;
 					text-align: center;
-					margin: 40px 0;
+					padding: 80px 0 60px 0;
 					color: black;
 					position: relative;
+					z-index: 99;
+					box-sizing: border-box;
+				}
+				.Contact .container {
+					position: relative;
+					z-index: 99;
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+					align-items: center;
+					box-sizing: border-box;
 				}
 				.afiliacionForm-title {
 					font-size: 22px;
 					text-transform: uppercase;
 					text-align: center;
+					color: white;
 				}
 				.afiliacionForm-form {
 					padding: 20px;
@@ -178,6 +229,7 @@ class Contact extends React.Component {
 					padding-left: 10px;
 					font-family: Montserrat;
 					padding-left: 20px;
+					color: white;
 				}
 				.btnRosa {
 					background: #00bcd4;

@@ -13,7 +13,7 @@ class BannerServices extends React.Component {
     }
 
 	handleDown () {
-		fullpage_api.moveSectionDown();
+		// fullpage_api.moveSectionDown();
 	}
 
 	render () {
@@ -22,8 +22,7 @@ class BannerServices extends React.Component {
 
                         <div className="vimeo-wrapper">
                             
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/xJAwnCMgqCg?autoplay=1
-                        0&controls=0&loop=1&playlist=xJAwnCMgqCg" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/xJAwnCMgqCg?autoplay=1&controls=0&loop=1&mute=1&playlist=xJAwnCMgqCg" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
 
                             <div className="container videoBanner-text">
                                 <h1 className="videoBanner-title">¿Necesita mostrar <br/> su proyecto eficientemente?
@@ -109,10 +108,10 @@ class BannerServices extends React.Component {
                     .vimeo-wrapper iframe {
                         width: 100vw;
                         height: 56.25vw; /* Given a 16:9 aspect ratio, 9/16*100 = 56.25 */
-                        min-height: 100vh;
-                        min-width: 177.77vh; /* Given a 16:9 aspect ratio, 16/9*100 = 177.77 */
+                        min-height: 106vh;
+                        min-width: 201.77vh; /* Given a 16:9 aspect ratio, 16/9*100 = 177.77 */
                         position: absolute;
-                        top: 50%;
+                        top: 47%;
                         left: 50%;
                         transform: translate(-50%, -50%);
                     }
@@ -184,6 +183,10 @@ class BannerServices extends React.Component {
                         transform: translateY(20px);
                         transition: .5s;
                         transition-delay: 1.5s;
+                    }
+
+                    .videoBanner-skills li:hover {
+                        background: #00BCD4;
                     }
 
                     .videoBanner-skills li {
@@ -272,7 +275,6 @@ class BannerServices extends React.Component {
                             font-size: 9px;
                         }
                     }
-
 
                     @keyframes translateBottomToTop {
                         0% {

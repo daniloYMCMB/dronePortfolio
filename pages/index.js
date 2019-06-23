@@ -1,17 +1,14 @@
 import Layout from '../components/Layout'
 import ReactFullpageDesktop from '../components/ReactFullpageDesktop'
 
-export default class extends React.Component {
-	constructor(props) {
-		super(props);
+// import { i18n, withNamespaces } from '../i18n'
 
-		this.state = {
-			width: ""
+class Index extends React.Component {
+
+	static async getInitialProps() {
+		return {
+			namespacesRequired: ['common'],
 		}
-	}
-
-	componentDidMount() {
-
 	}
 
 	render() {
@@ -25,7 +22,7 @@ export default class extends React.Component {
 	}
 
 }
-
+export default Index
 
 
 
