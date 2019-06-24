@@ -5,13 +5,6 @@ export default class Layout extends React.Component {
 
     componentDidMount() {
 		const width = window.innerWidth;
-
-        (function(){
-            var url = "https://daniloviacava-40daf.firebaseapp.com/static/video/IvanOspinaFMX.mp4";
-            var player = dashjs.MediaPlayer().create();
-            player.initialize(document.querySelector("#videoPlayer"), url, true);
-            player.setAutoPlay(true);
-        })();
     }
 
 	render () {
@@ -266,7 +259,7 @@ export default class Layout extends React.Component {
 				
 			`}</style>
 
-			<script src="https://cdn.dashjs.org/latest/dash.all.min.js"></script>
+			<script src="https://apps.elfsight.com/p/platform.js" defer></script>
 		</div>
 
 	}

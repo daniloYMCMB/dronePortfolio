@@ -8,6 +8,7 @@
     "firebase": "^6.1.1",
     "i18next": "^17.0.3",
     "i18next-browser-languagedetector": "^3.0.1",
+    "instafeed.js": "^1.4.1",
     "next": "^8.1.0",
     "next-i18next": "^0.41.0",
     "react": "^16.8.6",
@@ -19,6 +20,7 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
+    "export": "next export",
     "start": "NODE_ENV=production node server.js"
   },
   "eslintConfig": {
