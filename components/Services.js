@@ -78,7 +78,7 @@ class Services extends React.Component {
 							color: #656565;
 						}
 						.services-about-bg {
-							background: url(/static/img/daniloviacava.jpg) center center no-repeat;
+							background: url(https://firebasestorage.googleapis.com/v0/b/daniloviacava-40daf.appspot.com/o/daniloviacava.JPG?alt=media&token=c4626005-0e32-4e7c-a36f-678a3c68c517) center center no-repeat;
 							background-size: cover;
 							width: 50%;
 							height: 280px;
@@ -133,7 +133,7 @@ class Services extends React.Component {
 						}
 
 						.services-drone {
-							background: url(static/img/rupac.jpg) center left no-repeat;
+							background: url(https://firebasestorage.googleapis.com/v0/b/daniloviacava-40daf.appspot.com/o/rupac.JPG?alt=media&token=60f399cd-9e02-4859-be73-665e7fe6cc05) center left no-repeat;
 							background-size: cover;
 							max-width: 230px;
 							padding: 80px 90px;
@@ -189,7 +189,7 @@ class Services extends React.Component {
 						}
 
 						.services-free {
-							background: url(static/img/emmaPetersen.JPG) -130px 0px no-repeat;
+							background: url(https://firebasestorage.googleapis.com/v0/b/daniloviacava-40daf.appspot.com/o/emmaPetersen.JPG?alt=media&token=3175db9b-ef8c-461b-b6e8-50b28fe13e9e) -130px 0px no-repeat;
 							background-size: cover;
 							color: white;
 							padding: 280px 100px 230px 100px;

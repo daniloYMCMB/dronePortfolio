@@ -170,8 +170,6 @@ class Contact extends React.Component {
                 }
 
 				.Contact {
-					background: url(static/img/contacto.jpg) center center no-repeat;
-					background-size: cover;
 					text-align: center;
 					padding: 80px 0 60px 0;
 					color: black;

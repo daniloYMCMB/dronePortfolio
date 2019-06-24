@@ -1,4 +1,3 @@
-import ReactFullpage from '@fullpage/react-fullpage'
 import Header from './Header'
 import BannerServices from './BannerServices'
 import Services from './Services'

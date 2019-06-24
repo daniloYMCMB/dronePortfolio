@@ -137,6 +137,7 @@ class BannerServices extends React.Component {
                         transform: translateY(30px);
                         transition: .5s;
                         transition-delay: 2s;
+                        // font-family: Odachi;
                     }
 
                     .videoBanner-title.active {
