@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 class Header extends React.Component {
 
 	
@@ -21,12 +23,24 @@ class Header extends React.Component {
 		return 	<header className="header">
 					<nav className="df container">
 
-						<a className="header-logo" href="/">
-							Danilo Viacava
-						</a>
+						<Link href="/">
+							<a className="header-logo">
+								Danilo Viacava
+							</a>
+						</Link>
 
 						<ul className="header-socialNetwork">
 							<li>
+								<Link href="/diseno-web">
+									<a >
+										<p>Diseño web</p>
+									</a>
+								</Link>
+								<Link href="/imagenes-de-drone">
+									<a >
+										<p>Imágenes de drones</p>
+									</a>
+								</Link>
 								<a target="_blank" href="https://www.facebook.com/profile.php?id=100009455848617" >
 									<img src="/static/img/facebookIcon.svg" alt=""/>
 								</a>
@@ -53,6 +67,8 @@ class Header extends React.Component {
 							width: 100%;
 							z-index: 999;
 							letter-spacing: 1px;
+							font-size: 13px;
+							font-weight: bold;
 						}
 						.header a {
 							color: white;
@@ -66,7 +82,9 @@ class Header extends React.Component {
 							opacity: 0;
 							transform: translateY(20px);
 							transition: .5s;
-							transition-delay: 1s
+							transition-delay: 1s;
+							font-family: Viga;
+							font-size: 16px;
 						}
 						.header-logo.active {
 							opacity: 1;

@@ -22,7 +22,7 @@ class BannerServices extends React.Component {
 
                         <div className="vimeo-wrapper">
                             
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/xJAwnCMgqCg?autoplay=1&controls=0&loop=1&mute=1&playlist=xJAwnCMgqCg" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/xJAwnCMgqCg?autoplay=0&controls=0&loop=1&mute=1&playlist=xJAwnCMgqCg" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
 
                             <div className="container videoBanner-text">
                                 <h1 className="videoBanner-title">¿Necesita mostrar <br/> su proyecto eficientemente?
@@ -33,7 +33,7 @@ class BannerServices extends React.Component {
                                     <a href="">
                                         <figure className="df">
                                             <img src="/static/img/responsive.svg" alt=""/>
-                                            <h2>DESARROLLO WEB</h2>
+                                            <h2>DISEÑO WEB</h2>
                                         </figure>
                                         <p>
                                             Páginas web profesionales y únicas son nuestro servicio clave. <span>Disponible en dispositivos móviles, listo para SEO (Google).</span>
@@ -100,7 +100,7 @@ class BannerServices extends React.Component {
                         height: 100%;
                         width: 100%;
                         background: black;
-                        opacity: 0.6;
+                        opacity: 0.5;
                         z-index: 1;
                         pointer-events: none;
                     }
@@ -126,7 +126,7 @@ class BannerServices extends React.Component {
                         height: 130px;
                         color: white;
                         z-index: 9;
-                        font-family: Montserrat;
+                        font-family: Viga;
                         text-align: center;
                     }
 
@@ -138,6 +138,7 @@ class BannerServices extends React.Component {
                         transition: .5s;
                         transition-delay: 2s;
                         // font-family: Odachi;
+                        line-height: 60px;
                     }
 
                     .videoBanner-title.active {
@@ -159,7 +160,6 @@ class BannerServices extends React.Component {
                         font-size: 12px;
                         z-index: 99;
                         text-align: left;
-                        font-family: Montserrat;
                         align-items: stretch;
                         opacity: 0;
                         transform: translateY(30px);

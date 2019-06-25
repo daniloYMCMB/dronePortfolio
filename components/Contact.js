@@ -58,7 +58,7 @@ class Contact extends React.Component {
 	render () {
 		return <div className="Contact">
 			<div className="vimeo-wrapper">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/oTALBxiERRQ?autoplay=1&controls=0&loop=1&mute=1&playlist=xJAwnCMgqCg" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/oTALBxiERRQ?autoplay=0&controls=0&loop=1&mute=1&playlist=xJAwnCMgqCg" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
 			</div>
 
 			<div className="container">
@@ -144,6 +144,7 @@ class Contact extends React.Component {
                     height: 100%;
                     z-index: 99;
                     overflow: hidden;
+                    display: none;
                 }
                 .vimeo-wrapper:before {
                     content: "";
@@ -176,7 +177,21 @@ class Contact extends React.Component {
 					position: relative;
 					z-index: 99;
 					box-sizing: border-box;
+					background: url(/static/img/huancaya.jpg) center center no-repeat;
+					background-size: cover;
 				}
+				.Contact:before {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left 0;
+                    height: 100%;
+                    width: 100%;
+                    background: black;
+                    opacity: 0.3;
+                    z-index: 1;
+                    pointer-events: none;
+                }
 				.Contact .container {
 					position: relative;
 					z-index: 99;

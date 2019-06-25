@@ -3362,7 +3362,7 @@ module.exports = (__webpack_require__(/*! dll-reference dll_d6107ac84deaa479911b
 
 /***/ }),
 
-/***/ 1:
+/***/ 2:
 /*!*****************************************************************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fnext%2Fdist%2Fpages%2F_error&absolutePagePath=%2FUsers%2Fdaniloviacavavizarreta%2FDesktop%2Fdrone-web%2Fnode_modules%2Fnext%2Fdist%2Fpages%2F_error.js ***!
   \*****************************************************************************************************************************************************************************************************/
@@ -3385,5 +3385,5 @@ module.exports = dll_d6107ac84deaa479911b;
 
 /***/ })
 
-},[[1,"static/runtime/webpack.js"]]]);
+},[[2,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=_error.js.map

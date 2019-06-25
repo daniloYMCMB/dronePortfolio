@@ -5,16 +5,6 @@ import Title from './TitleBlack'
 class Portafolio extends React.Component {
 
 	componentDidMount() {
-		// var feed = new Instafeed({
-		// 	get: 'user',
-		// 	userId: '2082061113',
-		// 	accessToken: '2082061113.1677ed0.1fc0b170d58e49e389ad4a27a6064fbc',
-		// 	target: 'instafeed',
-		// 	sortBy: 'most-liked',
-		// 	resolution: 'low_resolution',
-		// 	template: '<li><a href="{{link}}" target="_new"><img src="{{image}}" /></a></li>'
-		// });
-		// feed.run();
 	}
 
 	render() {

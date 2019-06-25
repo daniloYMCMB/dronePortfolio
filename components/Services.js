@@ -1,3 +1,7 @@
+import Link from 'next/link'
+
+import ButtonWhite from './Buttons'
+
 class Services extends React.Component {
 
 	render () {
@@ -15,22 +19,20 @@ class Services extends React.Component {
 						<div className="df container services-items">
 							<div className="services-left">
 								<div className="services-web">
-									<h2>WEB Y DISEÑO DE MEDIOS DIGITALES</h2>
+									<h2 >WEB Y DISEÑO DE MEDIOS DIGITALES</h2>
 									<p>
 										Su sitio web tiene solo unos segundos para interesar a posibles clientes. Con nosotros, su nuevo sitio web atraerá la atención y la pintará en la dirección correcta. Diseñamos sitios web modernos y creamos una imagen profesional de su empresa. Nuestro trabajo es nuestra pasión. Es por eso que nuestros sitios web están en línea con las últimas tendencias y tecnologías.
 									</p>
-									<a>
-										CREAR MI SITIO WEB
-									</a>	
+									<ButtonWhite href="/diseno-web" name="CREAR MI SITIO WEB"></ButtonWhite>
 								</div>
 								<div className="services-drone">
 									<h2>SERVICIO DE FOTOGRAFIA Y VIDEO AÉREO</h2>
 									<p>
 										Muestra tu resort, hotel o cualquier cosa que desees desde una perspectiva completamente diferente. Haga que su oferta se destaque en Booking.com o tripAdvisor entre otros.
 									</p>
-									<a>
+									<Link href="/disenoweb">
 										Saber más
-									</a>	
+									</Link>	
 								</div>
 							</div>
 
@@ -68,11 +70,10 @@ class Services extends React.Component {
 						.services-about-text h2 {
 							font-size: 22px;
 							margin-bottom: 10px;
+							font-family: Viga;
 						}
 						.services-about-text p {
 							max-width: 410px;
-							font-size: 15px;
-							font-family: Montserrat;
 							line-height: 1.2;
 							letter-spacing: -0.1px;
 							color: #656565;
@@ -109,14 +110,12 @@ class Services extends React.Component {
 							padding-right: 70px;
 							box-sizing: border-box;
 							margin-left: 100px;
+							font-family: Viga;
 						}
 						.services-web p {
-							font-size: 15px;
-							font-family: Montserrat;
 							line-height: 1.2;
 							letter-spacing: -0.1px;
 							max-width: 300px;
-							font-size: 14px;
 							margin-left: 100px;
 						}
 						.services-web a {
@@ -130,6 +129,7 @@ class Services extends React.Component {
 							margin-left: 100px;
 							font-size: 14px;
 							border-radius: 4px;
+							font-family: Viga;
 						}
 
 						.services-drone {
@@ -160,6 +160,7 @@ class Services extends React.Component {
 							box-sizing: border-box;
 							position: relative;
 							z-index: 1;
+							font-family: Viga;
 						}
 
 						.services-drone p {
@@ -169,8 +170,6 @@ class Services extends React.Component {
 							box-sizing: border-box;
 							position: relative;
 							z-index: 1;
-							font-family: Montserrat;
-							font-size: 14px;
 							line-height: 1.2;
 						}
 
@@ -197,7 +196,7 @@ class Services extends React.Component {
 							margin-top: -50px;
 							margin-left: -110px;
 							text-align: right;
-							max-width: 410px;
+							max-width: 460px;
 							font-size: 15px;
 							position: relative;
 						}
@@ -218,11 +217,11 @@ class Services extends React.Component {
 							margin-bottom: 10px;
 							position: relative;
 							z-index: 1;
+							font-family: Viga;
 						}
 
 						.services-free p {
-							font-size: 14px;
-							font-family: Montserrat;
+							font-size: 16px;
 							margin-bottom: 10px;
 							position: relative;
 							line-height: 1.2;

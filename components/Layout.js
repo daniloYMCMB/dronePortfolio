@@ -1,6 +1,8 @@
 import Link from 'next/link'
 import Head from 'next/head'
 
+import Header from './Header'
+
 export default class Layout extends React.Component {
 
     componentDidMount() {
@@ -23,6 +25,8 @@ export default class Layout extends React.Component {
 				<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" />
 
 			</Head>
+
+            <Header></Header>
 			
 			{children}
 			
@@ -34,7 +38,11 @@ export default class Layout extends React.Component {
 				
 				.Layout {
 					height: 100vh;
-					font-family: 'Viga';
+					font-family: "Poppins", Helvetica, Arial, sans-serif;
+					font-size: 16px;
+					line-height: 20px;
+					font-weight: 200;
+					font-style: normal;
 				}
 
 				@font-face{
@@ -49,11 +57,21 @@ export default class Layout extends React.Component {
 				}
 				
 				@font-face {
-				    font-family: 'Montserrat';
-				    src: url('/static/fonts/Montserrat-Regular.woff2') format('woff2'),
-				         url('/static/fonts/Montserrat-Regular.woff') format('woff');
-				    font-weight: normal;
-				    font-style: normal;
+				    font-family: 'Poppins';
+				    src:url("/static/fonts/Poppins-ExtraLight.eot");
+				    src:local('☺'),
+				    url("/static/fonts/Poppins-ExtraLight.wofff") format('woff'),
+				    url("/static/fonts/Poppins-ExtraLight.ttf") format('truetype'),
+				    url("/static/fonts/Poppins-ExtraLight.svg") format('svg');
+				}
+				
+				@font-face {
+				    font-family: 'Poppins-Bold';
+				    src:url("/static/fonts/Poppins-ExtraBold.eot");
+				    src:local('☺'),
+				    url("/static/fonts/Poppins-ExtraBold.woff") format('woff'),
+				    url("/static/fonts/Poppins-ExtraBold.ttf") format('truetype'),
+				    url("/static/fonts/Poppins-ExtraBold.svg") format('svg');
 				}
 
 				.df {

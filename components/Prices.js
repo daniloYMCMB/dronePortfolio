@@ -52,7 +52,7 @@ class Prices extends React.Component {
 										Proyecto BUSINESS
 									</h4>
 									<p className="price-caracteristicas">
-										- De 5 a 10 tabs de página <br/> 
+										- De 10 a más tabs de página <br/> 
 										<span>(home, about, services, clientes, <br/> contact ... )</span>
 									</p>
 									<p className="price-caracteristicas">

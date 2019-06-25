@@ -1,30 +1,31 @@
 {
-  "devFiles": [],
+  "devFiles": [
+    "static/development/dll/dll_de856a531f74836d37a0.js"
+  ],
   "pages": {
     "/": [
-      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
-      "static/chunks/commons.e75ee742bbf81857d8aa.js",
-      "static/runtime/main-2bbb3240fe080fe08749.js"
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
     ],
     "/_app": [
-      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
-      "static/chunks/commons.e75ee742bbf81857d8aa.js",
-      "static/runtime/main-2bbb3240fe080fe08749.js"
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
     ],
     "/_error": [
-      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
-      "static/chunks/commons.e75ee742bbf81857d8aa.js",
-      "static/runtime/main-2bbb3240fe080fe08749.js"
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
     ],
-    "/danilo": [
-      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
-      "static/chunks/commons.e75ee742bbf81857d8aa.js",
-      "static/runtime/main-2bbb3240fe080fe08749.js"
+    "/diseno-web": [
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
     ],
     "/index": [
-      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
-      "static/chunks/commons.e75ee742bbf81857d8aa.js",
-      "static/runtime/main-2bbb3240fe080fe08749.js"
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
+    ],
+    "/next/dist/pages/_error": [
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
     ]
   }
 }
