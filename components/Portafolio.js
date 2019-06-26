@@ -39,7 +39,7 @@ class Portafolio extends React.Component {
    		<div className="portafolio">
 
 			<div className="container web">
-				<Title title="Nuestro trabajo, es nuestra pasión." subtitle="Proyectos Web" classSubtitle="white" subtitleStrong="recientes"></Title>
+				<Title title="Nuestro trabajo, es nuestra pasión." subtitle="Proyectos Web" classSubtitle="white mb20" subtitleStrong=""></Title>
 				<Slider {...settings} className="">
 					<a href="https://www.profealtoque.com.pe/" target="_blank">
 						<figure className="portafolio-item">
@@ -124,7 +124,7 @@ class Portafolio extends React.Component {
 					text-align: center;
 					margin: 60px 0 0 0;
 					background: #00BCD4;
-					padding: 60px 0 0px 0;
+					padding: 60px 0 20px 0;
 					box-sizing: border-box;
 				}
 				.portafolio .web {
@@ -179,7 +179,6 @@ class Portafolio extends React.Component {
 
 				.instagramWidget {
 					position: relative;
-					margin-top: 40px !important;
 				} 
 				.instagramWidget:before {
 					content: "";
@@ -207,8 +206,9 @@ class Portafolio extends React.Component {
 
 				.eapps-instagram-feed-title {
 					font-size: 17px !important;
-					font-family: Montserrat;
+					font-family: Poppins;
 					color: white;
+					padding: 40px 20px;
 				}
 				.eapps-instagram-feed-container {
 					position: relative;

@@ -1,8 +1,14 @@
+
+
+import ButtonWhite from './Buttons'
+
 class BannerServices extends React.Component {
 
     componentDidMount() {
         setTimeout(function(){ 
             var videoBanner = document.querySelector(".videoBanner-title")
+            videoBanner.classList.add('active')
+            var videoBanner = document.querySelector(".videoBanner-paragraph")
             videoBanner.classList.add('active')
         }, 500);
 
@@ -22,12 +28,10 @@ class BannerServices extends React.Component {
                                 <h1 className="videoBanner-title">Diseño web
                                 </h1>
                                 <br/>
-                                <p>
+                                <p className="videoBanner-paragraph">
                                     Brindamos servicios digitales frescos y creativos. a empresas que quieran crecer online. El diseño web es nuestro servicio clave.
                                 </p>
-                                <a href="" className="btn-white">
-                                    Empezar proyecto
-                                </a>
+                                <ButtonWhite clase="colorWhite" href="/diseno-web" name="Empezar proyecto"></ButtonWhite>
                             </div>
                             <div className="section-down">
                                 <div className="cuadrado"></div>
@@ -40,109 +44,10 @@ class BannerServices extends React.Component {
 					</div>
 
 					<style jsx>{`
-                        .section-down {
-                            position: absolute;
-                            bottom: 1px;
-                            height: 60px;
-                            left: 0;
-                            width: 100%;
-                            z-index: 9;
-                        }
-                        .cuadrado {
-                            width: 60px;
-                            height: 60px;
-                            border-radius: 6px 0px 0px 0px;
-                            transform: rotate(45deg);
-                            background: white;
-                            position: absolute;
-                            left: 95px;
-                            bottom: -32px;
-                        }
-                        .arrow-down{
-                            width:30px;
-                            height:20px;
-                            margin:0 0 0 -30px;
-                            position:absolute;
-                            left: 140px;
-                            bottom: 0px;
-                            animation: arrow 0.5s 1s infinite ease-out alternate;
-                        }
-
-                        .arrow-down:hover{
-                            animation-play-state: paused;
-                        }
-
-                        .left{
-                            position:absolute;
-                            height:3px;
-                            width:15px;
-                            background:gray;
-                            -webkit-transform:rotate(230deg);
-                            top:13px;
-                            left:8px;
-                            border-radius:4px;
-                            transform-origin:5px 50%;
-                        }
-
-                        .right{
-                            position:absolute;
-                            height:3px;
-                            width:15px;
-                            background:gray;
-                            -webkit-transform:rotate(-50deg);
-                            top:13px;
-                            left:13px;
-                            border-radius:4px;
-                            transform-origin:5px 50%;
-                        }
-
-                        @keyframes arrow{
-                          0% {
-                            bottom:0px;
-                          }
-                          100%{
-                            bottom:10px;
-                          }
-                        }
-
-                        @keyframes leftArrow{
-                          0% {
-                          }
-                          100%{
-                            -webkit-transform:rotate(225deg);
-                          }
-                        }
-
-                        @keyframes rightArrow{
-                          0% {
-                          }
-                          100%{
-                            -webkit-transform:rotate(-45deg);
-                          }
-                        }
-
-
-                        .btn-white {
-                            display: inline-block;
-                            background: white;
-                            text-transform: uppercase;
-                            color #383838;
-                            padding: 12px 25px;
-                            margin: 20px 0 0;
-                            font-size: 16px;
-                            font-family: Viga;
-                            border-radius: 4px;
-                            transition: .25s;
-                        }
-                        .btn-white:hover {
-                            background: hsla(0,0%,100%,.85);
-                        }
-
                         .videoBanner {
                             height: 85vh;
                             position: relative;
                         }
-    						
                         .vimeo-wrapper {
                             position: absolute;
                             top: 0;
@@ -164,7 +69,6 @@ class BannerServices extends React.Component {
                             z-index: 1;
                             pointer-events: none;
                         }
-                            
                         .vimeo-wrapper iframe {
                             width: 100vw;
                             height: 56.25vw; /* Given a 16:9 aspect ratio, 9/16*100 = 56.25 */
@@ -186,12 +90,23 @@ class BannerServices extends React.Component {
                             height: 90px;
                             color: white;
                             z-index: 9;
-                            font-family: Montserrat;
+                            font-family: Viga;
                             padding-left: 20px;
                         }
 
-                        .videoBanner-text p {
+                        .videoBanner-paragraph {
                             max-width: 400px;
+                            font-family: Poppins;
+                            margin: 10px 0;
+                            opacity: 0;
+                            transform: translateY(30px);
+                            transition: .5s;
+                            transition-delay: 2.4s;
+                        }
+
+                        .videoBanner-paragraph.active {
+                            opacity: 1;
+                            transform: translateY(0);
                         }
 
                         .videoBanner-title {
@@ -201,7 +116,6 @@ class BannerServices extends React.Component {
                             transform: translateY(30px);
                             transition: .5s;
                             transition-delay: 2s;
-                            // font-family: Odachi;
                         }
 
                         .videoBanner-title.active {
@@ -281,6 +195,87 @@ class BannerServices extends React.Component {
                                 transform: translateY(0);
                                 opacity: 1;
                             }
+                        }
+
+                        .section-down {
+                            position: absolute;
+                            bottom: 1px;
+                            height: 60px;
+                            left: 0;
+                            width: 100%;
+                            z-index: 9;
+                        }
+                        .cuadrado {
+                            width: 60px;
+                            height: 60px;
+                            border-radius: 6px 0px 0px 0px;
+                            transform: rotate(45deg);
+                            background: white;
+                            position: absolute;
+                            left: 95px;
+                            bottom: -32px;
+                        }
+                        .arrow-down{
+                            width:30px;
+                            height:20px;
+                            margin:0 0 0 -30px;
+                            position:absolute;
+                            left: 140px;
+                            bottom: 0px;
+                            animation: arrow .6s 1s infinite ease-out alternate;
+                        }
+
+                        .arrow-down:hover{
+                            animation-play-state: paused;
+                        }
+
+                        .left{
+                            position:absolute;
+                            height:3px;
+                            width:15px;
+                            background:gray;
+                            -webkit-transform:rotate(230deg);
+                            top:13px;
+                            left:8px;
+                            border-radius:4px;
+                            transform-origin:5px 50%;
+                        }
+
+                        .right{
+                            position:absolute;
+                            height:3px;
+                            width:15px;
+                            background:gray;
+                            -webkit-transform:rotate(-50deg);
+                            top:13px;
+                            left:13px;
+                            border-radius:4px;
+                            transform-origin:5px 50%;
+                        }
+
+                        @keyframes arrow{
+                          0% {
+                            bottom:0px;
+                          }
+                          100%{
+                            bottom:10px;
+                          }
+                        }
+
+                        @keyframes leftArrow{
+                          0% {
+                          }
+                          100%{
+                            -webkit-transform:rotate(225deg);
+                          }
+                        }
+
+                        @keyframes rightArrow{
+                          0% {
+                          }
+                          100%{
+                            -webkit-transform:rotate(-45deg);
+                          }
                         }
 					`}</style>
 				</div>

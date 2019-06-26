@@ -1,16 +1,15 @@
+import TitleBlack from './TitleBlack'
+
 class Prices extends React.Component {
 
 	render () {
 		return 	<div className="prices">
 					<div className="container">
 
-						<div className="prices-title">
-							<h3>¿QUÉ PLAN PREFIERES PARA TUS CLIENTES?</h3>
-							<p>Empieza a ganar más clientes <strong>ahora</strong></p>
-						</div>
+						<TitleBlack title="¿QUÉ PLAN PREFIERES PARA TUS CLIENTES?" subtitle="Empieza a ganar más clientes" subtitleStrong="ahora"></TitleBlack>
 
 						<div className="price-table">
-							<h3>Diseño y Desarollo Web</h3>
+							<h3>Diseño web</h3>
 							<ul className="df">
 								<li>
 									<h4 className="price-title">
@@ -70,7 +69,7 @@ class Prices extends React.Component {
 						</div>
 
 						<div className="price-table">
-							<h3>Contenido Digital - Fotografía y video aéreo</h3>
+							<h3>Fotografía y video aéreo</h3>
 							<ul className="df even">
 								<li>
 									<h4 className="price-title">
@@ -127,7 +126,7 @@ class Prices extends React.Component {
 							text-align: center;
 							min-width: 300px;
 							color: white;
-							padding: 80px 0 10px 0;
+							padding: 60px 0 10px 0;
 							font-family: Montserrat;
 						}
 
@@ -161,14 +160,13 @@ class Prices extends React.Component {
 
 						.price-table {
 							margin: 30px 0 50px 0;
+							font-family: Poppins;
 						}
 
 						.price-table h3 {
-							font-size: 20px;
+							font-size: 17px;
 							margin-bottom: 20px;
-							font-family: Viga;
 							color: gray;
-							text-transform: uppercase;
 						}
 
 						.price-table ul {

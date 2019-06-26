@@ -24,7 +24,7 @@ class TitleBlack extends React.Component {
 							font-size: 17px;
 							margin-bottom: 50px;
 							margin-top: 5px;
-							font-family: Montserrat;
+							font-family: Poppins;
 							letter-spacing: -0.3px;
 						}
 
@@ -35,6 +35,10 @@ class TitleBlack extends React.Component {
 						.title strong {
 							color: black;
 							font-weight: bold;
+						}
+
+						.mb20 {
+							margin: 40px 0 20px 0 !important
 						}
 					`}</style>
 				</div>

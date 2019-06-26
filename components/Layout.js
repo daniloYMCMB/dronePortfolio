@@ -41,7 +41,7 @@ export default class Layout extends React.Component {
 					font-family: "Poppins", Helvetica, Arial, sans-serif;
 					font-size: 16px;
 					line-height: 20px;
-					font-weight: 200;
+					font-weight: 600;
 					font-style: normal;
 				}
 
@@ -133,132 +133,11 @@ export default class Layout extends React.Component {
 					text-decoration: none;
 					display: inline-block;
 				}
-
-				.fp-controlArrow.fp-prev {
-					width: 30px !important;
+				img {
+					max-width: 100%;
+					height: auto;
+					display: block;
 				}
-
-				@media screen and (max-width: 767px) {
-	              .slide {
-	                overflow: hidden;
-	              }
-	              .fp-right {
-	                display: none;
-	              }
-	              .fp-controlArrow.fp-prev {
-	                border: none;
-	                background: url(/static/img/arrow-down.svg);
-	                background-size: cover;
-	                width: 30px;
-	                height: 30px;
-	                transform: rotate(90deg);
-	                left: 10px;
-	              }
-	              .fp-controlArrow.fp-next {
-	                border: none;
-	                background: url(/static/img/arrow-down.svg);
-	                background-size: cover;
-	                width: 30px;
-	                height: 30px;
-	                transform: rotate(-90deg);
-	                right: 10px;
-	              }
-	            }
-
-	            .firstSection {
-	              display: flex;
-	              justify-content: center;
-	              align-items: center;
-	              background: url(/static/img/bg1.svg) -233px 0px;
-	              background-size: cover;
-	              height: 100%;
-	              position: relative;
-	            }
-
-	            .firstSection:before {
-	              content:"";
-	              background: url(/static/img/nubes1.svg) -35px 0px;
-	              background-size: cover;
-	              position: absolute;
-	              bottom: 0;
-	              left: 0;
-	              right: 0;
-	              width: 100%;
-	              height: 30vh;
-	            }
-
-	            .firstSection:after {
-	            	content: "";
-					background: url(/static/img/arrow-down.svg);
-					background-size: cover;
-					position: absolute;
-					bottom: 30px;
-					left: 0;
-					right: 0;
-					margin: auto;
-					width: 30px;
-					height: 30px;
-					z-index: 9;
-	            }
-
-	            .secondSection {
-	              position: relative;
-	              display: flex;
-	              justify-content: center;
-	              align-items: center;
-	            }
-
-	            .section3 {
-	              position: relative;
-	            }
-
-	            .section3:before {
-	              content: "";
-	              background: url(/static/img/nubes3.svg) center center no-repeat;
-	              background-size: cover;
-	              position: absolute;
-	              bottom: 0;
-	              left: 0;
-	              width: 100%;
-	              z-index: 9;
-	              height: 30vh;
-	            }
-
-	            @media screen and (max-width: 1024px) {
-	              .section3:before {
-	                height: 30vh;
-	                z-index: 10;
-	                background-size: inherit;
-	              }
-	            }
-
-	            @media screen and (max-width: 767px) {
-	              .slide {
-	                overflow: hidden;
-	              }
-	              .fp-right {
-	                display: none;
-	              }
-	              .fp-controlArrow.fp-prev {
-	                border: none;
-	                background: url(/static/img/arrow-down.svg);
-	                background-size: cover;
-	                width: 30px;
-	                height: 30px;
-	                transform: rotate(90deg);
-	                left: 10px;
-	              }
-	              .fp-controlArrow.fp-next {
-	                border: none;
-	                background: url(/static/img/arrow-down.svg);
-	                background-size: cover;
-	                width: 30px;
-	                height: 30px;
-	                transform: rotate(-90deg);
-	                right: 10px;
-	              }
-	            }
-
 
 				@keyframes translateBottomToTop {
 					0% {

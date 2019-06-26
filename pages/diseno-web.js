@@ -1,6 +1,8 @@
 import Layout from '../components/Layout'
 import BannerServicesInterna from '../components/BannerServicesInterna'
 import DisenoEstetico from '../components/DisenoEstetico'
+import AvailableMobiles from '../components/AvailableMobiles'
+import WebsiteFree from '../components/WebsiteFree'
 
 class disenoweb extends React.Component {
 
@@ -11,7 +13,9 @@ class disenoweb extends React.Component {
 				
 				<BannerServicesInterna />
 				<DisenoEstetico />
-
+				<AvailableMobiles />
+				<WebsiteFree />
+				
 			</Layout>
 		)
 	}

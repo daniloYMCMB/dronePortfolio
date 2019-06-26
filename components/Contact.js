@@ -56,20 +56,17 @@ class Contact extends React.Component {
 	}
 
 	render () {
-		return <div className="Contact">
-			<div className="vimeo-wrapper">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/oTALBxiERRQ?autoplay=0&controls=0&loop=1&mute=1&playlist=xJAwnCMgqCg" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
-			</div>
+		return <div className="contact">
 
 			<div className="container">
-				<h2 className="afiliacionForm-title">
+				<h2 className="contact-title">
 					¿Tiene un proyecto en el que <br/> <strong>podamos ayudarlo?</strong>
 				</h2>
 
 
-				<div className="afiliacionForm-form">
+				<div className="contact-form">
 					<form onSubmit={this.sendContact}>
-						<div className="afiliacionForm-formInput">
+						<div className="contact-formInput">
 							<input 
 								type="text" 
 								placeholder="Nombres*"
@@ -87,7 +84,7 @@ class Contact extends React.Component {
 								required
 								/>
 						</div>
-						<div className="afiliacionForm-formInput">
+						<div className="contact-formInput">
 							<input 
 								type="text" 
 								placeholder="Email*"
@@ -105,7 +102,7 @@ class Contact extends React.Component {
 								required
 								/>
 						</div>
-						<div className="afiliacionForm-formInput">
+						<div className="contact-formInput">
 							<textarea id="" cols="30" rows="3" 
 								placeholder="Cuéntanos cuál es tu empresa y te contactaremos."
 
@@ -127,7 +124,7 @@ class Contact extends React.Component {
 			</div>
 
 			<div className="gracias" id="thanks">
-				<h2 className="afiliacionForm-title">
+				<h2 className="contact-title">
 					¡Gracias! <br/> <strong>Te Contactaremos</strong>
 				</h2>
 				<button className="btnRosa" onClick={this.handleCloseForm} >
@@ -136,41 +133,7 @@ class Contact extends React.Component {
 			</div>
 
 			<style jsx>{`
-				.vimeo-wrapper {
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    width: 100%;
-                    height: 100%;
-                    z-index: 99;
-                    overflow: hidden;
-                    display: none;
-                }
-                .vimeo-wrapper:before {
-                    content: "";
-                    position: absolute;
-                    top: 0;
-                    left 0;
-                    height: 100%;
-                    width: 100%;
-                    background: black;
-                    opacity: 0.3;
-                    z-index: 1;
-                    pointer-events: none;
-                }
-                    
-                .vimeo-wrapper iframe {
-                    width: 100vw;
-                    height: 56.25vw; /* Given a 16:9 aspect ratio, 9/16*100 = 56.25 */
-                    min-height: 100vh;
-                    min-width: 177.77vh; /* Given a 16:9 aspect ratio, 16/9*100 = 177.77 */
-                    position: absolute;
-                    top: 50%;
-                    left: 50%;
-                    transform: translate(-50%, -50%);
-                }
-
-				.Contact {
+				.contact {
 					text-align: center;
 					padding: 80px 0 60px 0;
 					color: black;
@@ -179,8 +142,11 @@ class Contact extends React.Component {
 					box-sizing: border-box;
 					background: url(/static/img/huancaya.jpg) center center no-repeat;
 					background-size: cover;
+					height: 100vh;
+					padding-top: 30vh;
+					background-attachment: fixed;
 				}
-				.Contact:before {
+				.contact:before {
                     content: "";
                     position: absolute;
                     top: 0;
@@ -192,29 +158,28 @@ class Contact extends React.Component {
                     z-index: 1;
                     pointer-events: none;
                 }
-				.Contact .container {
-					position: relative;
-					z-index: 99;
-					display: flex;
-					flex-direction: column;
-					justify-content: center;
-					align-items: center;
-					box-sizing: border-box;
-				}
-				.afiliacionForm-title {
+                .contact .container {
+                	position: relative;
+                	z-index: 9;
+                }
+				.contact-title {
 					font-size: 22px;
 					text-transform: uppercase;
 					text-align: center;
 					color: white;
+					font-family: Viga;
+					letter-spacing: 1px;
+					line-height: 24px;
 				}
-				.afiliacionForm-form {
+				.contact-form {
 					padding: 20px;
 					box-sizing: border-box;
-					max-width: 500px;
+					max-width: 600px;
+					width: 100%;
 					margin: auto;
 				}
-				.afiliacionForm-formInput input,
-				.afiliacionForm-formInput textarea {
+				.contact-formInput input,
+				.contact-formInput textarea {
 					max-width: 45%;
 					width: 100%;
 					margin: 2%; 
@@ -225,22 +190,20 @@ class Contact extends React.Component {
 					border-radius: 3px;
 					border: none;
 					box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.05);
-					font-family: Montserrat;
 					font-size: 13px;
 				}
-				.afiliacionForm-formInput input:focus {
+				.contact-formInput input:focus {
 					box-shadow: 2px 3px 30px rgba(228, 55, 118, 0.1);
 				}
-				.afiliacionForm-formInput textarea {
+				.contact-formInput textarea {
 					height: auto;
 					width: 94%;
 					max-width: 100%;
 				}
-				.afiliacionForm-formInput p {
+				.contact-formInput p {
 					text-align: left;
 					font-size: 14px;
 					padding-left: 10px;
-					font-family: Montserrat;
 					padding-left: 20px;
 					color: white;
 				}
@@ -302,6 +265,7 @@ class Contact extends React.Component {
 					visibility: hidden;
 					transition: .3s linear;
 					background: white;
+					margin: auto;
 				}
 
 				.gracias.active {
@@ -316,10 +280,10 @@ class Contact extends React.Component {
 				}
 
 				@media screen and (max-width: 600px){
-					.afiliacionForm-title {
+					.contact-title {
 						font-size: 19px;
 					}
-					.afiliacionForm-form {
+					.contact-form {
 						padding: 20px 0;
 					}
 				}

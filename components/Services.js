@@ -71,6 +71,17 @@ class Services extends React.Component {
 							font-size: 22px;
 							margin-bottom: 10px;
 							font-family: Viga;
+							position: relative;
+						}
+
+						.services-about-text h2:before {
+							content: "";
+							position: absolute;
+							width: 50px;
+							height: 3px;
+							background: #00BCD4;
+							top: -15px;
+							left: 0;
 						}
 						.services-about-text p {
 							max-width: 410px;
@@ -112,6 +123,7 @@ class Services extends React.Component {
 							margin-left: 100px;
 							font-family: Viga;
 						}
+
 						.services-web p {
 							line-height: 1.2;
 							letter-spacing: -0.1px;

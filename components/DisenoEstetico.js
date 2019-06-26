@@ -70,6 +70,7 @@ class DisenoEstetico extends React.Component {
 							box-sizing: border-box;
 							text-align: left;
 							color: white;
+							box-shadow: 0 40px 120px -20px rgba(0,0,0,0.6);
 						}
 
 						.services-web h2 {
@@ -79,7 +80,7 @@ class DisenoEstetico extends React.Component {
 							padding-right: 70px;
 							box-sizing: border-box;
 							margin-left: 100px;
-							font-family: 'Poppins';
+							font-family: 'Viga';
 						}
 						.services-web p {
 							line-height: 1.2;
@@ -96,8 +97,9 @@ class DisenoEstetico extends React.Component {
 							box-sizing: border-box;
 							margin-top: 10px;
 							margin-left: 100px;
-							font-size: 14px;
+							font-size: 16px;
 							border-radius: 4px;
+							font-family: Viga;
 						}
 
 						.services-drone {
