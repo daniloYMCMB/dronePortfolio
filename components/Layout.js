@@ -132,6 +132,7 @@ export default class Layout extends React.Component {
 				a {
 					text-decoration: none;
 					display: inline-block;
+					letter-spacing: .4px;
 				}
 				img {
 					max-width: 100%;

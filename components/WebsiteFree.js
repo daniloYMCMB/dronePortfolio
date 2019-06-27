@@ -3,20 +3,17 @@ import Link from 'next/link'
 class WebsiteFree extends React.Component {
 
 	render() {
-		return 	<div className="disenoEstetico">
+		return 	<div className="websitefree">
 
 					<div className="df" style={{alignItems: 'stretch'}}>
 
-						<div className="services-free-bg">
-							<figure className="responsive">
-								<img src="static/img/Build-website-for-free.jpg" alt=""/>
-							</figure>
-						</div>
+						<figure className="websitefree-free-bg">
+						</figure>
 
-						<div className="services-web">
-							<div className="df services-about">
-								<div className="services-about-bg"></div>
-								<div className="services-about-text">
+						<div className="df websitefree-web">
+							<div className="websitefree-about">
+								<div className="websitefree-about-bg"></div>
+								<div className="websitefree-about-text">
 									<h2>CONSTRUYA SU SITIO WEB 
 										<br/>GRATIS
 									</h2>
@@ -30,13 +27,12 @@ class WebsiteFree extends React.Component {
 					</div>
 
 					<style jsx>{`
-						.disenoEstetico {
-							margin: 40px auto;
-							margin-top: 170px;
+						.websitefree {
+							margin-top: 60px;
 						}
 
-						.services-web {
-							padding: 40px;
+						.websitefree-web {
+							padding: 70px 40px;
 							box-sizing: border-box;
 							width: 50%;
 							padding-left: 50px;
@@ -44,61 +40,17 @@ class WebsiteFree extends React.Component {
 							border: 1px solid black;
 							border-right: none;
 							border-left: none;
-						}
-
-						.services-web h2 {
-							font-size: 22px;
-							margin-bottom: 10px;
-							box-sizing: border-box;
-							font-family: Viga;
-						}
-						.services-web p {
-							line-height: 1.2;
-							letter-spacing: 0.5px;
-							max-width: 500px;
-						}
-						.services-web a {
-							margin: auto;
-							display: inline-block;
-							padding: 13px 15px;
-							color: white;
-							box-sizing: border-box;
-							margin-top: 10px;
-							font-size: 14px;
-							border-radius: 4px;
-							font-family: Viga;
-							background: #00BCD4;
-						}
-						.services-web-item {
-							display: flex;
-							align-items: center;
-							justify-content: center;
-						}
-						.services-web-item img {
-							width: 180px;
-							height: 180px;
-							margin-left: 20px;
-						}
-
-						.services-free-bg {
-							width: 50%;
-						}
-
-						.services-about-text {
 							text-align: left;
-							padding-top: 3%;
-							padding-left: 4%;
-							padding-right: 2%;
-							box-sizing: border-box;
 						}
-						.services-about-text h2 {
+
+						.websitefree-web h2 {
 							font-size: 22px;
 							margin-bottom: 10px;
+							box-sizing: border-box;
 							font-family: Viga;
 							position: relative;
 						}
-
-						.services-about-text h2:before {
+						.websitefree-web h2:before {
 							content: "";
 							position: absolute;
 							width: 50px;
@@ -107,49 +59,52 @@ class WebsiteFree extends React.Component {
 							top: -15px;
 							left: 0;
 						}
-						.services-about-text p {
+						.websitefree-web p {
 							line-height: 1.2;
-							letter-spacing: -0.1px;
-							color: #656565;
+							letter-spacing: 0.5px;
+							max-width: 500px;
+						}
+						.websitefree-web a {
+							margin: auto;
+							display: inline-block;
+							padding: 13px 15px;
+							color: white;
+							box-sizing: border-box;
+							margin-top: 10px;
+							border-radius: 4px;
+							font-family: Viga;
+							background: #00BCD4;
 						}
 
-						
-						@media screen and (max-width: 900px) {
-							.services-web h2,
-							.services-web p,
-							.services-web a {
-								margin-left: 30px;
-							}
+						.websitefree-free-bg {
+							width: 50%;
+							background: url(static/img/Build-website-for-free.jpg) right center no-repeat;
+							background-size: cover;
 						}
 
 						@media screen and (max-width: 767px) {
-							.services-items {
+							.websitefree {
+								margin-top: 40px;
+							}
+							.websitefree .df {
 								flex-direction: column;
 							}
-							.services-left {
+							.websitefree-free-bg {
 								width: 100%;
+								height: 300px;
 							}
-							.services-web {
-								margin-top: 40px;
-								padding: 40px 120px;
-							}
-							.services-web h2,
-							.services-web p {
-								max-width: 100%;
-							}
-
-							.services-free-bg {
+							.websitefree-web {
 								width: 100%;
 							}
 						}
 
 						@media screen and (max-width: 600px) {
-							.services-web {
+							.websitefree-web {
 								padding: 40px 20px;
 							}
-							.services-web h2,
-							.services-web p,
-							.services-web a {
+							.websitefree-web h2,
+							.websitefree-web p,
+							.websitefree-web a {
 								margin: 10px 20px;
 							}
 						}

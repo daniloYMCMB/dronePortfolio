@@ -3,6 +3,8 @@ import BannerServicesInterna from '../components/BannerServicesInterna'
 import DisenoEstetico from '../components/DisenoEstetico'
 import AvailableMobiles from '../components/AvailableMobiles'
 import WebsiteFree from '../components/WebsiteFree'
+import UxEditable from '../components/UxEditable'
+import HowMuch from '../components/HowMuch'
 
 class disenoweb extends React.Component {
 
@@ -15,6 +17,8 @@ class disenoweb extends React.Component {
 				<DisenoEstetico />
 				<AvailableMobiles />
 				<WebsiteFree />
+				<UxEditable />
+				<HowMuch />
 				
 			</Layout>
 		)

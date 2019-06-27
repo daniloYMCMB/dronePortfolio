@@ -3,26 +3,25 @@ import Link from 'next/link'
 class AvailableMobiles extends React.Component {
 
 	render() {
-		return 	<div className="disenoEstetico">
+		return 	<div className="availableMobile">
 
 					<div className="df">
 
-						<div className="services-free-bg">
-							<figure className="responsive">
+						<div className="availableMobile-free-bg">
+							<figure className="availableMobile-responsive">
 								<img src="static/img/responsive.png" alt=""/>
 							</figure>
-							<div className="df services-about">
-								<div className="services-about-bg"></div>
-								<div className="services-about-text">
+							<div className="df availableMobile-about">
+								<div className="availableMobile-about-text">
 									<h2>DISPONIBLE EN MÓVILES</h2>
-									<p>Nos especializamos en la creación de sitios web totalmente sensibles que se ajustan perfectamente a cualquier tipo de dispositivo. El proyecto realizado en tal técnica se muestra bien en teléfonos inteligentes, tabletas, pantallas grandes o incluso televisores.</p>
+									<p>Nos especializamos en la creación de sitios web totalmente sensibles que se ajustan perfectamente a cualquier tipo de dispositivo. <br/>El proyecto realizado en tal técnica se muestra bien en teléfonos inteligentes, tabletas, pantallas grandes o incluso televisores.</p>
 								</div>
 							</div>
 						</div>
 
-						<div className="services-web">
-							<div className="services-web-item">
-								<div className="services-web-text">
+						<div className="availableMobile-web">
+							<div className="availableMobile-web-item">
+								<div className="availableMobile-web-text">
 									<h2>GOOGLE ANALYTICS</h2>
 									<p>
 										Compruebe quién y cuándo ha visitado su sitio, cómo lo encontró y qué es lo que más interesa a sus visitantes. Con Google Analytics integrado, tendrá acceso a todos los datos.
@@ -30,8 +29,8 @@ class AvailableMobiles extends React.Component {
 								</div>
 								<img src="static/img/ico-results.svg" alt=""/>
 							</div>
-							<div className="services-web-item">
-								<div className="services-web-text">
+							<div className="availableMobile-web-item">
+								<div className="availableMobile-web-text">
 									<h2>SEO AMIGABLE</h2>
 									<p>
 										Nuestros proyectos están diseñados y optimizados para posicionamiento en Google.
@@ -43,34 +42,36 @@ class AvailableMobiles extends React.Component {
 					</div>
 
 					<style jsx>{`
-						.disenoEstetico {
-							margin: 40px auto;
-							margin-top: 170px;
+						.availableMobile {
+							margin-top: 140px;
+							margin-bottom: 0;
 						}
 
-						.services-web {
+						.availableMobile-web {
 							background: #fca926;
-							padding: 40px;
+							padding: 50px 20px;
 							box-sizing: border-box;
 							text-align: right;
 							color: white;
 							width: 45%;
 							margin-left: 4%;
+							box-shadow: 0 40px 120px -20px rgba(0,0,0,0.6);
+							margin-top: 40px;
 						}
 
-						.services-web h2 {
+						.availableMobile-web h2 {
 							font-size: 22px;
 							max-width: 300px;
 							margin-bottom: 10px;
 							box-sizing: border-box;
 							font-family: Viga;
 						}
-						.services-web p {
+						.availableMobile-web p {
 							line-height: 1.2;
 							letter-spacing: 0.5px;
 							max-width: 300px;
 						}
-						.services-web a {
+						.availableMobile-web a {
 							margin: auto;
 							display: inline-block;
 							padding: 13px 15px;
@@ -82,43 +83,45 @@ class AvailableMobiles extends React.Component {
 							font-size: 14px;
 							border-radius: 4px;
 						}
-						.services-web-item {
+						.availableMobile-web-item {
 							display: flex;
 							align-items: center;
 							justify-content: center;
+							margin: 10px 0;
 						}
-						.services-web-item img {
+						.availableMobile-web-item img {
 							width: 180px;
 							height: 180px;
 							margin-left: 20px;
 						}
 
-						.services-free-bg {
+						.availableMobile-free-bg {
 							width: 40%;
 						}
 
-						.responsive {
+						.availableMobile-responsive {
 							margin-left: -70px;
 						}
 
-						.services-about {
+						.availableMobile-about {
 							align-items: stretch;
 						}
-						.services-about-text {
+						.availableMobile-about-text {
 							text-align: left;
+							margin-top: 40px;
 							padding-top: 3%;
 							padding-left: 4%;
 							padding-right: 2%;
 							box-sizing: border-box;
 						}
-						.services-about-text h2 {
+						.availableMobile-about-text h2 {
 							font-size: 22px;
 							margin-bottom: 10px;
 							font-family: Viga;
 							position: relative;
 						}
 
-						.services-about-text h2:before {
+						.availableMobile-about-text h2:before {
 							content: "";
 							position: absolute;
 							width: 50px;
@@ -127,50 +130,81 @@ class AvailableMobiles extends React.Component {
 							top: -15px;
 							left: 0;
 						}
-						.services-about-text p {
-							line-height: 1.2;
+						.availableMobile-about-text p {
+							line-height: 1.3;
 							letter-spacing: -0.1px;
 							color: #656565;
 						}
 
-						
+						@media screen and (max-width: 1150px) {
+							.availableMobile-web-item img {
+								width: 120px;
+								height: 120px;
+							}
+						}
+
+						@media screen and (max-width: 1024px) {
+							.availableMobile-web {
+								width: 50%;
+							}
+						}
+
 						@media screen and (max-width: 900px) {
-							.services-web h2,
-							.services-web p,
-							.services-web a {
-								margin-left: 30px;
+							.availableMobile-web {
+								padding: 50px 10px 50px 10px;
+							}
+							.availableMobile-web-item img {
+								width: 90px;
+								height: 90px;
 							}
 						}
 
 						@media screen and (max-width: 767px) {
-							.services-items {
+							.availableMobile {
+								margin-top: 50px;
+							}
+							.availableMobile .df {
 								flex-direction: column;
 							}
-							.services-left {
-								width: 100%;
+							.availableMobile-free-bg {
+								width: 90%;
+								margin: auto;
 							}
-							.services-web {
-								margin-top: 40px;
-								padding: 40px 120px;
-							}
-							.services-web h2,
-							.services-web p {
-								max-width: 100%;
+							.availableMobile-responsive {
+								margin-left: 0;
 							}
 
-							.services-free-bg {
+							.availableMobile-web {
+								width: 80%;
+								margin: 40px auto;
+								padding: 50px 80px;
+							}
+
+							.availableMobile-items {
+								flex-direction: column;
+							}
+							.availableMobile-left {
 								width: 100%;
+							}
+							.availableMobile-web h2,
+							.availableMobile-web p {
+								max-width: 100%;
 							}
 						}
 
 						@media screen and (max-width: 600px) {
-							.services-web {
+							.availableMobile-web {
 								padding: 40px 20px;
+								width: 90%;
 							}
-							.services-web h2,
-							.services-web p,
-							.services-web a {
+							.availableMobile-web h2,
+							.availableMobile-web p,
+							.availableMobile-web a {
 								margin: 10px 20px;
+							}
+							.availableMobile-web-item {
+								flex-direction: column;
+								text-align: center;
 							}
 						}
 					`}</style>

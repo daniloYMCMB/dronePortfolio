@@ -6,7 +6,7 @@ class DisenoEstetico extends React.Component {
 		return 	<div className="disenoEstetico">
 
 					<div className="df" style={{alignItems: 'flex-start'}}>
-						<div className="services-web">
+						<div className="disenoEstetico-web">
 							<h2>DISEÑO ESTÉTICO</h2>
 							<p>
 								Destacarse de la multitud. La mayoría de nosotros elegimos productos no solo por su funcionalidad, sino también porque son agradables a la vista. Un buen sitio web es también un diseño estético. Nuestra empresa presta especial atención a los detalles. Sin él, ningún producto será perfecto.
@@ -16,10 +16,10 @@ class DisenoEstetico extends React.Component {
 							</a>	
 						</div>
 
-						<div className="services-free-bg">
-							<figure className="portafolio-item">
-								<div className="portafolio-item-mascara">
-									<div className="portafolio-item-img" style={{background: "url(static/img/portafolio/profe.jpg) center center no-repeat", backgroundSize: 'cover'}}></div>
+						<div className="disenoEstetico-bg">
+							<figure className="disenoEstetico-item">
+								<div className="disenoEstetico-item-mascara">
+									<div className="disenoEstetico-item-img" style={{background: "url(static/img/portafolio/profe.jpg) center center no-repeat", backgroundSize: 'cover'}}></div>
 								</div>
 							</figure>
 						</div>
@@ -29,51 +29,17 @@ class DisenoEstetico extends React.Component {
 						.disenoEstetico {
 							margin: 80px auto;
 						}
-						.portafolio-item {
-							margin: 10px auto;
-							height: 630px;
-							width: 1034px;
-							background: url(/static/img/Macbook.svg) center center no-repeat;
-							background-size: cover;
-							position: absolute;
-							left: -50px;
-						}
 
-						.portafolio-item-mascara {
-							height: 543px;
-							overflow: hidden;
-							position: relative;
-						}
-
-						.portafolio-item-img {
-							max-width: 100%;
-							width: 77%;
-							height: auto;
-							display: block;
-							position: absolute;
-							top: 45px;
-							right: 0;
-							left: 0;
-							margin: auto;
-							border-radius: 2px;
-							height: 503px;
-							background-size: cover;
-						}
-
-						.services {
-							padding-top: 80px;
-						}
-
-						.services-web {
+						.disenoEstetico-web {
 							background: linear-gradient(to right, rgba(0,165,194,1) 0%,rgba(0,196,214,1) 100%);
-							padding: 130px 150px 130px 60px;
+							padding: 100px 130px 100px 40px;
 							box-sizing: border-box;
 							text-align: left;
 							color: white;
 							box-shadow: 0 40px 120px -20px rgba(0,0,0,0.6);
 						}
 
-						.services-web h2 {
+						.disenoEstetico-web h2 {
 							font-size: 22px;
 							max-width: 300px;
 							margin: 0 auto 10px;
@@ -82,13 +48,13 @@ class DisenoEstetico extends React.Component {
 							margin-left: 100px;
 							font-family: 'Viga';
 						}
-						.services-web p {
+						.disenoEstetico-web p {
 							line-height: 1.2;
 							letter-spacing: 0.5px;
 							max-width: 300px;
 							margin-left: 100px;
 						}
-						.services-web a {
+						.disenoEstetico-web a {
 							margin: auto;
 							display: inline-block;
 							padding: 13px 15px;
@@ -102,222 +68,134 @@ class DisenoEstetico extends React.Component {
 							font-family: Viga;
 						}
 
-						.services-drone {
-							background: url(https://firebasestorage.googleapis.com/v0/b/daniloviacava-40daf.appspot.com/o/rupac.JPG?alt=media&token=60f399cd-9e02-4859-be73-665e7fe6cc05) center left no-repeat;
-							background-size: cover;
-							max-width: 230px;
-							padding: 80px 90px;
-							margin: -60px 0px 0px 60px;
-							text-align: left;
-							position: relative;
-						}
 
-						.services-drone:before {
-							content: "";
-							position: absolute;
-							top: 0;
-							left: 0;
-							width: 100%;
-							height: 100%;
-							background: black;
-							opacity: .3;
-						}
-
-						.services-drone h2 {
-							font-size: 22px;
-							max-width: 180px;
-							margin: 0 auto 10px;
-							box-sizing: border-box;
-							position: relative;
-							z-index: 1;
-						}
-
-						.services-drone p {
-							max-width: 300px;
-							margin: 0 auto 10px;
-							padding-left: 25px;
-							box-sizing: border-box;
-							position: relative;
-							z-index: 1;
-							font-family: Montserrat;
-							font-size: 14px;
-							line-height: 1.2;
-						}
-
-						.services-drone a {
-							max-width: 300px;
-							padding-left: 25px;
-							box-sizing: border-box;
-							margin-top: 10px;
-							position: relative;
-							z-index: 1;
-							font-size: 14px;
-						}
-
-						.services-free-bg {
+						.disenoEstetico-bg {
 							width: 40%;
-
 							position: relative;
 						}
-
-						.services-free {
-							background: url(https://firebasestorage.googleapis.com/v0/b/daniloviacava-40daf.appspot.com/o/emmaPetersen.JPG?alt=media&token=3175db9b-ef8c-461b-b6e8-50b28fe13e9e) -130px 0px no-repeat;
+						.disenoEstetico-item {
+							margin: 10px auto;
+							height: 570px;
+							width: 950px;
+							background: url(/static/img/Macbook.svg) center center no-repeat;
 							background-size: cover;
-							color: white;
-							padding: 280px 100px 230px 100px;
-							box-sizing: border-box;
-							margin-top: -50px;
-							margin-left: -110px;
-							text-align: right;
-							max-width: 410px;
-							font-size: 15px;
-							position: relative;
-						}
-
-						.services-free:before {
-							content: "";
 							position: absolute;
-							top: 0;
+							left: -30px;
+						}
+
+						.disenoEstetico-item-mascara {
+							height: 492px;
+							overflow: hidden;
+							position: relative;
+						}
+
+						.disenoEstetico-item-img {
+							max-width: 100%;
+							width: 76%;
+							height: auto;
+							display: block;
+							position: absolute;
+							top: 41px;
+							right: 0;
 							left: 0;
-							width: 100%;
-							height: 100%;
-							background: black;
-							opacity: .4;
+							margin: auto;
+							border-radius: 2px;
+							height: 453px;
+							background-size: cover;
 						}
-
-						.services-free h2{
-							font-size: 22px;
-							margin-bottom: 10px;
-							position: relative;
-							z-index: 1;
-						}
-
-						.services-free p {
-							font-size: 14px;
-							font-family: Montserrat;
-							margin-bottom: 10px;
-							position: relative;
-							line-height: 1.2;
-							z-index: 1;
-						}
-
-						.services-free a {
-							font-size: 14px;
-							position: relative;
-							z-index: 1;
-						}
-
-						@media screen and (max-width: 900px) {
-							.services-about-text {
-								margin-right: 2%;
-								padding-top: 5%;
+						
+						@media screen and (max-width: 1024px) {
+							.disenoEstetico-web {
+								padding: 70px 50px 70px 0;
+								margin-left: 2%;
 							}
-							
-							.services-web h2,
-							.services-web p,
-							.services-web a {
-								margin-left: 30px;
+							.disenoEstetico-web h2 {
+								margin-left: 70px;
+							}
+							.disenoEstetico-web p {
+								margin-left: 70px;
+							}
+							.disenoEstetico-web a {
+								margin-left: 70px;
 							}
 
-							.services-drone {
-								margin-left: 20px;
+							.disenoEstetico-item {
+								height: 490px;
+								width: 830px;
 							}
-
-							.services-drone h2 {
-								margin-left: 0px;
+							.disenoEstetico-item-mascara {
+								height: 426px;
 							}
-							.services-drone p,
-							.services-drone a {
-								padding-left: 0;
-							}
-
-							.services-free {
-								margin-left: -90px;
-								padding: 280px 60px 230px 60px;
-								background-position: -170px 0px;
+							.disenoEstetico-item-img {
+								top: 30px;
 							}
 						}
 
 						@media screen and (max-width: 767px) {
-							.services-about {
+							.disenoEstetico {
+								margin-bottom: 0;
+								margin-top: 50px;
+							}
+							.disenoEstetico .df {
 								flex-direction: column;
-								max-width: 600px;
+							}
+							.disenoEstetico-web {
+								width: 80%;
 								margin: auto;
-								text-align: center;
+								padding-right: 0;
 							}
-							.services-about-bg,
-							.services-about-text {
-								width: 100%;
+							.disenoEstetico-web h2 {
+								margin: 0 auto 10px auto;
+								padding: 0;
 							}
-							.services-about p {
-								max-width: 100%;
+							.disenoEstetico-web p {
+								margin: auto;
+							}
+							.disenoEstetico-web a {
+								margin: 10px auto 0;
+								max-width: 120px;
+								display: block;
 							}
 
-							.services-items {
-								flex-direction: column;
-							}
-							.services-left {
-								width: 100%;
-							}
-							.services-web {
+							.disenoEstetico-bg {
+								width: 530px;
+								margin: auto;
 								margin-top: 40px;
-								padding: 40px 120px;
 							}
-							.services-web h2,
-							.services-web p {
-								max-width: 100%;
+							.disenoEstetico-item {
+								position: inherit;
+								left: 0;
+								width: auto;
+								height: 320px;
 							}
-
-							.services-drone {
-								margin: 30px auto;
-								max-width: 100%;
-								padding: 80px 170px;
+							.disenoEstetico-item-mascara {
+								height: 320px;
 							}
-							.services-drone h2 {
-								margin-left: 0;
-								max-width: 100%;
-							}
-							.services-drone a,
-							.services-drone p {
-								margin-left: 0;
-							}
-
-							.services-free-bg {
-								width: 100%;
-							}
-							.services-free {
-								margin: 0;
-								max-width: 100%;
-								padding: 70px 210px;
-								background-position: 0 -80px;
-							}
-
-							.services-free {
-								margin: 0;
-								max-width: 100%;
-								padding: 70px 140px;
-								background-position: 0 -80px;
+							.disenoEstetico-item-img {
+								top: 23px;
+								height: 256px;
 							}
 						}
 
-						@media screen and (max-width: 600px) {
-							.services {
-								padding-top: 40px;
-							}
-							.services-web {
+						@media screen and (max-width: 530px) {
+							.disenoEstetico-web {
 								padding: 40px 20px;
+								width: 90%;
 							}
-							.services-web h2,
-							.services-web p,
-							.services-web a {
-								margin: 10px 20px;
+							.disenoEstetico-bg {
+								width: 300px;
+								margin: auto;
+								margin-top: 40px;
 							}
-							.services-drone {
-								padding: 80px 50px;
+							.disenoEstetico-item {
+								height: 180px;
 							}
-							.services-free {
-								padding: 80px 50px;
-								background-position: 0px 0px;
+							.disenoEstetico-item-mascara {
+								height: 160px;
+							}
+							.disenoEstetico-item-img {
+								top: 13px;
+								height: 142px;
 							}
 						}
 
@@ -330,3 +208,11 @@ class DisenoEstetico extends React.Component {
 }
 
 export default DisenoEstetico;
+
+
+
+
+
+
+
+
