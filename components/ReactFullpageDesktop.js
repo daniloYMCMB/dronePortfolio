@@ -8,8 +8,6 @@ const Fullpage = () => (
   <div>
       <BannerServices />
       <Services></Services>
-      <Portafolio></Portafolio>
-      <Prices></Prices>
       <Contact></Contact>
       <style>{`
       `}</style>

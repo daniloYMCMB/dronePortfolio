@@ -25,11 +25,12 @@ class BannerServices extends React.Component {
                             <iframe width="560" height="315" src="https://www.youtube.com/embed/xJAwnCMgqCg?autoplay=0&controls=0&loop=1&mute=1&playlist=xJAwnCMgqCg" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
 
                             <div className="container videoBanner-text">
-                                <h1 className="videoBanner-title">Diseño web
+                                <h1 className="videoBanner-title">
+                                    {this.props.title}
                                 </h1>
                                 <br/>
                                 <p className="videoBanner-paragraph">
-                                    Brindamos servicios digitales frescos y creativos. a empresas que quieran crecer online. El diseño web es nuestro servicio clave.
+                                    {this.props.text}
                                 </p>
                                 <ButtonWhite clase="colorWhite" href="/diseno-web" name="Empezar proyecto"></ButtonWhite>
                             </div>
@@ -92,6 +93,7 @@ class BannerServices extends React.Component {
                             z-index: 9;
                             font-family: Viga;
                             padding-left: 20px;
+                            box-sizing: border-box;
                         }
 
                         .videoBanner-paragraph {
@@ -142,6 +144,9 @@ class BannerServices extends React.Component {
                             }
                             .videoBanner-text {
                                 top: -130px;
+                            }
+                            .videoBanner-text br {
+                                display: none;
                             }
                             .videoBanner-title  {
                                 font-size: 35px;

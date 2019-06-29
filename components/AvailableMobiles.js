@@ -194,17 +194,22 @@ class AvailableMobiles extends React.Component {
 
 						@media screen and (max-width: 600px) {
 							.availableMobile-web {
-								padding: 40px 20px;
+								padding: 20px;
 								width: 90%;
 							}
 							.availableMobile-web h2,
 							.availableMobile-web p,
 							.availableMobile-web a {
-								margin: 10px 20px;
+								margin: 10px 0 5px 0;
 							}
 							.availableMobile-web-item {
 								flex-direction: column;
 								text-align: center;
+								margin: 15px auto;
+							}
+							.availableMobile-web-item img {
+								margin-left: 0;
+								margin-top: 10px;
 							}
 						}
 					`}</style>

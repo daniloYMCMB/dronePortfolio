@@ -15,7 +15,7 @@ class WebsiteFree extends React.Component {
 								<div className="websitefree-about-bg"></div>
 								<div className="websitefree-about-text">
 									<h2>CONSTRUYA SU SITIO WEB 
-										<br/>GRATIS
+										<br/> GRATIS
 									</h2>
 									<p>El proyecto será gratuito a cambio de una estancia de vacaciones en su lugar. Tomaremos el equipo necesario para diseñar el sitio web y realizaremos materiales promocionales, fotos y videos de alta calidad.</p>
 									<a>
@@ -87,7 +87,7 @@ class WebsiteFree extends React.Component {
 								margin-top: 40px;
 							}
 							.websitefree .df {
-								flex-direction: column;
+								flex-direction: column-reverse;
 							}
 							.websitefree-free-bg {
 								width: 100%;
@@ -99,15 +99,20 @@ class WebsiteFree extends React.Component {
 						}
 
 						@media screen and (max-width: 600px) {
+							.websitefree {
+								margin-top: 20px;
+							}
 							.websitefree-web {
-								padding: 40px 20px;
+								padding: 70px 20px;
 							}
 							.websitefree-web h2,
 							.websitefree-web p,
 							.websitefree-web a {
 								margin: 10px 20px;
 							}
-						}
+							.websitefree-web h2 br {
+								display: none;
+							}
 					`}</style>
 				</div>
 	}

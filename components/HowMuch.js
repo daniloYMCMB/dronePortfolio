@@ -28,9 +28,6 @@ class HowMuch extends React.Component {
 					</div>
 
 					<style jsx>{`
-						.howMuch .df {
-							flex-direction: column;
-						}
 
 						.howMuch-web {
 							padding: 70px 10px;
@@ -120,6 +117,9 @@ class HowMuch extends React.Component {
 						}
 
 						@media screen and (max-width: 767px) {
+							.howMuch .df {
+								flex-direction: column;
+							}
 							.howMuch-web {
 								width: 100%;
 							}

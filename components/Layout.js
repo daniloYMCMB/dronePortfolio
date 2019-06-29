@@ -154,6 +154,18 @@ export default class Layout extends React.Component {
 						opacity: 1;
 					}
 				}
+
+				@media screen and (max-width: 600px) {
+					.Layout {
+						font-size: 14px;
+					}
+					h2 {
+						font-size: 20px !important;
+					}
+					a {
+
+					}
+				}
 				
 			`}</style>
 

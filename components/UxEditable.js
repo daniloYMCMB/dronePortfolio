@@ -1,7 +1,7 @@
 class UxEditable extends React.Component {
 
 	render () {
-		return 	<div className="disenoEstetico">
+		return 	<div className="UxEditable">
 
 					<div className="df">
 						<div className="services-web">
@@ -10,7 +10,7 @@ class UxEditable extends React.Component {
 								Proyecto moderno e individual que se adapta a su negocio e industria. Estamos interesados ​​en el diseño web de tal manera que el producto sea funcional, intuitivo y atractivo para el usuario.
 							</p>
 							<a>
-								VER PORTAFOLIO COMPLETO
+								VER PORTAFOLIO
 							</a>	
 						</div>
 
@@ -25,10 +25,10 @@ class UxEditable extends React.Component {
 					</div>
 
 					<style jsx>{`
-						.disenoEstetico {
+						.UxEditable {
 							margin: 80px auto;
 						}
-						.portafolio-item {
+						.UxEditable-item {
 							margin: 10px auto;
 							height: 570px;
 							width: 950px;
@@ -38,13 +38,13 @@ class UxEditable extends React.Component {
 							left: -30px;
 						}
 
-						.portafolio-item-mascara {
+						.UxEditable-item-mascara {
 							height: 492px;
 							overflow: hidden;
 							position: relative;
 						}
 
-						.portafolio-item-img {
+						.UxEditable-item-img {
 							max-width: 100%;
 							width: 76%;
 							height: auto;
@@ -176,10 +176,10 @@ class UxEditable extends React.Component {
 						}
 
 						@media screen and (max-width: 767px) {
-							.disenoEstetico {
+							.UxEditable {
 								margin: 50px auto;
 							}
-							.disenoEstetico .df {
+							.UxEditable .df {
 								flex-direction: column;
 							}
 
@@ -210,7 +210,7 @@ class UxEditable extends React.Component {
 						}
 
 						@media screen and (max-width: 530px) {
-							.disenoEstetico .df {
+							.UxEditable .df {
 								flex-direction: column;
 							}
 

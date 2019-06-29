@@ -7,11 +7,11 @@ class DisenoEstetico extends React.Component {
 
 					<div className="df" style={{alignItems: 'flex-start'}}>
 						<div className="disenoEstetico-web">
-							<h2>DISEÑO ESTÉTICO</h2>
-							<p>
+							<h2 className="title-h2">DISEÑO ESTÉTICO</h2>
+							<p className="paragraph-small">
 								Destacarse de la multitud. La mayoría de nosotros elegimos productos no solo por su funcionalidad, sino también porque son agradables a la vista. Un buen sitio web es también un diseño estético. Nuestra empresa presta especial atención a los detalles. Sin él, ningún producto será perfecto.
 							</p>
-							<a>
+							<a className="btn-action">
 								DESCUBRIR
 							</a>	
 						</div>

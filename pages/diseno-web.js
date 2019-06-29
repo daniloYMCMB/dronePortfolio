@@ -13,7 +13,10 @@ class disenoweb extends React.Component {
 		return (
 			<Layout title="Viaja con Danilo">
 				
-				<BannerServicesInterna />
+				<BannerServicesInterna 
+					title="Diseño web"
+					text="Brindamos servicios digitales frescos y creativos. a empresas que quieran crecer online. El diseño web es nuestro servicio clave."
+				/>
 				<DisenoEstetico />
 				<AvailableMobiles />
 				<WebsiteFree />
