@@ -4,6 +4,15 @@ import ButtonWhite from './Buttons'
 
 class BannerServices extends React.Component {
 
+    constructor(props) {
+        super(props);
+            this.state = {
+                i1: "https://www.youtube.com/embed/",
+                i2: this.props.iframe + "",
+                i3: "?autoplay=1&controls=0&loop=1&mute=1&playlist=xJAwnCMgqCg",
+            }
+    }
+
     componentDidMount() {
         setTimeout(function(){ 
             var videoBanner = document.querySelector(".videoBanner-title")
@@ -11,7 +20,6 @@ class BannerServices extends React.Component {
             var videoBanner = document.querySelector(".videoBanner-paragraph")
             videoBanner.classList.add('active')
         }, 500);
-
     }
 
 	handleDown () {
@@ -19,17 +27,19 @@ class BannerServices extends React.Component {
 	}
 
 	render () {
+
+
 		return 	<div className="videoBanner">
 					<div className="videoBanner-container">
                         <div className="vimeo-wrapper">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/xJAwnCMgqCg?autoplay=0&controls=0&loop=1&mute=1&playlist=xJAwnCMgqCg" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                            <iframe width="560" height="315" src={this.state.i1 + this.state.i2 + this.state.i3} frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
 
                             <div className="container videoBanner-text">
                                 <h1 className="videoBanner-title">
                                     {this.props.title}
                                 </h1>
                                 <br/>
-                                <p className="videoBanner-paragraph">
+                                <p className="videoBanner-paragraph" style={this.props.style}>
                                     {this.props.text}
                                 </p>
                                 <ButtonWhite clase="colorWhite" href="/diseno-web" name="Empezar proyecto"></ButtonWhite>
@@ -65,7 +75,8 @@ class BannerServices extends React.Component {
                             left 0;
                             height: 100%;
                             width: 100%;
-                            background: black;
+                            background: linear-gradient(to right top, transparent 33%, black 33%, black 66%, transparent 66%);
+                            background-size: 3px 3px;
                             opacity: 0.6;
                             z-index: 1;
                             pointer-events: none;

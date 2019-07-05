@@ -1,40 +1,23 @@
 {
-  "devFiles": [],
+  "devFiles": [
+    "static/development/dll/dll_599a58a60c43245180de.js"
+  ],
   "pages": {
-    "/": [
-      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
-      "static/chunks/commons.ea3131e3bb70561fc682.js",
-      "static/runtime/main-2bbb3240fe080fe08749.js"
-    ],
     "/_app": [
-      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
-      "static/chunks/commons.ea3131e3bb70561fc682.js",
-      "static/runtime/main-2bbb3240fe080fe08749.js"
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
     ],
     "/_error": [
-      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
-      "static/chunks/commons.ea3131e3bb70561fc682.js",
-      "static/runtime/main-2bbb3240fe080fe08749.js"
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
     ],
-    "/diseno-web": [
-      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
-      "static/chunks/commons.ea3131e3bb70561fc682.js",
-      "static/runtime/main-2bbb3240fe080fe08749.js"
+    "/conocenos": [
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
     ],
-    "/imagenes-de-drones": [
-      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
-      "static/chunks/commons.ea3131e3bb70561fc682.js",
-      "static/runtime/main-2bbb3240fe080fe08749.js"
-    ],
-    "/index": [
-      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
-      "static/chunks/commons.ea3131e3bb70561fc682.js",
-      "static/runtime/main-2bbb3240fe080fe08749.js"
-    ],
-    "/portafolio": [
-      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
-      "static/chunks/commons.ea3131e3bb70561fc682.js",
-      "static/runtime/main-2bbb3240fe080fe08749.js"
+    "/next/dist/pages/_error": [
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
     ]
   }
 }

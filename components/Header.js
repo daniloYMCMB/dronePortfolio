@@ -41,9 +41,14 @@ class Header extends React.Component {
 										<p>Imágenes de drones</p>
 									</a>
 								</Link>
-								<Link href="/portafolio">
-									<a >
+								<Link >
+									<a href="/portafolio">
 										<p>Portafolio</p>
+									</a>
+								</Link>
+								<Link href="/conocenos">
+									<a >
+										<p>Conócenos</p>
 									</a>
 								</Link>
 								<a target="_blank" href="https://www.facebook.com/profile.php?id=100009455848617" >

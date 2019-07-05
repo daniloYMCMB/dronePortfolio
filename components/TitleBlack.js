@@ -4,7 +4,7 @@ class TitleBlack extends React.Component {
 		return 	<div className="title-container">
 
 					<div className="title">
-						<h3>{this.props.title}</h3>
+						<h3 className={this.props.classTitle}>{this.props.title}</h3>
 						<p className={this.props.classSubtitle}>{this.props.subtitle} <strong className={this.props.classSubtitle}>{this.props.subtitleStrong}</strong>
 						</p>
 					</div>
@@ -26,6 +26,10 @@ class TitleBlack extends React.Component {
 							margin-top: 5px;
 							font-family: Poppins;
 							letter-spacing: -0.3px;
+						}
+
+						h3.white {
+							color: white;
 						}
 
 						.title .white {

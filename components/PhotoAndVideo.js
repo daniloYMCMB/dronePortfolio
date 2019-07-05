@@ -43,7 +43,6 @@ class PhotoAndVideo extends React.Component {
 						.PhotoAndVideo-free-bg {
 							width: 40%;
 							position: relative;
-							backgron
 						}				
 
 						.PhotoAndVideo-free {

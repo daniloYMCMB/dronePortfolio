@@ -1,10 +1,5 @@
 class VideoBanner extends React.Component {
 
-
-	handleDown () {
-		fullpage_api.moveSectionDown();
-	}
-
 	render () {
 		return 	<div className="videoBanner">
 					<div className="videoBanner-container">
