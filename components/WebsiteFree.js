@@ -7,7 +7,7 @@ class WebsiteFree extends React.Component {
 
 					<div className="df" style={{alignItems: 'stretch'}}>
 
-						<figure className="websitefree-free-bg">
+						<figure className="websitefree-free-bg" style={{backgroundImage: this.props.bg}}>
 						</figure>
 
 						<div className="df websitefree-web">

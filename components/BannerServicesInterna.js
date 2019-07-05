@@ -9,7 +9,7 @@ class BannerServices extends React.Component {
             this.state = {
                 i1: "https://www.youtube.com/embed/",
                 i2: this.props.iframe + "",
-                i3: "?autoplay=1&controls=0&loop=1&mute=1&playlist=xJAwnCMgqCg",
+                i3: "?autoplay=0&controls=0&loop=1&mute=1&playlist=xJAwnCMgqCg",
             }
     }
 
@@ -28,7 +28,6 @@ class BannerServices extends React.Component {
 
 	render () {
 
-
 		return 	<div className="videoBanner">
 					<div className="videoBanner-container">
                         <div className="vimeo-wrapper">
@@ -42,7 +41,7 @@ class BannerServices extends React.Component {
                                 <p className="videoBanner-paragraph" style={this.props.style}>
                                     {this.props.text}
                                 </p>
-                                <ButtonWhite clase="colorWhite" href="/diseno-web" name="Empezar proyecto"></ButtonWhite>
+                                <ButtonWhite clase="colorWhite" href="/#" name={this.props.btn}></ButtonWhite>
                             </div>
                             <div className="section-down">
                                 <div className="cuadrado"></div>

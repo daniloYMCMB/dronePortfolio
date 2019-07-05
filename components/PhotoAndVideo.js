@@ -1,18 +1,17 @@
 class PhotoAndVideo extends React.Component {
 
 	render () {
-		return 	<div className="PhotoAndVideo">
+		return 	<div className="PhotoAndVideo" style={this.props.stylePhotoAndVideo}>
 
 					<div className="df">
-						<div className="PhotoAndVideo-web">
+						<div className="PhotoAndVideo-web" style={this.props.styleWeb}>
 						</div>
 
 						<div className="PhotoAndVideo-free-bg">
-							<div className="PhotoAndVideo-free">
-								<h2>HOTEL Y RESORT <br/>
-									FOTOGRAFÍA Y VIDEO.</h2>
+							<div className="PhotoAndVideo-free" style={this.props.styleFree}>
+								<h2>{this.props.title}</h2>
 								<p>
-									Actualiza tu oferta en línea. ¡Destaquemos de los demás! Muestre su objeto desde una perspectiva completamente nueva y sorprenda a sus clientes potenciales. Lleve sus ofertas de Booking.com o TripAdvisor a un nivel completamente nuevo.
+									{this.props.description}
 								</p>
 								<a className="btn-action">
 									VER PROYECTOS RECIENTES

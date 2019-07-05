@@ -17,6 +17,7 @@ class disenoweb extends React.Component {
 					iframe="0AVP-nxv3aw"
 					title="Diseño web"
 					text="Brindamos servicios digitales frescos y creativos. A empresas que quieran crecer online. El diseño web es nuestro servicio clave."
+					btn="Iniciar un proyecto"
 				/>
 				<DisenoEstetico />
 				<AvailableMobiles />

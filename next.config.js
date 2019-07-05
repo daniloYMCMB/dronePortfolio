@@ -3,7 +3,7 @@ module.exports = {
       return {
         '/': { page: '/' },
         '/diseno-web': { page: '/diseno-web' },
-        '/imagenes-drone': { page: '/imagenes-drone' },
+        '/imagenes-drones': { page: '/imagenes-drones' },
         '/portafolio': { page: '/portafolio' },
         '/conocenos': { page: '/conocenos' }
       };

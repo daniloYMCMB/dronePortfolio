@@ -154,7 +154,7 @@ class Contact extends React.Component {
                     height: 100%;
                     width: 100%;
                     background: black;
-                    opacity: 0.3;
+                    opacity: 0.2;
                     z-index: 1;
                     pointer-events: none;
                 }

@@ -7,13 +7,14 @@ class ProfessionalEquipment extends React.Component {
 
 					<div className="df" style={{alignItems:'stretch'}}>
 
-						<div className="professionalEquipment-text">
-							<h2>EQUIPOS PROFESIONALES</h2>
-							<p>Usamos el avión no tripulado profesional para proporcionar fotos de alta calidad y videos 4K UHD. Suministramos ángulos innovadores, nunca antes vistos, que pueden ofrecer innumerables ventajas para casi cualquier negocio.
+						<div className="professionalEquipment-text" style={this.props.styleLeft}>
+							<h2>{this.props.titleLeft}</h2>
+							<p>
+								{this.props.descriptionLeft}
 							</p>
 						</div>
 
-						<figure className="professionalEquipment-responsive">
+						<figure className="professionalEquipment-responsive" style={{backgroundImage: this.props.bgRight}}>
 						</figure>
 					</div>
 

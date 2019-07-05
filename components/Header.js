@@ -8,7 +8,7 @@ class Header extends React.Component {
 			var header = document.querySelector(".header-logo")
 			header.classList.add('active')
 
-			var socials = document.querySelector(".header-socialNetwork li")
+			var socials = document.querySelector(".header-menu")
 			socials.classList.add('active')
 		}, 500);
 
@@ -29,43 +29,73 @@ class Header extends React.Component {
 							</a>
 						</Link>
 
-						<ul className="header-socialNetwork">
+						<ul className="header-menu">
 							<li>
 								<Link href="/diseno-web">
 									<a >
 										<p>Diseño web</p>
 									</a>
 								</Link>
+							</li>
+							<li>
 								<Link href="/imagenes-de-drones">
 									<a >
 										<p>Imágenes de drones</p>
 									</a>
 								</Link>
+							</li>
+							<li>
 								<Link >
 									<a href="/portafolio">
 										<p>Portafolio</p>
 									</a>
 								</Link>
+							</li>
+							<li>
 								<Link href="/conocenos">
 									<a >
 										<p>Conócenos</p>
 									</a>
 								</Link>
-								<a target="_blank" href="https://www.facebook.com/profile.php?id=100009455848617" >
-									<img src="/static/img/facebookIcon.svg" alt=""/>
-								</a>
-								<a target="_blank" href="https://www.instagram.com/danilojesusv/" >
-									<img src="/static/img/instagramIcon.svg" alt=""/>
-								</a>
-								<a target="_blank" href="https://api.whatsapp.com/send?phone=51931447041&text=Hola,%20quiero%20realizar%20mi%20proyecto" >
-									<img src="/static/img/whatsapp.png" alt=""/>
-								</a>
-								<a onClick={this.down} href="">
-									Cotización Gratis
-								</a>
+							</li>
+							<li>
+								<Link href="/viaje-de-trabajo">
+									<a >
+										<p>Viaje de trabajo</p>
+									</a>
+								</Link>
+							</li>
+							<li>
+								<Link href="/viajes">
+									<a >
+										<p>Viajes</p>
+									</a>
+								</Link>
+							</li>
+							<li>
+								<Link href="/contacto">
+									<a >
+										<p>Contacto</p>
+									</a>
+								</Link>
 							</li>
 						</ul>
 					</nav>
+
+					<div className="header-socialNetwork">
+						<a target="_blank" href="https://www.facebook.com/profile.php?id=100009455848617" >
+							<img src="/static/img/facebookIcon.svg" alt=""/>
+						</a>
+						<a target="_blank" href="https://www.instagram.com/danilojesusv/" >
+							<img src="/static/img/instagramIcon.svg" alt=""/>
+						</a>
+						<a target="_blank" href="https://api.whatsapp.com/send?phone=51931447041&text=Hola,%20quiero%20realizar%20mi%20proyecto" >
+							<img src="/static/img/whatsapp.png" alt=""/>
+						</a>
+						<a onClick={this.down} href="">
+							Cotización Gratis
+						</a>
+					</div>
 
 					<style jsx>{`
 						.header {
@@ -100,20 +130,26 @@ class Header extends React.Component {
 							opacity: 1;
 							transform: translateY(0);
 						}
-						.header-socialNetwork li {
+						.header-menu {
 							display: flex;
 							opacity: 0;
 							transform: translateY(20px);
 							transition: .5s;
 							transition-delay: 1.5s;
 						}
-						.header-socialNetwork li.active {
+						.header-menu.active {
 							opacity: 1;
 							transform: translateY(0);
 						}
+						.header-menu a,
 						.header-socialNetwork a {
 							margin: 5px;
 							padding: 5px;
+						}
+						.header-socialNetwork {
+							display: flex;
+							align-items: center;
+							justify-content: center;
 						}
 						.header-socialNetwork a:hover img {
 							box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.85);

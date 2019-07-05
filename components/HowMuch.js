@@ -11,12 +11,14 @@ class HowMuch extends React.Component {
 							<div className="howMuch-about">
 								<div className="howMuch-about-bg"></div>
 								<div className="howMuch-about-text">
-									<h2>CUÁNTO CUESTA
+									<h2>
+										{this.props.title}
 									</h2>
-									<p>No tenemos una lista de precios fijos. Cada proyecto se valora individualmente en función del número de pestañas y el nivel de complejidad del sitio web. Rellene el formulario para obtener la cotización exacta.
+									<p>
+										{this.props.description}
 									</p>
 									<a>
-										OBTENGA UNA CUOTA GRATIS
+										{this.props.btn}
 									</a>	
 								</div>
 							</div>
