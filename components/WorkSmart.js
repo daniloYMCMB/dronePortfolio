@@ -6,8 +6,8 @@ class WorkSmart extends React.Component {
 					<div className="df">
 						<div className="WorkSmart-free-bg">
 							<div className="WorkSmart-free">
-								<h2>TRABAJO INTELIGENTE <br/>
-									NO DURO</h2>
+								<h2>CONOCER EL NEGOCIO <br/>
+									ES LO MAS IMPORTANTE</h2>
 								<p>
 									¿Por qué elegimos este trabajo? Porque nos encanta viajar y gracias al diseño web y de medios digitales podemos trabajar de forma remota. Todo comenzó en 2015 durante el viaje „Work & Travel” a Bali. Nos dimos cuenta de que nuestra oficina puede ser cualquier lugar del mundo y establecimos nuestro negocio y comenzamos a viajar a Asia cada año. Nuestro lema es "Trabaja de forma inteligente, no dura", por lo que nos complace en cada proyecto. Nuestro trabajo es nuestra pasión.
 								</p>
@@ -88,41 +88,22 @@ class WorkSmart extends React.Component {
 						}
 
 						@media screen and (max-width: 1180px) {
-							.WorkSmart {
-								margin-top: 20px;
+							
+							.WorkSmart-free {
+								padding: 80px 100px 80px 80px;
 							}
 							.WorkSmart-web {
-								margin-left: 10px;
-								width: 50%;
-
-							}
-							.WorkSmart-web h2,
-							.WorkSmart-web p,
-							.WorkSmart-web a {
-								margin-left: 50px;
-							}
-							.WorkSmart-free-bg {
 								width: 45%;
-							}
-							.WorkSmart-free {
-								top: -180px;
-								padding 70px 40px 70px 80px;
-								left: -60px;
-								margin-right: 30px;
 							}
 						}
 
 						@media screen and (max-width: 900px) {
 							.WorkSmart-free-bg {
-								width: 50%;
+								width: 45%;
+								margin-left: 6%;
 							}
 							.WorkSmart-free {
-								top: -200px;
-							}
-							.WorkSmart-web {
-								width: 55%;
-								margin-left: 3%;
-								background-position: -40px 0px;
+								padding: 60px 70px 60px 40px;
 							}
 						}
 
@@ -138,6 +119,8 @@ class WorkSmart extends React.Component {
 								margin: 0;
 								width: 80%;
 								background-position: top center ;
+								height: 440px;
+								margin-bottom: 20px;
 							}
 							.WorkSmart-web h2,
 							.WorkSmart-web p,
@@ -147,11 +130,12 @@ class WorkSmart extends React.Component {
 							}
 
 							.WorkSmart-free-bg {
-								width: 65%;
+								width: 90%;
+								margin: 0;
 							}
 							.WorkSmart-free {
 								position: relative;
-								top: -30px;
+								top: 30px;
 								width: 100%;
 								left: 0;
 								right: 0;
@@ -168,19 +152,15 @@ class WorkSmart extends React.Component {
 								flex-direction: column;
 							}
 
+							.WorkSmart-free {
+								padding: 50px 25px;
+							}
+
 							.WorkSmart-web {
-								padding: 50px 30px;
-								width: 90%;
-								height: 350px;
+								height: 300px;
 							}
 							.WorkSmart-web a {
 								font-size: 14px;
-							}
-							.WorkSmart-free-bg {
-								width: 80%;
-							}
-							.WorkSmart-free {
-								padding: 40px 20px;
 							}
 							.WorkSmart-free a {
 								font-size: 13px;

@@ -1,14 +1,14 @@
 class PhotoAndVideo extends React.Component {
 
 	render () {
-		return 	<div className="PhotoAndVideo" style={this.props.stylePhotoAndVideo}>
+		return 	<div className={`PhotoAndVideo ${this.props.classPhotoAndVideo}`} style={this.props.stylePhotoAndVideo}>
 
 					<div className="df">
-						<div className="PhotoAndVideo-web" style={this.props.styleWeb}>
+						<div className={`PhotoAndVideo-web ${this.props.classForWhomWeb}`} style={this.props.styleWeb}>
 						</div>
 
 						<div className="PhotoAndVideo-free-bg">
-							<div className="PhotoAndVideo-free" style={this.props.styleFree}>
+							<div className={`PhotoAndVideo-free ${this.props.classForWhomFree}`} style={this.props.styleFree}>
 								<h2>{this.props.title}</h2>
 								<p>
 									{this.props.description}
@@ -84,10 +84,13 @@ class PhotoAndVideo extends React.Component {
 							font-family: Viga;
 						}
 
-						@media screen and (max-width: 1180px) {
-							.PhotoAndVideo {
-								margin-top: 20px;
+						@media screen and (max-width: 1310px) {
+							.forWhom-Free {
+								padding-bottom: 110px !important;
 							}
+						}
+
+						@media screen and (max-width: 1180px) {
 							.PhotoAndVideo-web {
 								margin-left: 10px;
 								width: 50%;
@@ -107,9 +110,22 @@ class PhotoAndVideo extends React.Component {
 								left: -60px;
 								margin-right: 30px;
 							}
+
+							.forWhom {
+								margin-top: -10px !important;
+							}
+							.forWhom-Web {
+								width: 50% !important;
+								margin-left: 3% !important;
+							}
+							.forWhom-Free {
+								top: -250px !important;
+								padding-left: 130px !important;
+								padding-bottom: 200px !important;
+							}
 						}
 
-						@media screen and (max-width: 900px) {
+						@media screen and (max-width: 1000px) {
 							.PhotoAndVideo-free-bg {
 								width: 50%;
 							}
@@ -120,6 +136,16 @@ class PhotoAndVideo extends React.Component {
 								width: 55%;
 								margin-left: 3%;
 								background-position: -40px 0px;
+							}
+							
+							.forWhom {
+								margin-top: 10px !important;
+							}
+							.forWhom-Web {
+								margin-left: 3% !important;
+							}
+							.forWhom-Free {
+								padding: 100px 60px 100px 130px!important;
 							}
 						}
 
@@ -155,6 +181,31 @@ class PhotoAndVideo extends React.Component {
 								margin: auto;
 								padding: 70px 50px;
 							}
+
+							.forWhom {
+								margin-top: 50px !important;
+							}
+
+							.forWhom .df {
+								flex-direction: column-reverse;
+							}
+							.forWhom-Web {
+								width: 70% !important;
+								margin-left: 0 !important; 
+								margin-top: -30px;
+								margin-bottom: 60px;
+							}
+							.forWhom .PhotoAndVideo-free-bg {
+								width: 90%;
+							}
+							.forWhom-Free {
+								width: 100%;
+								top: 0 !important;
+								left: 0 !important;
+								right: 0;
+								margin: auto;
+								padding: 50px 50px 70px 50px!important;
+							}
 						}
 
 						@media screen and (max-width: 530px) {
@@ -181,6 +232,19 @@ class PhotoAndVideo extends React.Component {
 							}
 							.PhotoAndVideo-free a {
 								font-size: 13px;
+							}
+
+							.forWhom {
+								margin-top: 40px !important;
+							}
+							.forWhom .df {
+								flex-direction: column-reverse;
+							}
+							.forWhom-Free {
+								padding: 40px 20px 60px 20px!important;
+							}
+							.forWhom-Web {
+								width: 80% !important;
 							}
 						}
 					`}</style>

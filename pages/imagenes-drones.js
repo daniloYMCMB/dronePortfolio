@@ -28,7 +28,7 @@ class imagenesDrone extends React.Component {
 				/>
 
 				<PhotoAndVideo 
-					title="HOTEL Y RESORT
+					title="HOTEL Y RESORT m b
 							FOTOGRAFÍA Y VIDEO."
 					description="Actualiza tu oferta en línea. ¡Destaquemos de los demás! Muestre su objeto desde una perspectiva completamente nueva y sorprenda a sus clientes potenciales. Lleve sus ofertas de Booking.com o TripAdvisor a un nivel completamente nuevo."
 				/>

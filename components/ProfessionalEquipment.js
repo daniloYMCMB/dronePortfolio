@@ -64,8 +64,12 @@ class ProfessionalEquipment extends React.Component {
 								width: 50%;
 							}
 							.professionalEquipment-responsive {
-								height: 220px;
-								width: 50%;
+								height: 250px;
+							}
+							.leftSide {
+								width: auto;
+								padding-left: 0;
+								margin-top: 0;
 							}
 						}
 
