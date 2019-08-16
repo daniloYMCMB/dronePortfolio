@@ -23,7 +23,11 @@ class disenoweb extends React.Component {
 				<AvailableMobiles />
 				<WebsiteFree />
 				<UxEditable />
-				<HowMuch />
+				<HowMuch 
+					title="¿CUÁNTO CUESTA?"
+					description="No tenemos una lista de precios fijos. Cada proyecto se valora individualmente en función del número de pestañas y el nivel de complejidad del sitio web. Rellene el formulario para obtener la cotización exacta."
+					btn="COMENZAR PROYECTO"
+				/>
 				
 			</Layout>
 		)

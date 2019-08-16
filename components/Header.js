@@ -25,7 +25,7 @@ class Header extends React.Component {
 
 						<Link href="/">
 							<a className="header-logo">
-								Danilo Viacava
+								DANILO VIACAVA
 							</a>
 						</Link>
 
@@ -124,7 +124,7 @@ class Header extends React.Component {
 							transition: .5s;
 							transition-delay: 1s;
 							font-family: Viga;
-							font-size: 16px;
+							font-size: 20px;
 						}
 						.header-logo.active {
 							opacity: 1;
