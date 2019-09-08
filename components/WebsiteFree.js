@@ -18,9 +18,11 @@ class WebsiteFree extends React.Component {
 										<br/> GRATIS
 									</h2>
 									<p>El proyecto será gratuito a cambio de una estancia de vacaciones en su lugar. Tomaremos el equipo necesario para diseñar el sitio web y realizaremos materiales promocionales, fotos y videos de alta calidad.</p>
-									<a>
+		                            <Link href="/viaje-de-trabajo">
+		                                <a>
 										VIAJE DE TRABAJO
-									</a>	
+										</a>	
+									</Link>
 								</div>
 							</div>
 						</div>

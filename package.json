@@ -11,7 +11,8 @@
     "react-dom": "^16.8.6",
     "react-scripts": "3.0.1",
     "react-slick": "^0.24.0",
-    "reset-css": "^4.0.1"
+    "reset-css": "^4.0.1",
+    "yt-player": "^3.4.0"
   },
   "scripts": {
     "dev": "next",

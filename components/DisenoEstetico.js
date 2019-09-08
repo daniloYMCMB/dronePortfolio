@@ -11,9 +11,11 @@ class DisenoEstetico extends React.Component {
 							<p className="paragraph-small">
 								Destacarse de la multitud. La mayoría de nosotros elegimos productos no solo por su funcionalidad, sino también porque son agradables a la vista. Un buen sitio web es también un diseño estético. Nuestra empresa presta especial atención a los detalles. Sin él, ningún producto será perfecto.
 							</p>
-							<a className="btn-action">
+                            <Link href="/portafolio">
+                                <a className="btn-action">
 								DESCUBRIR
-							</a>	
+								</a>	
+							</Link>
 						</div>
 
 						<div className="disenoEstetico-bg">

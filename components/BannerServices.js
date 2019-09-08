@@ -1,5 +1,9 @@
-class BannerServices extends React.Component {
+import Link from 'next/link'
 
+class BannerServices extends React.Component {
+    constructor(props) {
+        super(props);
+    }
 
     componentDidMount() {
         setTimeout(function(){ 
@@ -10,19 +14,43 @@ class BannerServices extends React.Component {
             videoBannerSkills.classList.add('active')
         }, 500);
 
+        var tag = document.createElement('script');
+        tag.src = "https://www.youtube.com/iframe_api";
+        var firstScriptTag = document.getElementsByTagName('script')[0];
+        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+        var player;
+        function onYouTubeIframeAPIReady() {
+          player = new YT.Player('video', {
+            events: {
+              'onReady': onPlayerReady
+            }
+          });
+        }
+
     }
 
-	handleDown () {
-		// fullpage_api.moveSectionDown();
-	}
 
 	render () {
 		return 	<div className="videoBanner">
+                    <div id="script"></div>
+                    <div className="buttons" style={{display: 'none', position: 'absolute',zIndex: 999}}>
+                        <button id="play-button" onClick={this.onPlayerReady}>PLAY</button>
+                        <button id="pause-button">PAUSE</button>
+                        <button id="stop-button">STOP</button>
+                    </div>
 					<div className="videoBanner-container">
 
                         <div className="vimeo-wrapper">
                             
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/xJAwnCMgqCg?autoplay=1&controls=0&loop=1&mute=1&playlist=xJAwnCMgqCg" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                            <iframe 
+                                id="video" 
+                                width="560" 
+                                height="315" 
+                                src="https://www.youtube.com/embed/xJAwnCMgqCg?enablejsapi=1&autoplay=1&controls=0&loop=1&mute=1&playlist=xJAwnCMgqCg" 
+                                frameBorder="0" 
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+                                allowFullScreen></iframe>
 
                             <div className="container videoBanner-text">
                                 <h1 className="videoBanner-title">¿Necesita mostrar <br/> su proyecto eficientemente?
@@ -30,47 +58,55 @@ class BannerServices extends React.Component {
                             </div>
                             <ul className="df container videoBanner-skills">
                                 <li>
-                                    <a href="">
-                                        <figure className="df">
-                                            <img src="/static/img/responsive.svg" alt=""/>
-                                            <h2>DISEÑO WEB</h2>
-                                        </figure>
-                                        <p>
-                                            Páginas web profesionales y únicas son nuestro servicio clave. <span>Disponible en dispositivos móviles, listo para SEO (Google).</span>
-                                        </p>
-                                    </a>
+                                    <Link href="/diseno-web">
+                                        <a>
+                                            <figure className="df">
+                                                <img src="/static/img/responsive.svg" alt=""/>
+                                                <h2>DISEÑO WEB</h2>
+                                            </figure>
+                                            <p>
+                                                Páginas web profesionales y únicas son nuestro servicio clave. <span>Disponible en dispositivos móviles, listo para SEO (Google).</span>
+                                            </p>
+                                        </a>
+                                    </Link>
                                 </li>
                                 <li>
-                                    <a href="">
-                                        <figure className="df">
-                                            <img src="/static/img/drone.svg" alt=""/>
-                                            <h2>IMÁGENES DE DRONES</h2>
-                                        </figure>
-                                        <p>
-                                            Brindamos servicios de fotografía y video aéreo con drones. <span>Certificados con licencia para conducir drones.</span>
-                                        </p>
-                                    </a>
+                                    <Link href="/imagenes-de-drones">
+                                        <a>
+                                            <figure className="df">
+                                                <img src="/static/img/drone.svg" alt=""/>
+                                                <h2>IMÁGENES DE DRONES</h2>
+                                            </figure>
+                                            <p>
+                                                Brindamos servicios de fotografía y video aéreo con drones. <span>Certificados con licencia para conducir drones.</span>
+                                            </p>
+                                        </a>
+                                    </Link>
                                 </li>
                                 <li>
-                                    <a href="">
-                                        <figure className="df">
-                                            <img src="/static/img/profiles.svg" alt=""/>
-                                            <h2>PORTAFOLIO</h2>
-                                        </figure>
-                                        <p>
-                                            Vea nuestros últimos proyectos de sitios web y videos aéreos. <span>Únase a nuestra lista de clientes satisfechos.</span></p>
-                                    </a>
+                                    <Link href="/portafolio">
+                                        <a>
+                                            <figure className="df">
+                                                <img src="/static/img/profiles.svg" alt=""/>
+                                                <h2>PORTAFOLIO</h2>
+                                            </figure>
+                                            <p>
+                                                Vea nuestros últimos proyectos de sitios web y videos aéreos. <span>Únase a nuestra lista de clientes satisfechos.</span></p>
+                                        </a>
+                                    </Link>
                                 </li>
                                 <li>
-                                    <a href="">
-                                        <figure className="df">
-                                            <img src="/static/img/handshake.svg" alt=""/>
-                                            <h2>SERVICIO GRATUITO</h2>
-                                        </figure>
-                                        <p>
-                                            Consulte nuestra oferta de trabajo y viaje <span>para obtener información ahora y obtener nuestros servicios gratuitos</span>
-                                        </p>
-                                    </a>
+                                    <Link href="/viaje-de-trabajo">
+                                        <a>
+                                            <figure className="df">
+                                                <img src="/static/img/handshake.svg" alt=""/>
+                                                <h2>SERVICIO GRATUITO</h2>
+                                            </figure>
+                                            <p>
+                                                Consulte nuestra oferta de trabajo y viaje <span>para obtener información ahora y obtener nuestros servicios gratuitos</span>
+                                            </p>
+                                        </a>
+                                    </Link>
                                 </li>
                             </ul>
                         </div>
@@ -254,13 +290,14 @@ class BannerServices extends React.Component {
                         }
                     }
 
-                    @media screen and (max-width: 400px){
+                    @media screen and (max-width: 450px){
                         .videoBanner-text {
                             top: -60px;
-                            height: 80px;
+                            height: 130px;
                         }
                         .videoBanner-title {
                             font-size: 25px;
+                            line-height: 30px;
                         }
                         .videoBanner-skills figure {
                             margin-bottom: 10px;
@@ -270,7 +307,8 @@ class BannerServices extends React.Component {
                             height: 25px;
                         }
                         .videoBanner-skills h2 {
-                            font-size: 11px;
+                            font-size: 11px !important;
+                            line-height: 1 !important;
                         }
                         .videoBanner-skills p {
                             font-size: 9px;

@@ -1,6 +1,6 @@
 {
   "devFiles": [
-    "static/development/dll/dll_de856a531f74836d37a0.js"
+    "static/development/dll/dll_4155f54877c0879b7684.js"
   ],
   "pages": {
     "/": [
@@ -19,7 +19,7 @@
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
-    "/viaje-de-trabajo": [
+    "/viajes": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ]

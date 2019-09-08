@@ -41,7 +41,7 @@ class BannerServices extends React.Component {
                                 <p className="videoBanner-paragraph" style={this.props.style}>
                                     {this.props.text}
                                 </p>
-                                <ButtonWhite clase="colorWhite" href="/#" name={this.props.btn}></ButtonWhite>
+                                <ButtonWhite clase="colorWhite" href="" name={this.props.btn}></ButtonWhite>
                             </div>
                             <div className="section-down">
                                 <div className="cuadrado"></div>

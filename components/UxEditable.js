@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 class UxEditable extends React.Component {
 
 	render () {
@@ -9,9 +11,11 @@ class UxEditable extends React.Component {
 							<p>
 								Proyecto moderno e individual que se adapta a su negocio e industria. Estamos interesados ​​en el diseño web de tal manera que el producto sea funcional, intuitivo y atractivo para el usuario.
 							</p>
-							<a>
+                            <Link href="/portafolio">
+                                <a>
 								VER PORTAFOLIO
-							</a>	
+								</a>	
+							</Link>
 						</div>
 
 						<div className="services-free-bg">

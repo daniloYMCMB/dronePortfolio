@@ -139,10 +139,6 @@ class Portafolio extends React.Component {
 					</Slider>
 				</div>
 
-				<div className="container instagramWidget">
-					<div class="elfsight-app-8a863662-90b2-482c-a0ee-88aa2c740771"></div>
-					<div class="elfsight-app-d24898e3-2755-4573-a4cf-f8c781291167"></div>
-				</div>
 
 				<style jsx global="true">{`
 					.portafolio {

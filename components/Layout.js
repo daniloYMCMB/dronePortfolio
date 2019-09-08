@@ -19,7 +19,7 @@ export default class Layout extends React.Component {
 				<title>{ title }</title>
 
 				<meta name="viewport" content="width=device-width, user-scalable=no" />
-				<link rel="icon" type="image/png" href="/static/img/FAVICON-DOLAR.png" />
+				<link rel="icon" type="image/png" href="" />
 				
 				<link rel="stylesheet" type="text/css" charset="UTF-8" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" />
 				<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" />
@@ -61,7 +61,6 @@ export default class Layout extends React.Component {
 				    font-family: 'Poppins';
 				    src:url("/static/fonts/Poppins-ExtraLight.eot");
 				    src:local('☺'),
-				    url("/static/fonts/Poppins-ExtraLight.wofff") format('woff'),
 				    url("/static/fonts/Poppins-ExtraLight.ttf") format('truetype'),
 				    url("/static/fonts/Poppins-ExtraLight.svg") format('svg');
 				}

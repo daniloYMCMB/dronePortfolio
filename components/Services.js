@@ -30,8 +30,13 @@ class Services extends React.Component {
 									<p>
 										Muestra tu resort, hotel o cualquier cosa que desees desde una perspectiva completamente diferente. Haga que su oferta se destaque en Booking.com o tripAdvisor entre otros.
 									</p>
-									<Link href="/disenoweb">
-										Saber más
+									<Link href="/imagenes-de-drones">
+										<a className="services-btn">
+											<div className="services-icon">
+												<img className="services-icon-drone" width="35" src="/static/img/droneIcon.svg" />
+											</div>
+											Saber más
+										</a>
 									</Link>	
 								</div>
 							</div>
@@ -42,9 +47,12 @@ class Services extends React.Component {
 									<p>
 										¿Quieres un nuevo sitio web pero no tienes tiempo para administrarlo? ¿No tienes fotos o materiales? ¿Es posible construir un sitio web de forma gratuita? En lugar de la oferta estándar, elija la opción Trabajo y viaje.
 									</p>
-									<a>
-										Saber más
-									</a>
+									<Link href="/viaje-de-trabajo">
+										<a className="services-btn jcfe">
+											<img className="services-icon-free" width="25" src="/static/img/worldwide.svg" />
+											Saber más
+										</a>
+									</Link>	
 								</div>
 							</div>
 						</div>
@@ -200,6 +208,49 @@ class Services extends React.Component {
 							width: 40%;
 						}
 
+						.jcfe {
+							justify-content: flex-end;
+						}
+
+						.services-icon {
+							position: relative;
+							display: flex;
+							align-items: center;
+							animation: float 10s infinite ease;
+							animation-fill-mode: forwards;
+						}
+						.services-icon:before {
+							content: "";
+							position: absolute;
+							top: 10px;
+							left: -1px;
+							width: 17px;
+							height: 1.2px;
+							background: white;
+							border-radius: 4px;
+							animation: helice .3s infinite
+						}
+						.services-icon:after {
+							content: "";
+							position: absolute;
+							top: 10px;
+							left: 20px;
+							width: 17px;
+							height: 1.2px;
+							background: white;
+							border-radius: 4px;
+							animation: helice .3s infinite
+						}
+
+						.services-icon-drone {
+
+						}
+
+						.services-icon-free {
+							animation: rotate360 5s infinite linear;
+							animation-fill-mode: forwards;
+						}
+
 						.services-free {
 							background: url(https://firebasestorage.googleapis.com/v0/b/daniloviacava-40daf.appspot.com/o/emmaPetersen.JPG?alt=media&token=3175db9b-ef8c-461b-b6e8-50b28fe13e9e) -130px 0px no-repeat;
 							background-size: cover;
@@ -245,6 +296,16 @@ class Services extends React.Component {
 							font-size: 14px;
 							position: relative;
 							z-index: 1;
+						}
+
+						.services-btn {
+							display: flex;
+							align-items: center;
+							color: white;
+						}
+
+						.services-btn img {
+							margin-right: 10px;
 						}
 
 						@media screen and (max-width: 900px) {
@@ -361,7 +422,44 @@ class Services extends React.Component {
 							}
 						}
 
+						@keyframes float {
+							0% {
+								transform: translate(0px, 0px)
+							}
+							30% {
+								transform: translate(10px, 30px)
+							}
+							55% {
+								transform: translate(120px, 20px)
+							}
+							70% {
+								transform: translate(150px, -20px)
+							}
+							85% {
+								transform: translate(40px, -px)
+							}
+							100% {
+								transform: translate(0px, 0px)
+							}
+						}
 
+						@keyframes rotate360 {
+							0% {
+								transform: rotateY(45deg)
+							}
+							100% {
+								transform: rotateY(360deg)
+							}
+						}
+
+						@keyframes helice {
+							0% {
+								transform: rotateY(0deg)
+							}
+							100% {
+								transform: rotateY(360deg)
+							}
+						}
 
 						
 					`}</style>
