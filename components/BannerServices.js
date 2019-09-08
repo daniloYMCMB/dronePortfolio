@@ -9,10 +9,12 @@ class BannerServices extends React.Component {
         setTimeout(function(){ 
             var videoBanner = document.querySelector(".videoBanner-title")
             videoBanner.classList.add('active')
+        }, 5000);
 
+        setTimeout(function(){ 
             var videoBannerSkills = document.querySelector(".videoBanner-skills")
             videoBannerSkills.classList.add('active')
-        }, 500);
+        }, 5500);
 
         var tag = document.createElement('script');
         tag.src = "https://www.youtube.com/iframe_api";
@@ -172,7 +174,6 @@ class BannerServices extends React.Component {
                         opacity: 0;
                         transform: translateY(30px);
                         transition: .5s;
-                        transition-delay: 2s;
                         // font-family: Odachi;
                         line-height: 60px;
                     }
@@ -200,7 +201,6 @@ class BannerServices extends React.Component {
                         opacity: 0;
                         transform: translateY(30px);
                         transition: .5s;
-                        transition-delay: 2.5s;
                     }
 
                     .videoBanner-skills.active {
@@ -211,7 +211,6 @@ class BannerServices extends React.Component {
                     .videoBanner-skills li {
                         margin-bottom: 35px;
                         background: white;
-                        padding: 25px 20px;
                         margin: 0 .5px;
                         min-height: 60px;
                         box-sizing: border-box;
@@ -219,9 +218,10 @@ class BannerServices extends React.Component {
                         opacity: 0;
                         transform: translateY(20px);
                         transition: .5s;
-                        transition-delay: 1.5s;
                     }
-
+                    .videoBanner-skills li a {
+                        padding: 25px 20px;
+                    }
                     .videoBanner-skills li:hover {
                         background: #00BCD4;
                     }

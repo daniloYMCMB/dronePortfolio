@@ -8,19 +8,20 @@ class Header extends React.Component {
 		setTimeout(function(){ 
 			var header = document.querySelector(".header-logo")
 			header.classList.add('active')
+		}, 3000);
 
-			var socials = document.querySelector(".header-menu")
-			socials.classList.add('active')
-		}, 500);
+		setTimeout(function(){ 
+			var menu = document.querySelector(".header-menu")
+			menu.classList.add('active')
+		}, 3100);
 
 		const widthScreen = window.innerWidth
 		if(widthScreen < 767) {
 			setTimeout(function(){ 
-				var socials = document.querySelector(".header-menu")
-				socials.classList.remove('active')
-			}, 501);
+				var menu = document.querySelector(".header-menu")
+				menu.classList.remove('active')
+			}, 3100);
 		}
-
 	}
 
 	menuMobile(e) {
