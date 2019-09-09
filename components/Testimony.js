@@ -1,6 +1,6 @@
 import Slider from "react-slick";
 
-class Testimonys extends React.Component {
+class Testimony extends React.Component {
 
 	constructor(props) {
 		super(props);
@@ -194,4 +194,4 @@ class Testimonys extends React.Component {
 	}
 }
 
-export default Testimonys;
+export default Testimony;

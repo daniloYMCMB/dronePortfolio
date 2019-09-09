@@ -5,7 +5,7 @@ import PhotoAndVideo from '../components/PhotoAndVideo'
 import WebsiteFree from '../components/WebsiteFree'
 import HowMuch from '../components/HowMuch'
 
-class imagenesDrone extends React.Component {
+class ImagenesDrone extends React.Component {
 
 	render() {
 
@@ -44,4 +44,4 @@ class imagenesDrone extends React.Component {
 	}
 
 }
-export default imagenesDrone
+export default ImagenesDrone

@@ -1,6 +1,5 @@
 import Slider from "react-slick"
 import Title from './TitleBlack'
-import axios from 'axios'
 // import Instafeed from 'instafeed.js'
 
 class Portafolio extends React.Component {

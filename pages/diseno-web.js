@@ -6,7 +6,7 @@ import WebsiteFree from '../components/WebsiteFree'
 import UxEditable from '../components/UxEditable'
 import HowMuch from '../components/HowMuch'
 
-class disenoweb extends React.Component {
+class Disenoweb extends React.Component {
 
 	render() {
 
@@ -34,7 +34,7 @@ class disenoweb extends React.Component {
 	}
 
 }
-export default disenoweb
+export default Disenoweb
 
 
 

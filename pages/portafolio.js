@@ -1,9 +1,9 @@
 import Layout from '../components/Layout'
 import BannerServicesInterna from '../components/BannerServicesInterna'
-import Testimony from '../components/testimony'
-import Portafolio from '../components/portafolio'
+import Testimony from '../components/Testimony'
+import PortafolioI from '../components/Portafolio'
 
-class portafolio extends React.Component {
+class Portafolio extends React.Component {
 	
 	render() {
 
@@ -18,11 +18,11 @@ class portafolio extends React.Component {
 					btn="Ver proyectos recientes"
 				/>
 				<Testimony />
-				<Portafolio />
+				<PortafolioI />
 				
 			</Layout>
 		)
 	}
 
 }
-export default portafolio
+export default Portafolio

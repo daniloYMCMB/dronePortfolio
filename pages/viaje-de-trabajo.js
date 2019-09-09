@@ -4,7 +4,7 @@ import ForWho from '../components/ForWho'
 import PhotoAndVideo from '../components/PhotoAndVideo'
 import HowMuch from '../components/HowMuch'
 
-class trabajoYviaje extends React.Component {
+class TrabajoYviaje extends React.Component {
 
 	render() {
 
@@ -47,4 +47,4 @@ class trabajoYviaje extends React.Component {
 	}
 
 }
-export default trabajoYviaje
+export default TrabajoYviaje
