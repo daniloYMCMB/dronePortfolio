@@ -21,7 +21,7 @@ class DisenoEstetico extends React.Component {
 						<div className="disenoEstetico-bg">
 							<figure className="disenoEstetico-item">
 								<div className="disenoEstetico-item-mascara">
-									<div className="disenoEstetico-item-img" style={{background: "url(static/img/portafolio/profe.jpg) center center no-repeat", backgroundSize: 'cover'}}></div>
+									<div className="disenoEstetico-item-img" style={{background: "url(https://firebasestorage.googleapis.com/v0/b/daniloviacava-40daf.appspot.com/o/profe.jpg?alt=media&token=e02ac6a9-5665-4e85-98ce-c272b0de9693) center center no-repeat", backgroundSize: 'cover'}}></div>
 								</div>
 							</figure>
 						</div>

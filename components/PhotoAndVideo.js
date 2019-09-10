@@ -28,7 +28,7 @@ class PhotoAndVideo extends React.Component {
 						}
 
 						.PhotoAndVideo-web {
-							background: url(static/img/viena.jpg) center center no-repeat;
+							background: url(https://firebasestorage.googleapis.com/v0/b/daniloviacava-40daf.appspot.com/o/viena.jpg?alt=media&token=2e560d83-91ca-457f-b532-cd726213558a) center center no-repeat;
 							background-size: cover;
 							box-sizing: border-box;
 							text-align: left;

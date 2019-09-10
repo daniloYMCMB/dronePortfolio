@@ -67,14 +67,14 @@ class Portafolio extends React.Component {
 						<a href="https://www.profealtoque.com.pe/" target="_blank">
 							<figure className="portafolio-item">
 								<div className="portafolio-item-mascara">
-									<div className="portafolio-item-img" style={{background: "url(static/img/portafolio/profe.jpg) center center no-repeat", backgroundSize: 'cover'}}></div>
+									<div className="portafolio-item-img" style={{background: "url(https://firebasestorage.googleapis.com/v0/b/daniloviacava-40daf.appspot.com/o/profe.jpg?alt=media&token=e02ac6a9-5665-4e85-98ce-c272b0de9693) center center no-repeat", backgroundSize: 'cover'}}></div>
 								</div>
 							</figure>
 						</a>
 						<a href="http://www.sanpiox.edu.pe/" target="_blank">
 							<figure className="portafolio-item">
 								<div className="portafolio-item-mascara">
-									<div className="portafolio-item-img" style={{background: "url(static/img/portafolio/sanpiox.jpg) center center no-repeat", backgroundSize: 'cover'}}></div>
+									<div className="portafolio-item-img" style={{background: "url(https://firebasestorage.googleapis.com/v0/b/daniloviacava-40daf.appspot.com/o/sanpiox.jpg?alt=media&token=55944382-8c24-49bb-b7e3-2d1384fb72d3) center center no-repeat", backgroundSize: 'cover'}}></div>
 								</div>
 							</figure>
 						</a> 
@@ -82,56 +82,56 @@ class Portafolio extends React.Component {
 						<a href="http://www.deliperuano.com/" target="_blank">
 							<figure className="portafolio-item">
 								<div className="portafolio-item-mascara">
-									<div className="portafolio-item-img" style={{background: "url(static/img/portafolio/deliperuano.png) center center no-repeat", backgroundSize: 'cover'}}></div>
+									<div className="portafolio-item-img" style={{background: "url(https://firebasestorage.googleapis.com/v0/b/daniloviacava-40daf.appspot.com/o/deliperuano.png?alt=media&token=42939ff5-1a28-4670-8994-8e50d7f1f4b2) center center no-repeat", backgroundSize: 'cover'}}></div>
 								</div>
 							</figure>
 						</a>
 						<a href="https://www.pagadespues.pe" target="_blank">
 							<figure className="portafolio-item">
 								<div className="portafolio-item-mascara">
-									<div className="portafolio-item-img" style={{background: "url(static/img/portafolio/pagadespues.jpg) center center no-repeat", backgroundSize: 'cover'}}></div>
+									<div className="portafolio-item-img" style={{background: "url(https://firebasestorage.googleapis.com/v0/b/daniloviacava-40daf.appspot.com/o/pagadespues.jpg?alt=media&token=1102af10-f293-4492-9c94-d84a64016c74) center center no-repeat", backgroundSize: 'cover'}}></div>
 								</div>
 							</figure>
 						</a>  
 						<a href="https://www.acuantoestaeldolar.com/" target="_blank">
 							<figure className="portafolio-item">
 								<div className="portafolio-item-mascara">
-									<div className="portafolio-item-img" style={{background: "url(static/img/portafolio/cambiodolar.png) center center no-repeat", backgroundSize: 'cover'}}></div>
+									<div className="portafolio-item-img" style={{background: "url(https://firebasestorage.googleapis.com/v0/b/daniloviacava-40daf.appspot.com/o/cambiodolar.png?alt=media&token=46f05c5e-49fb-4e1f-a415-2d42de2cc066) center center no-repeat", backgroundSize: 'cover'}}></div>
 								</div>
 							</figure>
 						</a>
 						<a href="https://www.clinicainternacional.com.pe/" target="_blank">
 							<figure className="portafolio-item" >
 								<div className="portafolio-item-mascara">
-									<div className="portafolio-item-img" style={{background: "url(static/img/portafolio/clinicaInternacional.jpg) center center no-repeat", backgroundSize: 'cover'}}></div>
+									<div className="portafolio-item-img" style={{background: "url(https://firebasestorage.googleapis.com/v0/b/daniloviacava-40daf.appspot.com/o/clinicaInternacional.jpg?alt=media&token=c367036f-5b56-43b9-bf3c-aaf74ad08b95) center center no-repeat", backgroundSize: 'cover'}}></div>
 								</div>
 							</figure>
 						</a>
 						<a href="https://www.canalipe.tv/" target="_blank">
 							<figure className="portafolio-item">
 								<div className="portafolio-item-mascara">
-									<div className="portafolio-item-img" style={{background: "url(static/img/portafolio/canalipe.jpg) center center no-repeat", backgroundSize: 'cover'}}></div>
+									<div className="portafolio-item-img" style={{background: "url(https://firebasestorage.googleapis.com/v0/b/daniloviacava-40daf.appspot.com/o/canalipe.jpg?alt=media&token=a6774d89-f051-4614-bf8c-ad43b0c2d536) center center no-repeat", backgroundSize: 'cover'}}></div>
 								</div>
 							</figure>
 						</a>
 						<a href="https://www.mifuturogr.com" target="_blank">
 							<figure className="portafolio-item" >
 								<div className="portafolio-item-mascara">
-									<div className="portafolio-item-img" style={{background: "url(static/img/portafolio/mifuturo.jpg) center center no-repeat", backgroundSize: 'cover'}}></div>
+									<div className="portafolio-item-img" style={{background: "url(https://firebasestorage.googleapis.com/v0/b/daniloviacava-40daf.appspot.com/o/mifuturo.jpg?alt=media&token=b6a77482-bbce-47cb-bf34-307c7f156d64) center center no-repeat", backgroundSize: 'cover'}}></div>
 								</div>
 							</figure>
 						</a>
 						<a href="https://www.marina.mil.pe" target="_blank">
 							<figure className="portafolio-item">
 								<div className="portafolio-item-mascara">
-									<div className="portafolio-item-img" style={{background: "url(static/img/portafolio/marina.jpg) center center no-repeat", backgroundSize: 'cover'}}></div>
+									<div className="portafolio-item-img" style={{background: "url(https://firebasestorage.googleapis.com/v0/b/daniloviacava-40daf.appspot.com/o/marina.jpg?alt=media&token=9f68e122-ad8c-4275-8986-88d75c0a05b4) center center no-repeat", backgroundSize: 'cover'}}></div>
 								</div>
 							</figure>
 						</a>
 						<a href="http://www.clubterrazas.com.pe/" target="_blank">
 							<figure className="portafolio-item" >
 								<div className="portafolio-item-mascara">
-									<div className="portafolio-item-img" style={{background: "url(static/img/portafolio/terrazas.jpg) center center no-repeat", backgroundSize: 'cover'}}></div>
+									<div className="portafolio-item-img" style={{background: "url(https://firebasestorage.googleapis.com/v0/b/daniloviacava-40daf.appspot.com/o/terrazas.jpg?alt=media&token=94c03751-ab06-4e2e-89fd-33efabce4117) center center no-repeat", backgroundSize: 'cover'}}></div>
 								</div>
 							</figure>
 						</a>

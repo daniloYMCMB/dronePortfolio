@@ -1,35 +1,60 @@
 {
-  "devFiles": [
-    "static/development/dll/dll_4155f54877c0879b7684.js"
-  ],
+  "devFiles": [],
   "pages": {
+    "/": [
+      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
+      "static/chunks/commons.2409bec196309d27284b.js",
+      "static/runtime/main-ed646d416150d89882f3.js"
+    ],
     "/_app": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
+      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
+      "static/chunks/commons.2409bec196309d27284b.js",
+      "static/runtime/main-ed646d416150d89882f3.js"
     ],
     "/_error": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
+      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
+      "static/chunks/commons.2409bec196309d27284b.js",
+      "static/runtime/main-ed646d416150d89882f3.js"
     ],
     "/conocenos": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
+      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
+      "static/chunks/commons.2409bec196309d27284b.js",
+      "static/runtime/main-ed646d416150d89882f3.js"
     ],
     "/contacto": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
+      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
+      "static/chunks/commons.2409bec196309d27284b.js",
+      "static/runtime/main-ed646d416150d89882f3.js"
+    ],
+    "/diseno-web": [
+      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
+      "static/chunks/commons.2409bec196309d27284b.js",
+      "static/runtime/main-ed646d416150d89882f3.js"
+    ],
+    "/imagenes-de-drones": [
+      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
+      "static/chunks/commons.2409bec196309d27284b.js",
+      "static/runtime/main-ed646d416150d89882f3.js"
+    ],
+    "/index": [
+      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
+      "static/chunks/commons.2409bec196309d27284b.js",
+      "static/runtime/main-ed646d416150d89882f3.js"
     ],
     "/portafolio": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
+      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
+      "static/chunks/commons.2409bec196309d27284b.js",
+      "static/runtime/main-ed646d416150d89882f3.js"
     ],
     "/viaje-de-trabajo": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
+      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
+      "static/chunks/commons.2409bec196309d27284b.js",
+      "static/runtime/main-ed646d416150d89882f3.js"
     ],
     "/viajes": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
+      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
+      "static/chunks/commons.2409bec196309d27284b.js",
+      "static/runtime/main-ed646d416150d89882f3.js"
     ]
   }
 }

@@ -9,7 +9,7 @@ class AvailableMobiles extends React.Component {
 
 						<div className="availableMobile-free-bg">
 							<figure className="availableMobile-responsive">
-								<img src="static/img/responsive.png" alt=""/>
+								<img src="https://firebasestorage.googleapis.com/v0/b/daniloviacava-40daf.appspot.com/o/responsive.png?alt=media&token=ba7f998e-b310-4c48-96e3-ae3a60fa8c9c" alt=""/>
 							</figure>
 							<div className="df availableMobile-about">
 								<div className="availableMobile-about-text">

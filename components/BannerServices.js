@@ -26,7 +26,7 @@ class BannerServices extends React.Component {
                         <div className="vimeo-wrapper">
                             
                             <iframe 
-                                src="https://www.youtube.com/embed/xJAwnCMgqCg?enablejsapi=1&autoplay=1&controls=0&loop=1&mute=1&playlist=xJAwnCMgqCg" 
+                                src="https://www.youtube.com/embed/xJAwnCMgqCg?enablejsapi=1&autoplay=1&controls=0&vq=hd720&loop=1&mute=1&playlist=xJAwnCMgqCg" 
                                 frameBorder="0" 
                                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
                                 allowFullScreen></iframe>
