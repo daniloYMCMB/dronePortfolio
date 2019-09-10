@@ -8,19 +8,19 @@ class Header extends React.Component {
 		setTimeout(function(){ 
 			var header = document.querySelector(".header-logo")
 			header.classList.add('active')
-		}, 3000);
+		}, 2000);
 
 		setTimeout(function(){ 
 			var menu = document.querySelector(".header-menu")
 			menu.classList.add('active')
-		}, 3100);
+		}, 2100);
 
 		const widthScreen = window.innerWidth
 		if(widthScreen < 767) {
 			setTimeout(function(){ 
 				var menu = document.querySelector(".header-menu")
 				menu.classList.remove('active')
-			}, 3100);
+			}, 2100);
 		}
 	}
 

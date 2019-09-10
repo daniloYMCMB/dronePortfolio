@@ -28,7 +28,7 @@ class PhotoAndVideo extends React.Component {
 						}
 
 						.PhotoAndVideo-web {
-							background: url(static/img/Drone-imagen-offer.jpg) center center no-repeat;
+							background: url(static/img/viena.jpg) center center no-repeat;
 							background-size: cover;
 							box-sizing: border-box;
 							text-align: left;

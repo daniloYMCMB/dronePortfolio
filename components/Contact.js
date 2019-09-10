@@ -140,7 +140,8 @@ class Contact extends React.Component {
 					position: relative;
 					z-index: 99;
 					box-sizing: border-box;
-					background: url(/static/img/huancaya.jpg) center center no-repeat;
+					background: url(/static/img/bolzano.jpg) center top no-repeat;
+					// background: url(/static/img/eiffel2.jpg) center top no-repeat;
 					background-size: cover;
 					height: 100vh;
 					padding-top: 30vh;

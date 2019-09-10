@@ -80,7 +80,7 @@ class WebsiteFree extends React.Component {
 
 						.websitefree-free-bg {
 							width: 50%;
-							background: url(static/img/Build-website-for-free.jpg) right center no-repeat;
+							background: url(static/img/parlamento.jpg) center center no-repeat;
 							background-size: cover;
 						}
 

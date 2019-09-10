@@ -76,7 +76,7 @@ class HowMuch extends React.Component {
 
 						.howMuch-free-bg {
 							width: 50%;
-							background: url(static/img/How-much-does-it-cost.jpg) center center no-repeat;
+							background: url(static/img/montana.jpg) top center no-repeat;
 							background-size: cover;
 						}
 

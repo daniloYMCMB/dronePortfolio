@@ -20,7 +20,7 @@ class Conocenos extends React.Component {
 				/>
 
 				<WorkSmart />
-				<WebsiteFree bg="url(https://144ontour.com/wp-content/uploads/2017/11/Get-in-touch.jpg)" />
+				<WebsiteFree bg="url(/static/img/parlamento.jpg)" />
 				
 			</Layout>
 		)

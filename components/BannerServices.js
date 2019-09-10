@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import ReactPlayer from 'react-player'
 
 class BannerServices extends React.Component {
     constructor(props) {
@@ -9,46 +10,22 @@ class BannerServices extends React.Component {
         setTimeout(function(){ 
             var videoBanner = document.querySelector(".videoBanner-title")
             videoBanner.classList.add('active')
-        }, 5000);
+        }, 4000);
 
         setTimeout(function(){ 
             var videoBannerSkills = document.querySelector(".videoBanner-skills")
             videoBannerSkills.classList.add('active')
-        }, 5500);
-
-        var tag = document.createElement('script');
-        tag.src = "https://www.youtube.com/iframe_api";
-        var firstScriptTag = document.getElementsByTagName('script')[0];
-        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
-        var player;
-        function onYouTubeIframeAPIReady() {
-          player = new YT.Player('video', {
-            events: {
-              'onReady': onPlayerReady
-            }
-          });
-        }
-
+        }, 4500);
     }
 
 
 	render () {
 		return 	<div className="videoBanner">
-                    <div id="script"></div>
-                    <div className="buttons" style={{display: 'none', position: 'absolute',zIndex: 999}}>
-                        <button id="play-button" onClick={this.onPlayerReady}>PLAY</button>
-                        <button id="pause-button">PAUSE</button>
-                        <button id="stop-button">STOP</button>
-                    </div>
 					<div className="videoBanner-container">
 
                         <div className="vimeo-wrapper">
                             
                             <iframe 
-                                id="video" 
-                                width="560" 
-                                height="315" 
                                 src="https://www.youtube.com/embed/xJAwnCMgqCg?enablejsapi=1&autoplay=1&controls=0&loop=1&mute=1&playlist=xJAwnCMgqCg" 
                                 frameBorder="0" 
                                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
@@ -129,6 +106,11 @@ class BannerServices extends React.Component {
                         height: 100%;
                         z-index: 99;
                         overflow: hidden;
+                        // background: url(/static/img/eiffel2.jpg) center center no-repeat;
+                        // background: url(/static/img/bolzano.jpg) center top no-repeat;
+                        
+                        background-position: center top;
+                        background-size: cover;
                     }
                     .vimeo-wrapper:before {
                         content: "";
@@ -138,7 +120,7 @@ class BannerServices extends React.Component {
                         height: 100%;
                         width: 100%;
                         background: black;
-                        opacity: 0.5;
+                        opacity: 0.4;
                         z-index: 1;
                         pointer-events: none;
                     }
@@ -152,6 +134,7 @@ class BannerServices extends React.Component {
                         top: 47%;
                         left: 50%;
                         transform: translate(-50%, -50%);
+                        // display: none;
                     }
 
                     .videoBanner-text {
@@ -284,6 +267,9 @@ class BannerServices extends React.Component {
                             width: 49%;
                             border-top: 1px solid black;
                             padding: 15px 10px;
+                        }
+                        .videoBanner-skills li a {
+                            padding: 0px;
                         }
                         .videoBanner-skills p span {
                             display: none;
