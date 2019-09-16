@@ -36,7 +36,7 @@ class AvailableMobiles extends React.Component {
 										Nuestros proyectos están diseñados y optimizados para posicionamiento en Google.
 									</p>
 								</div>
-								<img src="static/img/seo.png" alt=""/>
+								<img className="seo-img" src="static/img/analysis.svg" alt=""/>
 							</div>
 						</div>
 					</div>
@@ -135,11 +135,21 @@ class AvailableMobiles extends React.Component {
 							letter-spacing: -0.1px;
 							color: #656565;
 						}
+						.availableMobile-web-item .seo-img {
+							width: 150px;
+							margin-left: 40px;
+							margin-right: 20px;
+						}
 
 						@media screen and (max-width: 1150px) {
 							.availableMobile-web-item img {
 								width: 120px;
 								height: 120px;
+							}
+							.availableMobile-web-item .seo-img {
+								margin-left: 10px;
+								margin-right: -10px;
+								width: 110px;
 							}
 						}
 
@@ -177,11 +187,14 @@ class AvailableMobiles extends React.Component {
 							.availableMobile-web {
 								width: 80%;
 								margin: 40px auto;
-								padding: 50px 80px;
+								padding: 30px 80px;
 							}
 
 							.availableMobile-items {
 								flex-direction: column;
+							}
+							.availableMobile-web-item {
+								margin: 30px 0;
 							}
 							.availableMobile-left {
 								width: 100%;

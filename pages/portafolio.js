@@ -16,6 +16,7 @@ class Portafolio extends React.Component {
 					text="Nuestro trabajo es nuestra pasión.
 					Ver proyectos recientes."
 					btn="Ver proyectos recientes"
+					href="#portafolio"
 				/>
 				<Testimony />
 				<PortafolioI />

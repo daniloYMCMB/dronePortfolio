@@ -17,6 +17,7 @@ class Conocenos extends React.Component {
 					Trabajo y viajes | Con sede en Lima, Perú |"
 					style={{maxWidth: 390}}
 					btn="Saber más"
+					href="#WorkSmart"
 				/>
 
 				<WorkSmart />

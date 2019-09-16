@@ -3,7 +3,7 @@ import Link from 'next/link'
 class ProfessionalEquipment extends React.Component {
 
 	render() {
-		return 	<div className="professionalEquipment">
+		return 	<div className="professionalEquipment" id="ProfessionalEquipment">
 
 					<div className="df" style={{alignItems:'stretch'}}>
 

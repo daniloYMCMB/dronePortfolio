@@ -59,7 +59,7 @@ class Portafolio extends React.Component {
 		  ]
 	    };
     	return (
-	   		<div className="portafolio">
+	   		<div className="portafolio" id="portafolio">
 
 				<div className="container web">
 					<Title title="Nuestro trabajo, es nuestra pasión." classTitle="white" subtitle="Proyectos Web" classSubtitle="white mb20" subtitleStrong=""></Title>

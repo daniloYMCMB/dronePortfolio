@@ -17,9 +17,9 @@ class BannerServices extends React.Component {
         setTimeout(function(){ 
             var videoBanner = document.querySelector(".videoBanner-title")
             videoBanner.classList.add('active')
-            var videoBanner = document.querySelector(".videoBanner-paragraph")
-            videoBanner.classList.add('active')
-        }, 500);
+            var videoBannerParagraph = document.querySelector(".videoBanner-paragraph")
+            videoBannerParagraph.classList.add('active')
+        }, 1000);
     }
 
 	handleDown () {
@@ -28,10 +28,10 @@ class BannerServices extends React.Component {
 
 	render () {
 
-		return 	<div className="videoBanner">
+		return 	<div className="videoBanner" style={this.props.styleBg} id={this.props.contactBefore}>
 					<div className="videoBanner-container">
                         <div className="vimeo-wrapper">
-                            <iframe width="560" height="315" src={this.state.i1 + this.state.i2 + this.state.i3} frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                            <iframe style={this.props.styleNone} width="560" height="315" src={this.state.i1 + this.state.i2 + this.state.i3} frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
 
                             <div className="container videoBanner-text">
                                 <h1 className="videoBanner-title">
@@ -41,7 +41,11 @@ class BannerServices extends React.Component {
                                 <p className="videoBanner-paragraph" style={this.props.style}>
                                     {this.props.text}
                                 </p>
-                                <ButtonWhite clase="colorWhite" href="" name={this.props.btn}></ButtonWhite>
+                                <ButtonWhite 
+                                    clase="colorWhite" 
+                                    href={this.props.href} 
+                                    name={this.props.btn}>
+                                </ButtonWhite>
                             </div>
                             <div className="section-down">
                                 <div className="cuadrado"></div>
@@ -54,6 +58,9 @@ class BannerServices extends React.Component {
 					</div>
 
 					<style jsx>{`
+                        #contactBefore .vimeo-wrapper:before {
+                            display: none;
+                        } 
                         .videoBanner {
                             height: 85vh;
                             position: relative;

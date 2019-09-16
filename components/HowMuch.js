@@ -17,9 +17,11 @@ class HowMuch extends React.Component {
 									<p>
 										{this.props.description}
 									</p>
-									<a>
-										{this.props.btn}
-									</a>	
+									<Link href="/contacto">
+										<a>
+											{this.props.btn}
+										</a>	
+									</Link>
 								</div>
 							</div>
 						</div>

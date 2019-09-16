@@ -3,7 +3,7 @@ import Link from 'next/link'
 class WorkSmart extends React.Component {
 
 	render () {
-		return 	<div className="WorkSmart">
+		return 	<div className="WorkSmart" id="WorkSmart">
 
 					<div className="df">
 						<div className="WorkSmart-free-bg">
@@ -11,11 +11,11 @@ class WorkSmart extends React.Component {
 								<h2>CONOCER EL NEGOCIO <br/>
 									ES LO MAS IMPORTANTE</h2>
 								<p>
-									¿Por qué elegimos este trabajo? Porque nos encanta viajar y gracias al diseño web y de medios digitales podemos trabajar de forma remota. Todo comenzó en 2015 durante el viaje „Work & Travel” a Bali. Nos dimos cuenta de que nuestra oficina puede ser cualquier lugar del mundo y establecimos nuestro negocio y comenzamos a viajar a Asia cada año. Nuestro lema es "Trabaja de forma inteligente, no dura", por lo que nos complace en cada proyecto. Nuestro trabajo es nuestra pasión.
+									¿Por qué elegimos este trabajo? Porque nos encanta viajar y gracias al diseño web y de medios digitales podemos trabajar de forma remota. Todo comenzó en 2017 durante el viaje de trabajo a Dinamarca. Nos dimos cuenta de que nuestra oficina puede ser cualquier lugar del mundo y establecimos nuestro negocio y comenzamos a viajar a Europa cada año. Nuestro lema es "Trabaja de forma inteligente, no dura", por lo que nos complace en cada proyecto. Nuestro trabajo es nuestra pasión.
 								</p>	
 	                            <Link href="/portafolio">
 	                                <a className="btn-action">
-										VER PROYECTOS RECIENTES
+										PROYECTOS RECIENTES
 									</a>	
 								</Link>
 							</div>

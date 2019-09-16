@@ -3,7 +3,7 @@ import Link from 'next/link'
 class ForWho extends React.Component {
 
 	render() {
-		return 	<div className="ForWho">
+		return 	<div className="ForWho" id="forWho">
 
 					<div className="df" style={{alignItems:'stretch'}}>
 

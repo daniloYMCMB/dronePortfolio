@@ -18,6 +18,7 @@ class Disenoweb extends React.Component {
 					title="Diseño web"
 					text="Brindamos servicios digitales frescos y creativos. A empresas que quieran crecer online. El diseño web es nuestro servicio clave."
 					btn="Iniciar un proyecto"
+					href="/contacto"
 				/>
 				<DisenoEstetico />
 				<AvailableMobiles />

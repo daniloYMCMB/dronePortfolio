@@ -43,44 +43,44 @@ class Testimony extends React.Component {
 								<figure className="Testimony-item">
 									<figcaption>
 										<div className="Testimony-image">
-											<img src="/static/img/daniloviacava.JPG" alt=""/>
-											<strong>Sergio Gabaldoni</strong>
+											<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDx-lW7jFxxuyqSBYZ8SOHPowYKw32W-I15m07B50_yjjqURYIJA" alt=""/>
+											<strong>Cristina Aparicio</strong>
 										</div>
 										<p>
-											Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus eligendi itaque maxime reprehenderit blanditiis tempora, dolorum distinctio debitis, iusto quos, quia eos repellat corrupti dolorem explicabo placeat nesciunt labore dolores.
+											Estoy muy contenta con la web: se ven bien las fotos, es rápida y dinámica. Me ha sorprendido gratamente las opciones del sistema. 
 										</p>
 									</figcaption>
 								</figure>
 								<figure className="Testimony-item">
 									<figcaption>
 										<div className="Testimony-image">
-											<img src="/static/img/daniloviacava.JPG" alt=""/>
-											<strong>Pablo Paredes</strong>
+											<img src="https://www.observatoriorh.com/wp-content/uploads/2018/09/Daniel-Ruiz-BQ2.png" alt=""/>
+											<strong>Ubaldo Moreno</strong>
 										</div>
 										<p>
-											Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, aperiam corporis. Quidem maxime laudantium accusantium labore, placeat est cumque harum quas officia repellendus, consequuntur libero. Velit ratione tenetur magni, ad!
+											Es intuitivo y está lleno de facilidades, de todos los servicios que he probado. Tecnova es el mejor con diferencia.
 										</p>
 									</figcaption>
 								</figure>
 								<figure className="Testimony-item">
 									<figcaption>
 										<div className="Testimony-image">
-											<img src="/static/img/daniloviacava.JPG" alt=""/>
-											<strong>Cristina Rubio</strong>
+											<img src="https://cnnespanol2.files.wordpress.com/2019/08/cnn-hecc81roes-2.jpeg?quality=100&strip=info&strip=info" alt=""/>
+											<strong>Angelo Montalvo</strong>
 										</div>
 										<p>
-											Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, aperiam corporis. Quidem maxime laudantium accusantium labore, placeat est cumque harum quas officia repellendus, consequuntur libero. Velit ratione tenetur magni, ad!
+											Yo no puedo más que recomendar los servicios de Tecnova. Lo mejor es la rapidéz y amable gestión del soporte. 100% efectivo y profesional.
 										</p>
 									</figcaption>
 								</figure>
 								<figure className="Testimony-item">
 									<figcaption>
 										<div className="Testimony-image">
-											<img src="/static/img/daniloviacava.JPG" alt=""/>
-											<strong>Juan Perez</strong>
+											<img src="https://cdn.sindyk.com/?src=https://www.lanacion.com.co/wp-content/uploads/2019/09/0V9A1711-696x507.jpg&w=640&q=80" alt=""/>
+											<strong>Antonio Pascual</strong>
 										</div>
 										<p>
-											Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, aperiam corporis. Quidem maxime laudantium accusantium labore, placeat est cumque harum quas officia repellendus, consequuntur libero. Velit ratione tenetur magni, ad!
+											La confianza que nos inspiran es absoluta y se basa en los extraordinarios resultados que bridan.
 										</p>
 									</figcaption>
 								</figure>

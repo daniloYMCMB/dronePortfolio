@@ -2,6 +2,7 @@ import Link from 'next/link'
 import Head from 'next/head'
 
 import Header from './Header'
+import Footer from './Footer'
 
 export default class Layout extends React.Component {
 
@@ -30,11 +31,16 @@ export default class Layout extends React.Component {
             <Header></Header>
 			
 			{children}
+
+			<Footer></Footer>
 			
 			<style jsx global>{`
 
 				body {
 					overflow-x: hidden;
+				}	
+				html {
+					scroll-behavior: smooth;
 				}
 				
 				.Layout {

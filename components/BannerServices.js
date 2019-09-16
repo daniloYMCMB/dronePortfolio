@@ -10,14 +10,13 @@ class BannerServices extends React.Component {
         setTimeout(function(){ 
             var videoBanner = document.querySelector(".videoBanner-title")
             videoBanner.classList.add('active')
-        }, 4000);
+        }, 3000);
 
         setTimeout(function(){ 
             var videoBannerSkills = document.querySelector(".videoBanner-skills")
             videoBannerSkills.classList.add('active')
-        }, 4500);
+        }, 3500);
     }
-
 
 	render () {
 		return 	<div className="videoBanner">
@@ -26,7 +25,7 @@ class BannerServices extends React.Component {
                         <div className="vimeo-wrapper">
                             
                             <iframe 
-                                src="https://www.youtube.com/embed/xJAwnCMgqCg?enablejsapi=1&autoplay=1&controls=0&vq=hd720&loop=1&mute=1&playlist=xJAwnCMgqCg" 
+                                src="https://www.youtube.com/embed/xJAwnCMgqCg?enablejsapi=1&autoplay=1&controls=0&vq=hd480&loop=1&mute=1&playlist=xJAwnCMgqCg" 
                                 frameBorder="0" 
                                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
                                 allowFullScreen></iframe>

@@ -18,6 +18,7 @@ class TrabajoYviaje extends React.Component {
 						y elija la opción "Trabajar y viajar". 
 						Obtenga su sitio web o imágenes de drones de forma gratuita!'
 					btn="Saber más"
+					href="#forWho"
 				/>
 				
 				<ForWho 
@@ -35,11 +36,12 @@ class TrabajoYviaje extends React.Component {
 					styleFree={{left: -100, background: 'linear-gradient(to right, rgba(255,255,255,0.2) 0%,rgba(237,237,237,0.4) 100%)', top: -150, color: 'black', padding: 90, paddingLeft: 180, paddingBottom: 140}}
 					title="¿ES GRATIS?"
 					description="¡Sí! Diseñaremos su sitio web o grabaremos el drone completamente gratis. Brindaremos nuestros servicios a cambio de una estadía de vacaciones en su lugar. Tomaremos el equipo necesario para diseñar el sitio web y realizaremos materiales promocionales, fotos y videos de alta calidad. Póngase en contacto con nosotros para organizar los detalles de intercambio, la duración de la estancia y el tipo de proyecto."
+					btnSky={{background: '#00BCD4', color: 'white'}}
 				/>
 				<HowMuch 
 					title="GANAR GANAR"
 					description='¡Lo llamamos oferta "GANAR-GANAR" porque puede obtener un servicio profesional, ahorrar su dinero y podemos cumplir nuestros sueños y viajar alrededor del mundo casi gratis!'
-					btn="PROYECTOS RECIENTES"
+					btn="CONTÁCTANOS"
 				/>
 				
 			</Layout>

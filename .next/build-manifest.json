@@ -3,57 +3,62 @@
   "pages": {
     "/": [
       "static/runtime/webpack-a79426b5e11f0ba5879d.js",
-      "static/chunks/commons.2409bec196309d27284b.js",
+      "static/chunks/commons.6db91c06f2140ccd210a.js",
+      "static/runtime/main-ed646d416150d89882f3.js"
+    ],
+    "/REACTPLAYER": [
+      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
+      "static/chunks/commons.6db91c06f2140ccd210a.js",
       "static/runtime/main-ed646d416150d89882f3.js"
     ],
     "/_app": [
       "static/runtime/webpack-a79426b5e11f0ba5879d.js",
-      "static/chunks/commons.2409bec196309d27284b.js",
+      "static/chunks/commons.6db91c06f2140ccd210a.js",
       "static/runtime/main-ed646d416150d89882f3.js"
     ],
     "/_error": [
       "static/runtime/webpack-a79426b5e11f0ba5879d.js",
-      "static/chunks/commons.2409bec196309d27284b.js",
+      "static/chunks/commons.6db91c06f2140ccd210a.js",
       "static/runtime/main-ed646d416150d89882f3.js"
     ],
     "/conocenos": [
       "static/runtime/webpack-a79426b5e11f0ba5879d.js",
-      "static/chunks/commons.2409bec196309d27284b.js",
+      "static/chunks/commons.6db91c06f2140ccd210a.js",
       "static/runtime/main-ed646d416150d89882f3.js"
     ],
     "/contacto": [
       "static/runtime/webpack-a79426b5e11f0ba5879d.js",
-      "static/chunks/commons.2409bec196309d27284b.js",
+      "static/chunks/commons.6db91c06f2140ccd210a.js",
       "static/runtime/main-ed646d416150d89882f3.js"
     ],
     "/diseno-web": [
       "static/runtime/webpack-a79426b5e11f0ba5879d.js",
-      "static/chunks/commons.2409bec196309d27284b.js",
+      "static/chunks/commons.6db91c06f2140ccd210a.js",
       "static/runtime/main-ed646d416150d89882f3.js"
     ],
     "/imagenes-de-drones": [
       "static/runtime/webpack-a79426b5e11f0ba5879d.js",
-      "static/chunks/commons.2409bec196309d27284b.js",
+      "static/chunks/commons.6db91c06f2140ccd210a.js",
       "static/runtime/main-ed646d416150d89882f3.js"
     ],
     "/index": [
       "static/runtime/webpack-a79426b5e11f0ba5879d.js",
-      "static/chunks/commons.2409bec196309d27284b.js",
+      "static/chunks/commons.6db91c06f2140ccd210a.js",
       "static/runtime/main-ed646d416150d89882f3.js"
     ],
     "/portafolio": [
       "static/runtime/webpack-a79426b5e11f0ba5879d.js",
-      "static/chunks/commons.2409bec196309d27284b.js",
+      "static/chunks/commons.6db91c06f2140ccd210a.js",
       "static/runtime/main-ed646d416150d89882f3.js"
     ],
     "/viaje-de-trabajo": [
       "static/runtime/webpack-a79426b5e11f0ba5879d.js",
-      "static/chunks/commons.2409bec196309d27284b.js",
+      "static/chunks/commons.6db91c06f2140ccd210a.js",
       "static/runtime/main-ed646d416150d89882f3.js"
     ],
     "/viajes": [
       "static/runtime/webpack-a79426b5e11f0ba5879d.js",
-      "static/chunks/commons.2409bec196309d27284b.js",
+      "static/chunks/commons.6db91c06f2140ccd210a.js",
       "static/runtime/main-ed646d416150d89882f3.js"
     ]
   }

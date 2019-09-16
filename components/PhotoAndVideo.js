@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 class PhotoAndVideo extends React.Component {
 
 	render () {
@@ -13,9 +15,11 @@ class PhotoAndVideo extends React.Component {
 								<p>
 									{this.props.description}
 								</p>
-								<a className="btn-action">
-									VER PROYECTOS RECIENTES
-								</a>	
+								<Link href="/portafolio">
+									<a className="btn-action" style={this.props.btnSky}>
+										PROYECTOS RECIENTES
+									</a>	
+								</Link>
 							</div>
 						</div>
 					</div>

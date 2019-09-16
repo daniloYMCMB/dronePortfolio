@@ -8,19 +8,19 @@ class Header extends React.Component {
 		setTimeout(function(){ 
 			var header = document.querySelector(".header-logo")
 			header.classList.add('active')
-		}, 2000);
+		}, 1000);
 
 		setTimeout(function(){ 
 			var menu = document.querySelector(".header-menu")
 			menu.classList.add('active')
-		}, 2100);
+		}, 1100);
 
 		const widthScreen = window.innerWidth
 		if(widthScreen < 767) {
 			setTimeout(function(){ 
 				var menu = document.querySelector(".header-menu")
 				menu.classList.remove('active')
-			}, 2100);
+			}, 1100);
 		}
 	}
 
@@ -94,13 +94,6 @@ class Header extends React.Component {
 												</a>
 											</Link>
 										</div>
-										<div>
-											<Link href="/viajes">
-												<a >
-													<p>Viajes</p>
-												</a>
-											</Link>
-										</div>
 									</div>
 								</li>
 								<li>
@@ -113,7 +106,7 @@ class Header extends React.Component {
 							</ul>
 						</nav>
 
-						<div className="header-socialNetwork">
+						<div className="header-socialNetwork" style={{display: 'none'}}>
 							<a target="_blank" href="https://www.facebook.com/profile.php?id=100009455848617" >
 								<img src="/static/img/facebookIcon.svg" alt=""/>
 							</a>
@@ -122,9 +115,6 @@ class Header extends React.Component {
 							</a>
 							<a target="_blank" href="https://api.whatsapp.com/send?phone=51931447041&text=Hola,%20quiero%20realizar%20mi%20proyecto" >
 								<img src="/static/img/whatsapp.png" alt=""/>
-							</a>
-							<a onClick={this.down} href="">
-								Cotización Gratis
 							</a>
 						</div>
 					</header>
@@ -240,7 +230,7 @@ class Header extends React.Component {
 							display: flex;
 							align-items: center;
 							justify-content: center;
-							display: none;
+							// display: none;
 						}
 						.header-socialNetwork a:hover img {
 							box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.85);

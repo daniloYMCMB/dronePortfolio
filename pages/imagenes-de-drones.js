@@ -19,6 +19,7 @@ class ImagenesDrone extends React.Component {
 							Servicios de fotografía aérea y video 
 							en la más alta calidad."
 					btn="Saber más"
+					href="#ProfessionalEquipment"
 				/>
 				
 				<ProfessionalEquipment 
