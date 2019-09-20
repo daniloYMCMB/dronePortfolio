@@ -25,7 +25,7 @@ class Footer extends React.Component {
 
 					<style jsx>{`
 						.footer {
-							background: #00bcd4;
+							background: #13130d;
 						}
 						.footer .container {
 							display: flex;

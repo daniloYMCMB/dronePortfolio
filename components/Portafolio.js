@@ -64,6 +64,55 @@ class Portafolio extends React.Component {
 				<div className="container web">
 					<Title title="Nuestro trabajo, es nuestra pasión." classTitle="white" subtitle="Proyectos Web" classSubtitle="white mb20" subtitleStrong=""></Title>
 					<Slider {...settings} className="">
+						<a href="https://millas-latam.web.app/" target="_blank">
+							<figure className="portafolio-item" >
+								<div className="portafolio-item-mascara">
+									<div className="portafolio-item-img" style={{background: "url(https://firebasestorage.googleapis.com/v0/b/daniloviacava-40daf.appspot.com/o/millas-latam.png?alt=media&token=f0c7f428-7bf4-4d49-99fe-cf4ac7893897) center center no-repeat", backgroundSize: 'cover'}}></div>
+								</div>
+							</figure>
+						</a>
+						<a href="http://superbidperu.com" target="_blank">
+							<figure className="portafolio-item" >
+								<div className="portafolio-item-mascara">
+									<div className="portafolio-item-img" style={{background: "url(https://firebasestorage.googleapis.com/v0/b/daniloviacava-40daf.appspot.com/o/superbid.png?alt=media&token=39c3874c-1ac2-4474-a41b-78cd967cd332) center center no-repeat", backgroundSize: 'cover'}}></div>
+								</div>
+							</figure>
+						</a>
+						<a href="https://viva-air-a056f.web.app/" target="_blank">
+							<figure className="portafolio-item" >
+								<div className="portafolio-item-mascara">
+									<div className="portafolio-item-img" style={{background: "url(https://firebasestorage.googleapis.com/v0/b/daniloviacava-40daf.appspot.com/o/viva-air.png?alt=media&token=69a6c905-0731-426e-bb3a-6a30f57f8d3b) center center no-repeat", backgroundSize: 'cover'}}></div>
+								</div>
+							</figure>
+						</a>
+						<a href="https://www.clinicainternacional.com.pe/" target="_blank">
+							<figure className="portafolio-item" >
+								<div className="portafolio-item-mascara">
+									<div className="portafolio-item-img" style={{background: "url(https://firebasestorage.googleapis.com/v0/b/daniloviacava-40daf.appspot.com/o/clinicaInternacional.jpg?alt=media&token=c367036f-5b56-43b9-bf3c-aaf74ad08b95) center center no-repeat", backgroundSize: 'cover'}}></div>
+								</div>
+							</figure>
+						</a>
+						<a href="https://www.canalipe.tv/" target="_blank">
+							<figure className="portafolio-item">
+								<div className="portafolio-item-mascara">
+									<div className="portafolio-item-img" style={{background: "url(https://firebasestorage.googleapis.com/v0/b/daniloviacava-40daf.appspot.com/o/canalipe.jpg?alt=media&token=a6774d89-f051-4614-bf8c-ad43b0c2d536) center center no-repeat", backgroundSize: 'cover'}}></div>
+								</div>
+							</figure>
+						</a>
+						<a href="https://www.mifuturogr.com" target="_blank">
+							<figure className="portafolio-item" >
+								<div className="portafolio-item-mascara">
+									<div className="portafolio-item-img" style={{background: "url(https://firebasestorage.googleapis.com/v0/b/daniloviacava-40daf.appspot.com/o/mifuturo.jpg?alt=media&token=b6a77482-bbce-47cb-bf34-307c7f156d64) center center no-repeat", backgroundSize: 'cover'}}></div>
+								</div>
+							</figure>
+						</a>
+						<a href="https://www.marina.mil.pe" target="_blank">
+							<figure className="portafolio-item">
+								<div className="portafolio-item-mascara">
+									<div className="portafolio-item-img" style={{background: "url(https://firebasestorage.googleapis.com/v0/b/daniloviacava-40daf.appspot.com/o/marina.jpg?alt=media&token=9f68e122-ad8c-4275-8986-88d75c0a05b4) center center no-repeat", backgroundSize: 'cover'}}></div>
+								</div>
+							</figure>
+						</a>
 						<a href="https://www.profealtoque.com.pe/" target="_blank">
 							<figure className="portafolio-item">
 								<div className="portafolio-item-mascara">
@@ -97,34 +146,6 @@ class Portafolio extends React.Component {
 							<figure className="portafolio-item">
 								<div className="portafolio-item-mascara">
 									<div className="portafolio-item-img" style={{background: "url(https://firebasestorage.googleapis.com/v0/b/daniloviacava-40daf.appspot.com/o/cambiodolar.png?alt=media&token=46f05c5e-49fb-4e1f-a415-2d42de2cc066) center center no-repeat", backgroundSize: 'cover'}}></div>
-								</div>
-							</figure>
-						</a>
-						<a href="https://www.clinicainternacional.com.pe/" target="_blank">
-							<figure className="portafolio-item" >
-								<div className="portafolio-item-mascara">
-									<div className="portafolio-item-img" style={{background: "url(https://firebasestorage.googleapis.com/v0/b/daniloviacava-40daf.appspot.com/o/clinicaInternacional.jpg?alt=media&token=c367036f-5b56-43b9-bf3c-aaf74ad08b95) center center no-repeat", backgroundSize: 'cover'}}></div>
-								</div>
-							</figure>
-						</a>
-						<a href="https://www.canalipe.tv/" target="_blank">
-							<figure className="portafolio-item">
-								<div className="portafolio-item-mascara">
-									<div className="portafolio-item-img" style={{background: "url(https://firebasestorage.googleapis.com/v0/b/daniloviacava-40daf.appspot.com/o/canalipe.jpg?alt=media&token=a6774d89-f051-4614-bf8c-ad43b0c2d536) center center no-repeat", backgroundSize: 'cover'}}></div>
-								</div>
-							</figure>
-						</a>
-						<a href="https://www.mifuturogr.com" target="_blank">
-							<figure className="portafolio-item" >
-								<div className="portafolio-item-mascara">
-									<div className="portafolio-item-img" style={{background: "url(https://firebasestorage.googleapis.com/v0/b/daniloviacava-40daf.appspot.com/o/mifuturo.jpg?alt=media&token=b6a77482-bbce-47cb-bf34-307c7f156d64) center center no-repeat", backgroundSize: 'cover'}}></div>
-								</div>
-							</figure>
-						</a>
-						<a href="https://www.marina.mil.pe" target="_blank">
-							<figure className="portafolio-item">
-								<div className="portafolio-item-mascara">
-									<div className="portafolio-item-img" style={{background: "url(https://firebasestorage.googleapis.com/v0/b/daniloviacava-40daf.appspot.com/o/marina.jpg?alt=media&token=9f68e122-ad8c-4275-8986-88d75c0a05b4) center center no-repeat", backgroundSize: 'cover'}}></div>
 								</div>
 							</figure>
 						</a>

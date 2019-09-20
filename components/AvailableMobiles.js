@@ -27,7 +27,7 @@ class AvailableMobiles extends React.Component {
 										Compruebe quién y cuándo ha visitado su sitio, cómo lo encontró y qué es lo que más interesa a sus visitantes. Con Google Analytics integrado, tendrá acceso a todos los datos.
 									</p>
 								</div>
-								<img src="static/img/ico-results.svg" alt=""/>
+								<img src="https://firebasestorage.googleapis.com/v0/b/daniloviacava-40daf.appspot.com/o/ico-results.svg?alt=media&token=40067b4a-3df3-4181-a66c-7219e4f91c43" alt=""/>
 							</div>
 							<div className="availableMobile-web-item">
 								<div className="availableMobile-web-text">
@@ -36,7 +36,7 @@ class AvailableMobiles extends React.Component {
 										Nuestros proyectos están diseñados y optimizados para posicionamiento en Google.
 									</p>
 								</div>
-								<img className="seo-img" src="static/img/analysis.svg" alt=""/>
+								<img className="seo-img" src="https://firebasestorage.googleapis.com/v0/b/daniloviacava-40daf.appspot.com/o/analysis.svg?alt=media&token=61b74837-9d32-41c5-b9cf-1d4e218d64da" alt=""/>
 							</div>
 						</div>
 					</div>
