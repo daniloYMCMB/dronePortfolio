@@ -4,7 +4,7 @@ import ReactPlayer from 'react-player'
 class BannerServices extends React.Component {
 
     state = {
-        playing: false
+        playing: true
     }
 
     componentDidMount() {
@@ -44,7 +44,7 @@ class BannerServices extends React.Component {
                         <div className="vimeo-wrapper">
 
                             <ReactPlayer
-                                url="https://www.youtube.com/embed/xJAwnCMgqCg?enablejsapi=1&autoplay=0"
+                                url="https://www.youtube.com/embed/xJAwnCMgqCg?enablejsapi=1&autoplay=1"
                                 playing={playing}
                                 onPause={this.handlePause}
                                 className="react-player"
