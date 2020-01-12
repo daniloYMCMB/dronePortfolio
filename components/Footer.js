@@ -7,10 +7,10 @@ class Footer extends React.Component {
 					<div className="container">
 						<div className="footer-left">
 							<div className="header-socialNetwork">
-								<a target="_blank" href="https://www.facebook.com/1793-FilmMaker-762119844128165" >
+								<a target="_blank" href="https://www.facebook.com/Tecnova-115217153207217" >
 									<img src="/static/img/facebookIcon.svg" alt=""/>
 								</a>
-								<a target="_blank" href="https://www.instagram.com/1793filmmakerr/" >
+								<a target="_blank" href="https://www.instagram.com/tecnova.io/" >
 									<img src="/static/img/instagramIcon.svg" alt=""/>
 								</a>
 								<a target="_blank" href="https://api.whatsapp.com/send?phone=51931447041&text=Hola,%20quiero%20realizar%20mi%20proyecto" >
@@ -34,11 +34,10 @@ class Footer extends React.Component {
 							padding: 10px 0;
 						}
 						.footer-left {
-							flex: 1
 							text-align: left;
 						}
 						.footer-right {
-							flex: 1
+							flex: 1;
 							text-align: right;
 							color: white;
 							font-size: 14px;
@@ -70,6 +69,15 @@ class Footer extends React.Component {
 						}
 						.header-socialNetwork a {
 							margin: 0 15px;
+						}
+
+						@media screen and (max-width: 450px){
+							.footer .header-socialNetwork a {
+								margin: 0 5px;
+							}
+							.footer-right {
+								font-size: 12px;
+							}
 						}
 					`}</style>
 				</footer>

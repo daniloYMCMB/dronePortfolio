@@ -25,6 +25,8 @@ class Header extends React.Component {
 	}
 
 	menuMobile(e) {
+		const header = document.getElementById("header");
+		header.classList.toggle('active');
 		const menu_mobile = document.getElementById("header_menu");
 		menu_mobile.classList.toggle('active');
 		const menu_mobile_btn = document.getElementById("menu-mobile-btn");
@@ -44,16 +46,20 @@ class Header extends React.Component {
 
 	render () {
 		return 	<div className="">
-					<header className="header">
+					<header className="header" id="header">
 						<nav className="df container">
 
 							<Link href="/">
 								<a className="header-logo">
 									TECNOVA.IO
+
+									<div className="services-icon">
+									<img className="services-icon-drone" width="35" src="/static/img/droneIcon.svg" />
+								</div>
 								</a>
 							</Link>
 
-							<div className="menu-mobile-btn" onClick={this.menuMobile} id="menu-mobile-btn" ></div>
+							<div className="menu-mobile-btn" onClick={this.menuMobile} id="menu-mobile-btn"></div>
 
 							<ul id="header_menu" className="header-menu">
 								<li>
@@ -87,13 +93,11 @@ class Header extends React.Component {
 										<p>#TECNOVA.IO</p>
 									</a>
 									<div className="sub-menu">
-										<div>
-											<Link href="/viaje-de-trabajo">
-												<a >
-													<p>Viaje de trabajo</p>
-												</a>
-											</Link>
-										</div>
+										<Link href="/viaje-de-trabajo">
+											<a >
+												<p>Viaje de trabajo</p>
+											</a>
+										</Link>
 									</div>
 								</li>
 								<li>
@@ -137,8 +141,7 @@ class Header extends React.Component {
 						}
 
 						.header {
-							background: transparent;
-							margin-top: 10px;
+							background: linear-gradient(180deg,#9292926b 0,#ffffff00);
 							position: absolute;
 							top: 0;
 							left: 0;
@@ -147,15 +150,10 @@ class Header extends React.Component {
 							letter-spacing: 1px;
 							font-size: 13px;
 							font-weight: bold;
+							padding: 10px 0;
 						}
-						.header:before {
-							content: "";
-							background: linear-gradient(180deg,#9292926b 0,#ffffff00);
-							position: absolute;
-							top: -10px;
-							left: 0;
-							width: 100%;
-							height: 200%;
+						.header.active {
+							overflow: inherit;
 						}
 						.header a {
 							color: white;
@@ -257,7 +255,77 @@ class Header extends React.Component {
 							cursor: pointer;
 						}
 
+
+						.services-icon {
+							position: absolute;
+							display: flex;
+							align-items: center;
+							animation: float 10s infinite ease;
+							animation-fill-mode: forwards;
+						}
+						.services-icon:before {
+							content: "";
+							position: absolute;
+							top: 10px;
+							left: -1px;
+							width: 17px;
+							height: 1.2px;
+							background: white;
+							border-radius: 4px;
+							animation: helice .3s infinite
+						}
+						.services-icon:after {
+							content: "";
+							position: absolute;
+							top: 10px;
+							left: 20px;
+							width: 17px;
+							height: 1.2px;
+							background: white;
+							border-radius: 4px;
+							animation: helice .3s infinite
+						}
+
+						@keyframes float {
+							0% {
+								transform: translate(120px, -30px) rotate(5deg)
+							}
+							30% {
+								transform: translate(350px, 10px) rotate(0deg)
+							}
+							50% {
+								transform: translate(470px, 10px) rotate(5deg)
+							}
+							80% {
+								transform: translate(450px, 400px) rotate(0deg)
+							}
+							100% {
+								transform: translate(120px, -30px) rotate(-5deg)
+							}
+						}
+
+						@keyframes rotate360 {
+							0% {
+								transform: rotateY(45deg)
+							}
+							100% {
+								transform: rotateY(360deg)
+							}
+						}
+
+						@keyframes helice {
+							0% {
+								transform: rotateY(0deg)
+							}
+							100% {
+								transform: rotateY(360deg)
+							}
+						}
+
 						@media screen and (max-width: 900px) {
+							.header {
+								//overflow: hidden;
+							}
 							.header-menu a {
 								font-size: 12px;
 								margin: 2px;
@@ -285,7 +353,7 @@ class Header extends React.Component {
 							.menu-mobile-btn {
 								display: block;
 								position: absolute;
-								top: 10px;
+								top: 12px;
 								right: 20px;
 								width: 30px;
 								height: 30px;
@@ -335,6 +403,24 @@ class Header extends React.Component {
 								position: relative;
 								opacity: 1;
 								visibility: visible;
+							}
+
+							@keyframes float {
+								0% {
+									transform: translate(120px, -30px) rotate(5deg)
+								}
+								20% {
+									transform: translate(170px, 100px) rotate(5deg)
+								}
+								50% {
+									transform: translate(300px, 200px) rotate(-5deg)
+								}
+								80% {
+									transform: translate(150px, 350px) 
+								}
+								100% {
+									transform: translate(120px, -30px) 
+								}
 							}
 						}
 

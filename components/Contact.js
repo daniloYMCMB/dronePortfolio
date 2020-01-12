@@ -256,7 +256,7 @@ class Contact extends React.Component {
 					top: 0;
 					left: 0;
 					right: 0;
-					width: 96%;
+					width: 100%;
 					height: 100%;
 					display: flex;
 					justify-content: center;
@@ -265,8 +265,9 @@ class Contact extends React.Component {
 					opacity: 0;
 					visibility: hidden;
 					transition: .3s linear;
-					background: white;
+					background: #262b3b;
 					margin: auto;
+					z-index: 99;
 				}
 
 				.gracias.active {
@@ -281,6 +282,9 @@ class Contact extends React.Component {
 				}
 
 				@media screen and (max-width: 600px){
+					.contact {
+						padding-top: 20vh;
+					}
 					.contact-title {
 						font-size: 19px;
 					}

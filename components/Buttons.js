@@ -33,6 +33,14 @@ export default class Buttons extends React.Component {
 			      		margin: 10px 0 0;
 
 			      	}
+
+			      	@media screen and (max-width: 500px) {
+			      		.btn-white {
+			      			font-size: 14px;
+			      			padding: 10px 13px;
+			      			margin-left: 20px;
+			      		}
+			      	}
 			      `}</style>
 			  </div>
 	}

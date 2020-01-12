@@ -43,17 +43,6 @@ class Testimony extends React.Component {
 								<figure className="Testimony-item">
 									<figcaption>
 										<div className="Testimony-image">
-											<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDx-lW7jFxxuyqSBYZ8SOHPowYKw32W-I15m07B50_yjjqURYIJA" alt=""/>
-											<strong>Cristina Aparicio</strong>
-										</div>
-										<p>
-											Estoy muy contenta con la web: se ven bien las fotos, es rápida y dinámica. Me ha sorprendido gratamente las opciones del sistema. 
-										</p>
-									</figcaption>
-								</figure>
-								<figure className="Testimony-item">
-									<figcaption>
-										<div className="Testimony-image">
 											<img src="https://www.observatoriorh.com/wp-content/uploads/2018/09/Daniel-Ruiz-BQ2.png" alt=""/>
 											<strong>Ubaldo Moreno</strong>
 										</div>
@@ -70,6 +59,17 @@ class Testimony extends React.Component {
 										</div>
 										<p>
 											Yo no puedo más que recomendar los servicios de Tecnova. Lo mejor es la rapidéz y amable gestión del soporte. 100% efectivo y profesional.
+										</p>
+									</figcaption>
+								</figure>
+								<figure className="Testimony-item">
+									<figcaption>
+										<div className="Testimony-image">
+											<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDx-lW7jFxxuyqSBYZ8SOHPowYKw32W-I15m07B50_yjjqURYIJA" alt=""/>
+											<strong>Cristina Aparicio</strong>
+										</div>
+										<p>
+											Estoy muy contenta con la web: se ven bien las fotos, es rápida y dinámica. Me ha sorprendido gratamente las opciones del sistema. 
 										</p>
 									</figcaption>
 								</figure>

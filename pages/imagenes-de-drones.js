@@ -4,6 +4,7 @@ import ProfessionalEquipment from '../components/ProfessionalEquipment'
 import PhotoAndVideo from '../components/PhotoAndVideo'
 import WebsiteFree from '../components/WebsiteFree'
 import HowMuch from '../components/HowMuch'
+import Head from 'next/head'
 
 class ImagenesDrone extends React.Component {
 
@@ -11,6 +12,23 @@ class ImagenesDrone extends React.Component {
 
 		return (
 			<Layout title="Viaja con Danilo">
+				<Head>
+				<title>Imágenes de drones | Video y fotografía - TECNOVA.IO - Tecnova.io</title>
+				<meta name="title" content="Imágenes de drones | TECNOVA.IO - Tecnova.io"></meta>
+				<meta name="description" content="Brindamos servicios de fotografía y video aéreo basados ​​en drones. Pon tu TripAdvisor o Booking.com a un nivel completamente nuevo | Imágenes de drones."></meta>
+				
+				<meta property="og:type" content="website"></meta>
+				<meta property="og:url" content="https://www.tecnova.io/imagenes-de-drones"></meta>
+				<meta property="og:title" content="Imágenes de drones | TECNOVA.IO - Tecnova.io"></meta>
+				<meta property="og:description" content="Brindamos servicios de fotografía y video aéreo basados ​​en drones. Pon tu TripAdvisor o Booking.com a un nivel completamente nuevo | Imágenes de drones."></meta>
+				<meta property="og:image" content=""></meta>
+				
+				<meta property="twitter:card" content="summary_large_image"></meta>
+				<meta property="twitter:url" content="https://www.tecnova.io/imagenes-de-drones"></meta>
+				<meta property="twitter:title" content="Imágenes de drones | TECNOVA.IO - Tecnova.io"></meta>
+				<meta property="twitter:description" content="Brindamos servicios de fotografía y video aéreo basados ​​en drones. Pon tu TripAdvisor o Booking.com a un nivel completamente nuevo | Imágenes de drones."></meta>
+				<meta property="twitter:image" content=""></meta>
+				</Head>
 				
 				<BannerServicesInterna 
 					iframe="itFF4hKUC4Y"

@@ -1,4 +1,4 @@
-
+import ReactPlayer from 'react-player'
 
 import ButtonWhite from './Buttons'
 
@@ -10,33 +10,58 @@ class BannerServices extends React.Component {
                 i1: "https://www.youtube.com/embed/",
                 i2: this.props.iframe + "",
                 i3: "?autoplay=1&controls=0&loop=1&mute=1&playlist=xJAwnCMgqCg",
+                playing: true
             }
     }
 
     componentDidMount() {
+        if(window.innerWidth < 1000) {
+            this.setState({ playing: false })
+        }
+
         setTimeout(function(){ 
             var videoBanner = document.querySelector(".videoBanner-title")
             videoBanner.classList.add('active')
             var videoBannerParagraph = document.querySelector(".videoBanner-paragraph")
             videoBannerParagraph.classList.add('active')
         }, 1000);
+
+        setTimeout(function(){ 
+            var btnWhite = document.querySelector(".btn-white")
+            btnWhite.classList.add('active')
+            var btnWhite = document.querySelector(".btn-white.mobile")
+            btnWhite.classList.add('active')
+        }, 3300);
     }
 
-	handleDown () {
-		// fullpage_api.moveSectionDown();
-	}
+    handlePlayPause = (e) => {
+        this.setState({ playing: !this.state.playing })
+    }
 
 	render () {
-
+        const { playing } = this.state
 		return 	<div className="videoBanner" style={this.props.styleBg} id={this.props.contactBefore}>
 					<div className="videoBanner-container">
                         <div className="vimeo-wrapper">
-                            <iframe style={this.props.styleNone} width="560" height="315" src={this.state.i1 + this.state.i2 + this.state.i3} frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+
+                            <ReactPlayer
+                                url={this.state.i1 + this.state.i2 + this.state.i3}
+                                playing={playing}
+                                onPause={this.handlePause}
+                                className="react-player"
+                            />
 
                             <div className="container videoBanner-text">
                                 <h1 className="videoBanner-title">
                                     {this.props.title}
                                 </h1>
+
+                                <button className="btn-white" onClick={this.handlePlayPause}>
+                                    {playing ? 'Detener video' : 'Reanudar video'}
+                                </button>
+                                <button className="btn-white mobile" onClick={this.handlePlayPause}>
+                                    {playing ? 'Detener video' : 'Ver video'}
+                                </button>
                                 <br/>
                                 <p className="videoBanner-paragraph" style={this.props.style}>
                                     {this.props.text}
@@ -57,7 +82,24 @@ class BannerServices extends React.Component {
                         </div>
 					</div>
 
-					<style jsx>{`
+                    <style jsx global>{`
+                        .btn-white {
+                            margin: 35px 15px 10px 0 !important;
+                            padding: 10px 30px !important;
+                            outline: none;
+                            opacity: 0;
+                            transform: translateY(30px);
+                            transition: .5s;
+                            cursor: pointer;
+                        }
+                        .btn-white.mobile {
+                            display: none;
+                        }
+                        .btn-white.active {
+                            opacity: 1;
+                            transform: translateY(0);
+                        }
+
                         #contactBefore .vimeo-wrapper:before {
                             display: none;
                         } 
@@ -87,7 +129,7 @@ class BannerServices extends React.Component {
                             z-index: 1;
                             pointer-events: none;
                         }
-                        .vimeo-wrapper iframe {
+                        .vimeo-wrapper .react-player {
                             width: 100vw;
                             height: 56.25vw; /* Given a 16:9 aspect ratio, 9/16*100 = 56.25 */
                             min-height: 106vh;
@@ -96,6 +138,11 @@ class BannerServices extends React.Component {
                             top: 47%;
                             left: 50%;
                             transform: translate(-50%, -50%);
+                        }
+
+                        .react-player {
+                            width: 100% !important;
+                            height: 100% !important;
                         }
 
                         .videoBanner-text {
@@ -147,6 +194,12 @@ class BannerServices extends React.Component {
                         }
 
                         @media screen and (max-width: 768px){
+                            .btn-white {
+                                display: none !important;
+                            }
+                            .btn-white.mobile {
+                                display: inline-block !important;
+                            }
                             .videoBanner-title br {
                                 display: block;
                             }

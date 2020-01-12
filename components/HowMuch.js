@@ -79,6 +79,7 @@ class HowMuch extends React.Component {
 						.howMuch-free-bg {
 							width: 50%;
 							background: url(https://firebasestorage.googleapis.com/v0/b/daniloviacava-40daf.appspot.com/o/montana.jpg?alt=media&token=414e0dd5-712a-4935-85e1-0102100f54fb) top center no-repeat;
+							background: url(/static/img/Concert-CardyB-banner.jpg) top center no-repeat;
 							background-size: cover;
 						}
 

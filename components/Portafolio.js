@@ -165,7 +165,7 @@ class Portafolio extends React.Component {
 						text-align: center;
 						margin: 60px 0 0 0;
 						background: #00BCD4;
-						padding: 60px 0 20px 0;
+						padding: 60px 0 40px 0;
 						box-sizing: border-box;
 					}
 					.portafolio .web {

@@ -62,7 +62,7 @@ class Services extends React.Component {
 					<style jsx>{`
 						.services {
 							color: black;
-							padding-top: 80px;
+							padding-top: 60px;
 							margin-bottom: 50px;
 						}
 						.services-about {
@@ -320,9 +320,12 @@ class Services extends React.Component {
 						}
 
 						@media screen and (max-width: 900px) {
+							.services {
+								padding-top: 40px;
+							}
 							.services-about-text {
 								margin-right: 2%;
-								padding-top: 5%;
+								padding-top: 30px;
 							}
 							
 							.services-web h2,
@@ -346,7 +349,7 @@ class Services extends React.Component {
 							.services-free {
 								margin-left: -90px;
 								padding: 280px 60px 230px 60px;
-								background-position: -170px 0px;
+								background-position: -220px 0px;
 							}
 						}
 
@@ -384,6 +387,7 @@ class Services extends React.Component {
 								margin: 30px auto;
 								max-width: 100%;
 								padding: 80px 170px;
+								background-position: center center;
 							}
 							.services-drone h2 {
 								margin-left: 0;
@@ -414,7 +418,7 @@ class Services extends React.Component {
 
 						@media screen and (max-width: 600px) {
 							.services {
-								padding-top: 40px;
+								padding-top: 20px;
 							}
 							.services-web {
 								padding: 40px 20px;
@@ -430,6 +434,9 @@ class Services extends React.Component {
 							.services-free {
 								padding: 80px 50px;
 								background-position: 0px 0px;
+							}
+							.services-free p {
+								font-size: 14px;
 							}
 						}
 

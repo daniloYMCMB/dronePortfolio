@@ -23,6 +23,10 @@ class Contacto extends React.Component {
 		this.setState({ playing: false })
 	}
 
+	handlePlay = () => {
+		this.setState({ playing: true })
+	}
+
 	render () {
 		const { playing } = this.state
 		return (
@@ -31,14 +35,20 @@ class Contacto extends React.Component {
 					url="https://www.youtube.com/embed/xJAwnCMgqCg?enablejsapi=1&autoplay=1"
 					playing={playing}
 					onPause={this.handlePause}
+					className="react-player"
 				/>
 				<button onClick={this.handlePause}>
-					{playing ? 'Pause' : 'Play'}
+					Pause
+				</button>
+				<button onClick={this.handlePlay}>
+					Play
 				</button>
 				<style>{`
+					.react-player {
+						width: 100% !important;
+						height: 100% !important;
+					}
 				`}</style>
-
-				
 			</Layout>
 		)
 	}
