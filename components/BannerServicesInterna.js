@@ -10,7 +10,7 @@ class BannerServices extends React.Component {
                 i1: "https://www.youtube.com/embed/",
                 i2: this.props.iframe + "",
                 i3: "?autoplay=1&controls=0&loop=1&mute=1&playlist=xJAwnCMgqCg",
-                playing: true
+                playing: false
             }
     }
 

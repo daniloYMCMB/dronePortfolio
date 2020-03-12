@@ -4,7 +4,7 @@ import ReactPlayer from 'react-player'
 class BannerServices extends React.Component {
 
     state = {
-        playing: true
+        playing: false
     }
 
     componentDidMount() {

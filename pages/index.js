@@ -10,7 +10,7 @@ import Head from 'next/head'
 const Index = () => (
   <Layout>
       <Head>
-        <title>Diseño web | Imágenes de drones - TECNOVA.IO - Tecnova.io</title>
+        <title>Diseño web | Imágenes de Drones - TECNOVA.IO - Tecnova.io</title>
         <meta name="title" content="Diseño web | Imágenes de drone - TECNOVA.IO - Tecnova.io"></meta>
         <meta name="description" content="El diseño web de TECNOVA.IO se distingue por: profesionalismo, diseño estético, atención especial a los detalles, disponibilidad en teléfonos inteligentes, SEO amigable."></meta>
         

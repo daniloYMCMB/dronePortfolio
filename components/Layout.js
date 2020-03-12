@@ -1,13 +1,18 @@
-import Link from 'next/link'
 import Head from 'next/head'
 
 import Header from './Header'
 import Footer from './Footer'
+import TagManager from 'react-gtm-module'
+
+const tagManagerArgs = {
+	gtmId: 'GTM-MS5Q8GM'
+}
 
 export default class Layout extends React.Component {
 
     componentDidMount() {
 		const width = window.innerWidth;
+		TagManager.initialize(tagManagerArgs)
     }
 
 	render () {
