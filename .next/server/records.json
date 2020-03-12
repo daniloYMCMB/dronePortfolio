@@ -1,8 +1,8 @@
 {
   "modules": {
     "byIdentifier": {
-      "multi private-next-pages/conocenos.js": 0,
-      "multi private-next-pages/REACTPLAYER.js": 1,
+      "multi private-next-pages/REACTPLAYER.js": 0,
+      "multi private-next-pages/conocenos.js": 1,
       "multi private-next-pages/contacto.js": 2,
       "multi private-next-pages/diseno-web.js": 3,
       "multi private-next-pages/imagenes-de-drones.js": 4,
